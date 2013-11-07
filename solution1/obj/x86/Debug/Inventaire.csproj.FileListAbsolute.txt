@@ -1,0 +1,410 @@
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.exe.config
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.exe
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.pdb
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\PrintableListView.dll
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.info.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\solution1.exe.config
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.info.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\solution1.exe
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\solution1.pdb
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\projets\inventaire\Mobility\Projects\asset - version beta\solution1\solution1\bin\Debug\PrintableListView.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\solution1.exe.config
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\solution1.exe
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\solution1.pdb
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\bin\Debug\PrintableListView.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.info.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+E:\Projects\Inventaire\partie serveur\asset - version beta - Copie\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.exe.config
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.info.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UC_bien_pers.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.exe
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.pdb
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+E:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.read.2.tlog
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.exe.config
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.pdb
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.info.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UC_bien_pers.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.read.2.tlog
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.exe
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.pdb
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\BarcodeLib.dll
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+D:\Projects\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.exe.config
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.pdb
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.info.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UC_bien_pers.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.exe
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\solution1.pdb
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\BarcodeLib.dll
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.Admin.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.gestion_utilisateur.message.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.import_export.export_données.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.import_export.import_bloc.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.import_export.import_tab.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.import_export.vider_BDD.resources
+C:\mini projet\Inventaire\partie serveur\asset - version beta\solution1\solution1\obj\x86\Debug\solution1.Prenom.Information.inform.resources

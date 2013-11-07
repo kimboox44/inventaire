@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Inventaire_BDDEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Amortissement" EntityType="Model.Amortissement" />
+    <EntitySet Name="Bien" EntityType="Model.Bien" />
+    <EntitySet Name="BonTransfert" EntityType="Model.BonTransfert" />
+    <EntitySet Name="CategorieBien" EntityType="Model.CategorieBien" />
+    <EntitySet Name="Ceder" EntityType="Model.Ceder" />
+    <EntitySet Name="Client" EntityType="Model.Client" />
+    <EntitySet Name="Emplacement" EntityType="Model.Emplacement" />
+    <EntitySet Name="Etat" EntityType="Model.Etat" />
+    <EntitySet Name="Fournisseur" EntityType="Model.Fournisseur" />
+    <EntitySet Name="Inventaire" EntityType="Model.Inventaire" />
+    <EntitySet Name="Inventorier" EntityType="Model.Inventorier" />
+    <EntitySet Name="MSdynamicsnapshotjobs" EntityType="Model.MSdynamicsnapshotjobs" />
+    <EntitySet Name="MSdynamicsnapshotviews" EntityType="Model.MSdynamicsnapshotviews" />
+    <EntitySet Name="MSmerge_agent_parameters" EntityType="Model.MSmerge_agent_parameters" />
+    <EntitySet Name="MSmerge_altsyncpartners" EntityType="Model.MSmerge_altsyncpartners" />
+    <EntitySet Name="MSmerge_articlehistory" EntityType="Model.MSmerge_articlehistory" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Amortissement" EntityType="Model.MSmerge_conflict_PubInventaire_Amortissement" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Bien" EntityType="Model.MSmerge_conflict_PubInventaire_Bien" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_BonTransfert" EntityType="Model.MSmerge_conflict_PubInventaire_BonTransfert" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_CategorieBien" EntityType="Model.MSmerge_conflict_PubInventaire_CategorieBien" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Ceder" EntityType="Model.MSmerge_conflict_PubInventaire_Ceder" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Client" EntityType="Model.MSmerge_conflict_PubInventaire_Client" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Emplacement" EntityType="Model.MSmerge_conflict_PubInventaire_Emplacement" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Etat" EntityType="Model.MSmerge_conflict_PubInventaire_Etat" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Fournisseur" EntityType="Model.MSmerge_conflict_PubInventaire_Fournisseur" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Inventaire" EntityType="Model.MSmerge_conflict_PubInventaire_Inventaire" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Inventorier" EntityType="Model.MSmerge_conflict_PubInventaire_Inventorier" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_PVCession" EntityType="Model.MSmerge_conflict_PubInventaire_PVCession" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Responsable" EntityType="Model.MSmerge_conflict_PubInventaire_Responsable" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_SeTrouveB" EntityType="Model.MSmerge_conflict_PubInventaire_SeTrouveB" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Sigle" EntityType="Model.MSmerge_conflict_PubInventaire_Sigle" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Site" EntityType="Model.MSmerge_conflict_PubInventaire_Site" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Transferer" EntityType="Model.MSmerge_conflict_PubInventaire_Transferer" />
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Utilisateur" EntityType="Model.MSmerge_conflict_PubInventaire_Utilisateur" />
+    <EntitySet Name="MSmerge_conflicts_info" EntityType="Model.MSmerge_conflicts_info" />
+    <EntitySet Name="MSmerge_contents" EntityType="Model.MSmerge_contents" />
+    <EntitySet Name="MSmerge_current_partition_mappings" EntityType="Model.MSmerge_current_partition_mappings" />
+    <EntitySet Name="MSmerge_dynamic_snapshots" EntityType="Model.MSmerge_dynamic_snapshots" />
+    <EntitySet Name="MSmerge_errorlineage" EntityType="Model.MSmerge_errorlineage" />
+    <EntitySet Name="MSmerge_generation_partition_mappings" EntityType="Model.MSmerge_generation_partition_mappings" />
+    <EntitySet Name="MSmerge_genhistory" EntityType="Model.MSmerge_genhistory" />
+    <EntitySet Name="MSmerge_history" EntityType="Model.MSmerge_history" />
+    <EntitySet Name="MSmerge_identity_range" EntityType="Model.MSmerge_identity_range" />
+    <EntitySet Name="MSmerge_log_files" EntityType="Model.MSmerge_log_files" />
+    <EntitySet Name="MSmerge_metadataaction_request" EntityType="Model.MSmerge_metadataaction_request" />
+    <EntitySet Name="MSmerge_partition_groups" EntityType="Model.MSmerge_partition_groups" />
+    <EntitySet Name="MSmerge_past_partition_mappings" EntityType="Model.MSmerge_past_partition_mappings" />
+    <EntitySet Name="MSmerge_replinfo" EntityType="Model.MSmerge_replinfo" />
+    <EntitySet Name="MSmerge_sessions" EntityType="Model.MSmerge_sessions" />
+    <EntitySet Name="MSmerge_settingshistory" EntityType="Model.MSmerge_settingshistory" />
+    <EntitySet Name="MSmerge_supportability_settings" EntityType="Model.MSmerge_supportability_settings" />
+    <EntitySet Name="MSmerge_tombstone" EntityType="Model.MSmerge_tombstone" />
+    <EntitySet Name="MSrepl_errors" EntityType="Model.MSrepl_errors" />
+    <EntitySet Name="PVCession" EntityType="Model.PVCession" />
+    <EntitySet Name="Responsable" EntityType="Model.Responsable" />
+    <EntitySet Name="SeTrouveB" EntityType="Model.SeTrouveB" />
+    <EntitySet Name="Sigle" EntityType="Model.Sigle" />
+    <EntitySet Name="Site" EntityType="Model.Site" />
+    <EntitySet Name="sysmergearticles" EntityType="Model.sysmergearticles" />
+    <EntitySet Name="sysmergepartitioninfo" EntityType="Model.sysmergepartitioninfo" />
+    <EntitySet Name="sysmergepublications" EntityType="Model.sysmergepublications" />
+    <EntitySet Name="sysmergeschemaarticles" EntityType="Model.sysmergeschemaarticles" />
+    <EntitySet Name="sysmergeschemachange" EntityType="Model.sysmergeschemachange" />
+    <EntitySet Name="sysmergesubscriptions" EntityType="Model.sysmergesubscriptions" />
+    <EntitySet Name="sysmergesubsetfilters" EntityType="Model.sysmergesubsetfilters" />
+    <EntitySet Name="sysreplservers" EntityType="Model.sysreplservers" />
+    <EntitySet Name="Transferer" EntityType="Model.Transferer" />
+    <EntitySet Name="Utilisateur" EntityType="Model.Utilisateur" />
+    <AssociationSet Name="FK_CATEGORI_ASSOCIATI_AMORTISS" Association="Model.FK_CATEGORI_ASSOCIATI_AMORTISS">
+      <End Role="Amortissement" EntitySet="Amortissement" />
+      <End Role="CategorieBien" EntitySet="CategorieBien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BIEN_ASSOCIATI_CATEGORI" Association="Model.FK_BIEN_ASSOCIATI_CATEGORI">
+      <End Role="CategorieBien" EntitySet="CategorieBien" />
+      <End Role="Bien" EntitySet="Bien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bien_Fournisseur" Association="Model.FK_Bien_Fournisseur">
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
+      <End Role="Bien" EntitySet="Bien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ceder_Bien" Association="Model.FK_ceder_Bien">
+      <End Role="Bien" EntitySet="Bien" />
+      <End Role="Ceder" EntitySet="Ceder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_Client" Association="Model.FK_Transfert_Client">
+      <End Role="Bien" EntitySet="Bien" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_BonTransfert" Association="Model.FK_Transfert_BonTransfert">
+      <End Role="BonTransfert" EntitySet="BonTransfert" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CATEGORI_ASSOCIATI_CATEGORI" Association="Model.FK_CATEGORI_ASSOCIATI_CATEGORI">
+      <End Role="CategorieBien" EntitySet="CategorieBien" />
+      <End Role="CategorieBien1" EntitySet="CategorieBien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ceder_PVCession" Association="Model.FK_ceder_PVCession">
+      <End Role="PVCession" EntitySet="PVCession" />
+      <End Role="Ceder" EntitySet="Ceder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PVCession_Client" Association="Model.FK_PVCession_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="PVCession" EntitySet="PVCession" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLACEM_ASSOCIATI_EMPLACEM" Association="Model.FK_EMPLACEM_ASSOCIATI_EMPLACEM">
+      <End Role="Emplacement" EntitySet="Emplacement" />
+      <End Role="Emplacement1" EntitySet="Emplacement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLACEM_ASSOCIATI_SITE" Association="Model.FK_EMPLACEM_ASSOCIATI_SITE">
+      <End Role="Site" EntitySet="Site" />
+      <End Role="Emplacement" EntitySet="Emplacement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResponsableEmpla" Association="Model.FK_ResponsableEmpla">
+      <End Role="Responsable" EntitySet="Responsable" />
+      <End Role="Emplacement" EntitySet="Emplacement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_EmplacementDest" Association="Model.FK_Transfert_EmplacementDest">
+      <End Role="Emplacement" EntitySet="Emplacement" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_EmplacementSource" Association="Model.FK_Transfert_EmplacementSource">
+      <End Role="Emplacement" EntitySet="Emplacement" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seTrouveB_Etat" Association="Model.FK_seTrouveB_Etat">
+      <End Role="Etat" EntitySet="Etat" />
+      <End Role="SeTrouveB" EntitySet="SeTrouveB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_uidInventaire_Inventorier" Association="Model.FK_uidInventaire_Inventorier">
+      <End Role="Inventaire" EntitySet="Inventaire" />
+      <End Role="Inventorier" EntitySet="Inventorier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idUtilisateur_Inventorier" Association="Model.FK_idUtilisateur_Inventorier">
+      <End Role="Utilisateur" EntitySet="Utilisateur" />
+      <End Role="Inventorier" EntitySet="Inventorier" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MSmerge_d__parti__78B0F438" Association="Model.FK__MSmerge_d__parti__78B0F438">
+      <End Role="MSmerge_partition_groups" EntitySet="MSmerge_partition_groups" />
+      <End Role="MSmerge_dynamic_snapshots" EntitySet="MSmerge_dynamic_snapshots" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResponsableSite" Association="Model.FK_ResponsableSite">
+      <End Role="Responsable" EntitySet="Responsable" />
+      <End Role="Site" EntitySet="Site" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Amortissement">
+    <Key>
+      <PropertyRef Name="IdAmort" />
+    </Key>
+    <Property Name="IdAmort" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesigAmort" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="CategorieBien" Relationship="Model.FK_CATEGORI_ASSOCIATI_AMORTISS" FromRole="Amortissement" ToRole="CategorieBien" />
+  </EntityType>
+  <EntityType Name="Bien">
+    <Key>
+      <PropertyRef Name="IdBien" />
+    </Key>
+    <Property Name="IdBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="IdCategorieBien" Type="Int32" Nullable="false" />
+    <Property Name="IdBienSeq" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesigBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="DateAcquisitionBien" Type="DateTime" />
+    <Property Name="Particularite" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="Prix" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Photo" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="ancienCode" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="idFournisseur" Type="Int32" />
+    <Property Name="numFacture" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="numSerie" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="marque" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etat" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="CategorieBien" Relationship="Model.FK_BIEN_ASSOCIATI_CATEGORI" FromRole="Bien" ToRole="CategorieBien" />
+    <NavigationProperty Name="Fournisseur" Relationship="Model.FK_Bien_Fournisseur" FromRole="Bien" ToRole="Fournisseur" />
+    <NavigationProperty Name="Ceder" Relationship="Model.FK_ceder_Bien" FromRole="Bien" ToRole="Ceder" />
+    <NavigationProperty Name="Transferer" Relationship="Model.FK_Transfert_Client" FromRole="Bien" ToRole="Transferer" />
+  </EntityType>
+  <EntityType Name="BonTransfert">
+    <Key>
+      <PropertyRef Name="idBonTransfert" />
+    </Key>
+    <Property Name="idBonTransfert" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dateTransfert" Type="DateTime" Nullable="false" />
+    <Property Name="motifTransfert" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="idSiteSource" Type="Int32" Nullable="false" />
+    <Property Name="idSiteDestination" Type="Int32" Nullable="false" />
+    <Property Name="etatBonTransfert" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Transferer" Relationship="Model.FK_Transfert_BonTransfert" FromRole="BonTransfert" ToRole="Transferer" />
+  </EntityType>
+  <EntityType Name="CategorieBien">
+    <Key>
+      <PropertyRef Name="IdCategorieBien" />
+    </Key>
+    <Property Name="IdCategorieBien" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCategorieBienPere" Type="Int32" />
+    <Property Name="IdAmort" Type="Int32" Nullable="false" />
+    <Property Name="DesigCategorieBien" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Amortissement" Relationship="Model.FK_CATEGORI_ASSOCIATI_AMORTISS" FromRole="CategorieBien" ToRole="Amortissement" />
+    <NavigationProperty Name="Bien" Relationship="Model.FK_BIEN_ASSOCIATI_CATEGORI" FromRole="CategorieBien" ToRole="Bien" />
+    <NavigationProperty Name="CategorieBien1" Relationship="Model.FK_CATEGORI_ASSOCIATI_CATEGORI" FromRole="CategorieBien" ToRole="CategorieBien1" />
+    <NavigationProperty Name="CategorieBien2" Relationship="Model.FK_CATEGORI_ASSOCIATI_CATEGORI" FromRole="CategorieBien1" ToRole="CategorieBien" />
+  </EntityType>
+  <EntityType Name="Ceder">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdBien" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idPVCession" Type="Int32" />
+    <Property Name="prixCession" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Bien" Relationship="Model.FK_ceder_Bien" FromRole="Ceder" ToRole="Bien" />
+    <NavigationProperty Name="PVCession" Relationship="Model.FK_ceder_PVCession" FromRole="Ceder" ToRole="PVCession" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="idClient" />
+    </Key>
+    <Property Name="idClient" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="spécialité" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="adresse" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ville" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="wilaya" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="pays" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="registreDeCommerce" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NIF" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone1" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="fax" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etat" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="PVCession" Relationship="Model.FK_PVCession_Client" FromRole="Client" ToRole="PVCession" />
+  </EntityType>
+  <EntityType Name="Emplacement">
+    <Key>
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+    </Key>
+    <Property Name="IdSite" Type="Int32" Nullable="false" />
+    <Property Name="IdEmpla" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdSitePere" Type="Int32" />
+    <Property Name="IdEmplaPere" Type="Int32" />
+    <Property Name="DesigEmpla" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idEmplaComplet" Type="String" MaxLength="9" Unicode="true" FixedLength="true" />
+    <Property Name="idResp" Type="Int32" />
+    <Property Name="abrevEmpla" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etatEmpla" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Emplacement1" Relationship="Model.FK_EMPLACEM_ASSOCIATI_EMPLACEM" FromRole="Emplacement" ToRole="Emplacement1" />
+    <NavigationProperty Name="Emplacement2" Relationship="Model.FK_EMPLACEM_ASSOCIATI_EMPLACEM" FromRole="Emplacement1" ToRole="Emplacement" />
+    <NavigationProperty Name="Site" Relationship="Model.FK_EMPLACEM_ASSOCIATI_SITE" FromRole="Emplacement" ToRole="Site" />
+    <NavigationProperty Name="Responsable" Relationship="Model.FK_ResponsableEmpla" FromRole="Emplacement" ToRole="Responsable" />
+    <NavigationProperty Name="Transferer" Relationship="Model.FK_Transfert_EmplacementDest" FromRole="Emplacement" ToRole="Transferer" />
+    <NavigationProperty Name="Transferer1" Relationship="Model.FK_Transfert_EmplacementSource" FromRole="Emplacement" ToRole="Transferer" />
+  </EntityType>
+  <EntityType Name="Etat">
+    <Key>
+      <PropertyRef Name="IdEtat" />
+    </Key>
+    <Property Name="IdEtat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesigEtat" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="SeTrouveB" Relationship="Model.FK_seTrouveB_Etat" FromRole="Etat" ToRole="SeTrouveB" />
+  </EntityType>
+  <EntityType Name="Fournisseur">
+    <Key>
+      <PropertyRef Name="idFournisseur" />
+    </Key>
+    <Property Name="idFournisseur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="spécialité" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="adresse" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ville" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="wilaya" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="pays" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="registreDeCommerce" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NIF" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone1" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="fax" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etat" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Bien" Relationship="Model.FK_Bien_Fournisseur" FromRole="Fournisseur" ToRole="Bien" />
+  </EntityType>
+  <EntityType Name="Inventaire">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+    </Key>
+    <Property Name="uidInventaire" Type="Guid" Nullable="false" />
+    <Property Name="DesigInventaire" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="DateInventaire" Type="DateTime" Nullable="false" />
+    <Property Name="etat" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Inventorier" Relationship="Model.FK_uidInventaire_Inventorier" FromRole="Inventaire" ToRole="Inventorier" />
+  </EntityType>
+  <EntityType Name="Inventorier">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="idUtilisateur" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="Guid" Nullable="false" />
+    <Property Name="idUtilisateur" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Inventaire" Relationship="Model.FK_uidInventaire_Inventorier" FromRole="Inventorier" ToRole="Inventaire" />
+    <NavigationProperty Name="Utilisateur" Relationship="Model.FK_idUtilisateur_Inventorier" FromRole="Inventorier" ToRole="Utilisateur" />
+  </EntityType>
+  <EntityType Name="MSdynamicsnapshotjobs">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="job_id" />
+      <PropertyRef Name="agent_id" />
+      <PropertyRef Name="dynamic_snapshot_location" />
+      <PropertyRef Name="partition_id" />
+      <PropertyRef Name="computed_dynsnap_location" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="job_id" Type="Guid" Nullable="false" />
+    <Property Name="agent_id" Type="Int32" Nullable="false" />
+    <Property Name="dynamic_filter_login" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="dynamic_filter_hostname" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="dynamic_snapshot_location" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="partition_id" Type="Int32" Nullable="false" />
+    <Property Name="computed_dynsnap_location" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSdynamicsnapshotviews">
+    <Key>
+      <PropertyRef Name="dynamic_snapshot_view_name" />
+    </Key>
+    <Property Name="dynamic_snapshot_view_name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_agent_parameters">
+    <Key>
+      <PropertyRef Name="profile_name" />
+      <PropertyRef Name="parameter_name" />
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="profile_name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="parameter_name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_altsyncpartners">
+    <Key>
+      <PropertyRef Name="subid" />
+      <PropertyRef Name="alternate_subid" />
+    </Key>
+    <Property Name="subid" Type="Guid" Nullable="false" />
+    <Property Name="alternate_subid" Type="Guid" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_articlehistory">
+    <Key>
+      <PropertyRef Name="session_id" />
+      <PropertyRef Name="start_time" />
+      <PropertyRef Name="inserts" />
+      <PropertyRef Name="updates" />
+      <PropertyRef Name="deletes" />
+      <PropertyRef Name="conflicts" />
+      <PropertyRef Name="rows_retried" />
+      <PropertyRef Name="percent_complete" />
+      <PropertyRef Name="relative_cost" />
+    </Key>
+    <Property Name="session_id" Type="Int32" Nullable="false" />
+    <Property Name="phase_id" Type="Int32" />
+    <Property Name="article_name" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="start_time" Type="DateTime" Nullable="false" />
+    <Property Name="duration" Type="Int32" />
+    <Property Name="inserts" Type="Int32" Nullable="false" />
+    <Property Name="updates" Type="Int32" Nullable="false" />
+    <Property Name="deletes" Type="Int32" Nullable="false" />
+    <Property Name="conflicts" Type="Int32" Nullable="false" />
+    <Property Name="rows_retried" Type="Int32" Nullable="false" />
+    <Property Name="percent_complete" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="estimated_changes" Type="Int32" />
+    <Property Name="relative_cost" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Amortissement">
+    <Key>
+      <PropertyRef Name="IdAmort" />
+      <PropertyRef Name="DesigAmort" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdAmort" Type="Int32" Nullable="false" />
+    <Property Name="DesigAmort" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Bien">
+    <Key>
+      <PropertyRef Name="IdBien" />
+      <PropertyRef Name="IdCategorieBien" />
+      <PropertyRef Name="IdBienSeq" />
+      <PropertyRef Name="DesigBien" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="IdCategorieBien" Type="Int32" Nullable="false" />
+    <Property Name="IdBienSeq" Type="Int32" Nullable="false" />
+    <Property Name="DesigBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="DateAcquisitionBien" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Particularite" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="Prix" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Photo" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="ancienCode" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="idFournisseur" Type="Int32" />
+    <Property Name="numFacture" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="numSerie" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="marque" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etat" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_BonTransfert">
+    <Key>
+      <PropertyRef Name="idBonTransfert" />
+      <PropertyRef Name="dateTransfert" />
+      <PropertyRef Name="idSiteSource" />
+      <PropertyRef Name="idSiteDestination" />
+      <PropertyRef Name="etatBonTransfert" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idBonTransfert" Type="Int32" Nullable="false" />
+    <Property Name="dateTransfert" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="motifTransfert" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="idSiteSource" Type="Int32" Nullable="false" />
+    <Property Name="idSiteDestination" Type="Int32" Nullable="false" />
+    <Property Name="etatBonTransfert" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_CategorieBien">
+    <Key>
+      <PropertyRef Name="IdCategorieBien" />
+      <PropertyRef Name="IdAmort" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdCategorieBien" Type="Int32" Nullable="false" />
+    <Property Name="IdCategorieBienPere" Type="Int32" />
+    <Property Name="IdAmort" Type="Int32" Nullable="false" />
+    <Property Name="DesigCategorieBien" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Ceder">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdBien" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idPVCession" Type="Int32" />
+    <Property Name="prixCession" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Client">
+    <Key>
+      <PropertyRef Name="idClient" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idClient" Type="Int32" Nullable="false" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="spécialité" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="adresse" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ville" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="wilaya" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="pays" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="registreDeCommerce" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NIF" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone1" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="fax" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etat" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Emplacement">
+    <Key>
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+      <PropertyRef Name="DesigEmpla" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdSite" Type="Int32" Nullable="false" />
+    <Property Name="IdEmpla" Type="Int32" Nullable="false" />
+    <Property Name="IdSitePere" Type="Int32" />
+    <Property Name="IdEmplaPere" Type="Int32" />
+    <Property Name="DesigEmpla" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idEmplaComplet" Type="String" MaxLength="9" Unicode="true" FixedLength="true" />
+    <Property Name="idResp" Type="Int32" />
+    <Property Name="abrevEmpla" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etatEmpla" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Etat">
+    <Key>
+      <PropertyRef Name="IdEtat" />
+      <PropertyRef Name="DesigEtat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdEtat" Type="Int32" Nullable="false" />
+    <Property Name="DesigEtat" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Fournisseur">
+    <Key>
+      <PropertyRef Name="idFournisseur" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idFournisseur" Type="Int32" Nullable="false" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="spécialité" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="adresse" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ville" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="wilaya" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="pays" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="registreDeCommerce" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NIF" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone1" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Téléphone2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="fax" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="etat" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Inventaire">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="DesigInventaire" />
+      <PropertyRef Name="DateInventaire" />
+      <PropertyRef Name="etat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="Guid" Nullable="false" />
+    <Property Name="DesigInventaire" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="DateInventaire" Type="DateTime" Nullable="false" />
+    <Property Name="etat" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Inventorier">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="idUtilisateur" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="Guid" Nullable="false" />
+    <Property Name="idUtilisateur" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_PVCession">
+    <Key>
+      <PropertyRef Name="idPVCession" />
+      <PropertyRef Name="DateCession" />
+      <PropertyRef Name="etat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idPVCession" Type="Int32" Nullable="false" />
+    <Property Name="DateCession" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="etat" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="numfacture" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="idClient" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Responsable">
+    <Key>
+      <PropertyRef Name="idResp" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idResp" Type="Int32" Nullable="false" />
+    <Property Name="nomResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="prenomResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="fonctionResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="etatResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_SeTrouveB">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+      <PropertyRef Name="IdBien" />
+      <PropertyRef Name="IdEtat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="Guid" Nullable="false" />
+    <Property Name="IdSite" Type="Int32" Nullable="false" />
+    <Property Name="IdEmpla" Type="Int32" Nullable="false" />
+    <Property Name="IdBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="IdEtat" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Sigle">
+    <Key>
+      <PropertyRef Name="IdSigle" />
+      <PropertyRef Name="DesigSigle" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdSigle" Type="Int32" Nullable="false" />
+    <Property Name="DesigSigle" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="Rubrique" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Site">
+    <Key>
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="NomSite" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdSite" Type="Int32" Nullable="false" />
+    <Property Name="NomSite" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idResp" Type="Int32" />
+    <Property Name="etatSite" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Transferer">
+    <Key>
+      <PropertyRef Name="idBien" />
+      <PropertyRef Name="idBonTransfert" />
+      <PropertyRef Name="idSiteSource" />
+      <PropertyRef Name="idEmplaSource" />
+      <PropertyRef Name="idSiteDest" />
+      <PropertyRef Name="idEmplaDest" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idBonTransfert" Type="Int32" Nullable="false" />
+    <Property Name="idSiteSource" Type="Int32" Nullable="false" />
+    <Property Name="idEmplaSource" Type="Int32" Nullable="false" />
+    <Property Name="idSiteDest" Type="Int32" Nullable="false" />
+    <Property Name="idEmplaDest" Type="Int32" Nullable="false" />
+    <Property Name="reçu" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflict_PubInventaire_Utilisateur">
+    <Key>
+      <PropertyRef Name="idUtilisateur" />
+      <PropertyRef Name="pseudo" />
+      <PropertyRef Name="motDePasse" />
+      <PropertyRef Name="Administrateur" />
+      <PropertyRef Name="etat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idUtilisateur" Type="Int32" Nullable="false" />
+    <Property Name="pseudo" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="motDePasse" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Administrateur" Type="Boolean" Nullable="false" />
+    <Property Name="etat" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_conflicts_info">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="MSrepl_create_time" />
+    </Key>
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="origin_datasource" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="conflict_type" Type="Int32" />
+    <Property Name="reason_code" Type="Int32" />
+    <Property Name="reason_text" Type="String" MaxLength="720" Unicode="true" FixedLength="false" />
+    <Property Name="pubid" Type="Guid" />
+    <Property Name="MSrepl_create_time" Type="DateTime" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MSmerge_contents">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="generation" />
+      <PropertyRef Name="lineage" />
+    </Key>
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="generation" Type="Int64" Nullable="false" />
+    <Property Name="partchangegen" Type="Int64" />
+    <Property Name="lineage" Type="Binary" Nullable="false" MaxLength="311" FixedLength="false" />
+    <Property Name="colv1" Type="Binary" MaxLength="2953" FixedLength="false" />
+    <Property Name="marker" Type="Guid" />
+    <Property Name="logical_record_parent_rowguid" Type="Guid" />
+    <Property Name="logical_record_lineage" Type="Binary" MaxLength="311" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_current_partition_mappings">
+    <Key>
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="partition_id" />
+    </Key>
+    <Property Name="publication_number" Type="Int16" Nullable="false" />
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="partition_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_dynamic_snapshots">
+    <Key>
+      <PropertyRef Name="partition_id" />
+    </Key>
+    <Property Name="partition_id" Type="Int32" Nullable="false" />
+    <Property Name="dynamic_snapshot_location" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="last_updated" Type="DateTime" />
+    <Property Name="last_started" Type="DateTime" />
+    <NavigationProperty Name="MSmerge_partition_groups" Relationship="Model.FK__MSmerge_d__parti__78B0F438" FromRole="MSmerge_dynamic_snapshots" ToRole="MSmerge_partition_groups" />
+  </EntityType>
+  <EntityType Name="MSmerge_errorlineage">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="lineage" Type="Binary" MaxLength="311" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_generation_partition_mappings">
+    <Key>
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="generation" />
+      <PropertyRef Name="partition_id" />
+      <PropertyRef Name="changecount" />
+    </Key>
+    <Property Name="publication_number" Type="Int16" Nullable="false" />
+    <Property Name="generation" Type="Int64" Nullable="false" />
+    <Property Name="partition_id" Type="Int32" Nullable="false" />
+    <Property Name="changecount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_genhistory">
+    <Key>
+      <PropertyRef Name="guidsrc" />
+      <PropertyRef Name="generation" />
+      <PropertyRef Name="nicknames" />
+      <PropertyRef Name="coldate" />
+      <PropertyRef Name="genstatus" />
+      <PropertyRef Name="changecount" />
+      <PropertyRef Name="subscriber_number" />
+    </Key>
+    <Property Name="guidsrc" Type="Guid" Nullable="false" />
+    <Property Name="pubid" Type="Guid" />
+    <Property Name="generation" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="art_nick" Type="Int32" />
+    <Property Name="nicknames" Type="Binary" Nullable="false" MaxLength="1001" FixedLength="false" />
+    <Property Name="coldate" Type="DateTime" Nullable="false" />
+    <Property Name="genstatus" Type="Byte" Nullable="false" />
+    <Property Name="changecount" Type="Int32" Nullable="false" />
+    <Property Name="subscriber_number" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_history">
+    <Key>
+      <PropertyRef Name="agent_id" />
+      <PropertyRef Name="comments" />
+      <PropertyRef Name="error_id" />
+      <PropertyRef Name="timestamp" />
+      <PropertyRef Name="updateable_row" />
+      <PropertyRef Name="time" />
+    </Key>
+    <Property Name="session_id" Type="Int32" />
+    <Property Name="agent_id" Type="Int32" Nullable="false" />
+    <Property Name="comments" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="error_id" Type="Int32" Nullable="false" />
+    <Property Name="timestamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="updateable_row" Type="Boolean" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_identity_range">
+    <Key>
+      <PropertyRef Name="subid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="is_pub_range" />
+    </Key>
+    <Property Name="subid" Type="Guid" Nullable="false" />
+    <Property Name="artid" Type="Guid" Nullable="false" />
+    <Property Name="range_begin" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="range_end" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="next_range_begin" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="next_range_end" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="is_pub_range" Type="Boolean" Nullable="false" />
+    <Property Name="max_used" Type="Decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="MSmerge_log_files">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="file_name" />
+      <PropertyRef Name="upload_time" />
+      <PropertyRef Name="log_file_type" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pubid" Type="Guid" />
+    <Property Name="subid" Type="Guid" />
+    <Property Name="web_server" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="file_name" Type="String" Nullable="false" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="upload_time" Type="DateTime" Nullable="false" />
+    <Property Name="log_file_type" Type="Int32" Nullable="false" />
+    <Property Name="log_file" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_metadataaction_request">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="action" />
+    </Key>
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="action" Type="Byte" Nullable="false" />
+    <Property Name="generation" Type="Int64" />
+    <Property Name="changed" Type="Int32" />
+  </EntityType>
+  <EntityType Name="MSmerge_partition_groups">
+    <Key>
+      <PropertyRef Name="partition_id" />
+    </Key>
+    <Property Name="partition_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="publication_number" Type="Int16" Nullable="false" />
+    <Property Name="maxgen_whenadded" Type="Int64" />
+    <Property Name="using_partition_groups" Type="Boolean" />
+    <Property Name="is_partition_active" Type="Boolean" Nullable="false" />
+    <Property Name="HOST_NAME_FN" Type="String" MaxLength="260" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="MSmerge_dynamic_snapshots" Relationship="Model.FK__MSmerge_d__parti__78B0F438" FromRole="MSmerge_partition_groups" ToRole="MSmerge_dynamic_snapshots" />
+  </EntityType>
+  <EntityType Name="MSmerge_past_partition_mappings">
+    <Key>
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="partition_id" />
+      <PropertyRef Name="reason" />
+    </Key>
+    <Property Name="publication_number" Type="Int16" Nullable="false" />
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="partition_id" Type="Int32" Nullable="false" />
+    <Property Name="generation" Type="Int64" />
+    <Property Name="reason" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_replinfo">
+    <Key>
+      <PropertyRef Name="repid" />
+      <PropertyRef Name="use_interactive_resolver" />
+      <PropertyRef Name="validation_level" />
+      <PropertyRef Name="resync_gen" />
+      <PropertyRef Name="login_name" />
+      <PropertyRef Name="sync_info" />
+    </Key>
+    <Property Name="repid" Type="Guid" Nullable="false" />
+    <Property Name="use_interactive_resolver" Type="Boolean" Nullable="false" />
+    <Property Name="validation_level" Type="Int32" Nullable="false" />
+    <Property Name="resync_gen" Type="Int64" Nullable="false" />
+    <Property Name="login_name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="hostname" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="merge_jobid" Type="Binary" MaxLength="16" FixedLength="true" />
+    <Property Name="sync_info" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MSmerge_sessions">
+    <Key>
+      <PropertyRef Name="session_id" />
+      <PropertyRef Name="agent_id" />
+      <PropertyRef Name="delivery_time" />
+      <PropertyRef Name="upload_time" />
+      <PropertyRef Name="download_time" />
+      <PropertyRef Name="schema_change_time" />
+      <PropertyRef Name="prepare_snapshot_time" />
+      <PropertyRef Name="delivery_rate" />
+      <PropertyRef Name="time_remaining" />
+      <PropertyRef Name="percent_complete" />
+      <PropertyRef Name="runstatus" />
+      <PropertyRef Name="timestamp" />
+    </Key>
+    <Property Name="subid" Type="Guid" />
+    <Property Name="session_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="agent_id" Type="Int32" Nullable="false" />
+    <Property Name="start_time" Type="DateTime" />
+    <Property Name="end_time" Type="DateTime" />
+    <Property Name="duration" Type="Int32" />
+    <Property Name="delivery_time" Type="Int32" Nullable="false" />
+    <Property Name="upload_time" Type="Int32" Nullable="false" />
+    <Property Name="download_time" Type="Int32" Nullable="false" />
+    <Property Name="schema_change_time" Type="Int32" Nullable="false" />
+    <Property Name="prepare_snapshot_time" Type="Int32" Nullable="false" />
+    <Property Name="delivery_rate" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="time_remaining" Type="Int32" Nullable="false" />
+    <Property Name="percent_complete" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="upload_inserts" Type="Int32" />
+    <Property Name="upload_updates" Type="Int32" />
+    <Property Name="upload_deletes" Type="Int32" />
+    <Property Name="upload_conflicts" Type="Int32" />
+    <Property Name="upload_rows_retried" Type="Int32" />
+    <Property Name="download_inserts" Type="Int32" />
+    <Property Name="download_updates" Type="Int32" />
+    <Property Name="download_deletes" Type="Int32" />
+    <Property Name="download_conflicts" Type="Int32" />
+    <Property Name="download_rows_retried" Type="Int32" />
+    <Property Name="schema_changes" Type="Int32" />
+    <Property Name="bulk_inserts" Type="Int32" />
+    <Property Name="metadata_rows_cleanedup" Type="Int32" />
+    <Property Name="runstatus" Type="Int32" Nullable="false" />
+    <Property Name="estimated_upload_changes" Type="Int32" />
+    <Property Name="estimated_download_changes" Type="Int32" />
+    <Property Name="connection_type" Type="Int32" />
+    <Property Name="timestamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="current_phase_id" Type="Int32" />
+    <Property Name="spid" Type="Int16" />
+    <Property Name="spid_login_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="MSmerge_settingshistory">
+    <Key>
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="eventtype" />
+    </Key>
+    <Property Name="eventtime" Type="DateTime" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="artid" Type="Guid" />
+    <Property Name="eventtype" Type="Byte" Nullable="false" />
+    <Property Name="propertyname" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="previousvalue" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="newvalue" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="eventtext" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_supportability_settings">
+    <Key>
+      <PropertyRef Name="support_options" />
+      <PropertyRef Name="log_severity" />
+      <PropertyRef Name="log_modules" />
+      <PropertyRef Name="log_file_size" />
+      <PropertyRef Name="no_of_log_files" />
+      <PropertyRef Name="upload_interval" />
+      <PropertyRef Name="delete_after_upload" />
+    </Key>
+    <Property Name="pubid" Type="Guid" />
+    <Property Name="subid" Type="Guid" />
+    <Property Name="web_server" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="support_options" Type="Int32" Nullable="false" />
+    <Property Name="log_severity" Type="Int32" Nullable="false" />
+    <Property Name="log_modules" Type="Int32" Nullable="false" />
+    <Property Name="log_file_path" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="log_file_name" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="log_file_size" Type="Int32" Nullable="false" />
+    <Property Name="no_of_log_files" Type="Int32" Nullable="false" />
+    <Property Name="upload_interval" Type="Int32" Nullable="false" />
+    <Property Name="delete_after_upload" Type="Int32" Nullable="false" />
+    <Property Name="custom_script" Type="String" MaxLength="2048" Unicode="true" FixedLength="false" />
+    <Property Name="message_pattern" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="last_log_upload_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="MSmerge_tombstone">
+    <Key>
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="lineage" />
+      <PropertyRef Name="generation" />
+    </Key>
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="tablenick" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="lineage" Type="Binary" Nullable="false" MaxLength="311" FixedLength="false" />
+    <Property Name="generation" Type="Int64" Nullable="false" />
+    <Property Name="logical_record_parent_rowguid" Type="Guid" />
+    <Property Name="logical_record_lineage" Type="Binary" MaxLength="311" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MSrepl_errors">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="time" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" />
+    <Property Name="error_type_id" Type="Int32" />
+    <Property Name="source_type_id" Type="Int32" />
+    <Property Name="source_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="error_code" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="error_text" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="xact_seqno" Type="Binary" MaxLength="16" FixedLength="false" />
+    <Property Name="command_id" Type="Int32" />
+    <Property Name="session_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PVCession">
+    <Key>
+      <PropertyRef Name="idPVCession" />
+    </Key>
+    <Property Name="idPVCession" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCession" Type="DateTime" Nullable="false" />
+    <Property Name="etat" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="numfacture" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="idClient" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Ceder" Relationship="Model.FK_ceder_PVCession" FromRole="PVCession" ToRole="Ceder" />
+    <NavigationProperty Name="Client" Relationship="Model.FK_PVCession_Client" FromRole="PVCession" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="Responsable">
+    <Key>
+      <PropertyRef Name="idResp" />
+    </Key>
+    <Property Name="idResp" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nomResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="prenomResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="fonctionResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="etatResp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Emplacement" Relationship="Model.FK_ResponsableEmpla" FromRole="Responsable" ToRole="Emplacement" />
+    <NavigationProperty Name="Site" Relationship="Model.FK_ResponsableSite" FromRole="Responsable" ToRole="Site" />
+  </EntityType>
+  <EntityType Name="SeTrouveB">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+      <PropertyRef Name="IdBien" />
+      <PropertyRef Name="IdEtat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="Guid" Nullable="false" />
+    <Property Name="IdSite" Type="Int32" Nullable="false" />
+    <Property Name="IdEmpla" Type="Int32" Nullable="false" />
+    <Property Name="IdBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="IdEtat" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Etat" Relationship="Model.FK_seTrouveB_Etat" FromRole="SeTrouveB" ToRole="Etat" />
+  </EntityType>
+  <EntityType Name="Sigle">
+    <Key>
+      <PropertyRef Name="IdSigle" />
+    </Key>
+    <Property Name="IdSigle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesigSigle" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="Rubrique" Type="String" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="IdSite" />
+    </Key>
+    <Property Name="IdSite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomSite" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idResp" Type="Int32" />
+    <Property Name="etatSite" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Emplacement" Relationship="Model.FK_EMPLACEM_ASSOCIATI_SITE" FromRole="Site" ToRole="Emplacement" />
+    <NavigationProperty Name="Responsable" Relationship="Model.FK_ResponsableSite" FromRole="Site" ToRole="Responsable" />
+  </EntityType>
+  <EntityType Name="sysmergearticles">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="objid" />
+      <PropertyRef Name="sync_objid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="column_tracking" />
+      <PropertyRef Name="destination_object" />
+      <PropertyRef Name="excluded_col_count" />
+      <PropertyRef Name="vertical_partition" />
+      <PropertyRef Name="identity_support" />
+      <PropertyRef Name="allow_interactive_resolver" />
+      <PropertyRef Name="fast_multicol_updateproc" />
+      <PropertyRef Name="check_permissions" />
+      <PropertyRef Name="maxversion_at_cleanup" />
+      <PropertyRef Name="processing_order" />
+      <PropertyRef Name="upload_options" />
+      <PropertyRef Name="published_in_tran_pub" />
+      <PropertyRef Name="lightweight" />
+      <PropertyRef Name="compensate_for_errors" />
+      <PropertyRef Name="stream_blob_columns" />
+      <PropertyRef Name="preserve_rowguidcol" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="Byte" />
+    <Property Name="objid" Type="Int32" Nullable="false" />
+    <Property Name="sync_objid" Type="Int32" Nullable="false" />
+    <Property Name="view_type" Type="Byte" />
+    <Property Name="artid" Type="Guid" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="pre_creation_command" Type="Byte" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="nickname" Type="Int32" Nullable="false" />
+    <Property Name="column_tracking" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Byte" />
+    <Property Name="conflict_table" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="creation_script" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="conflict_script" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="article_resolver" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ins_conflict_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="insert_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="update_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="select_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="metadata_select_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="delete_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="schema_option" Type="Binary" MaxLength="8" FixedLength="true" />
+    <Property Name="destination_object" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="destination_owner" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="resolver_clsid" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="subset_filterclause" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="missing_col_count" Type="Int32" />
+    <Property Name="missing_cols" Type="Binary" MaxLength="128" FixedLength="false" />
+    <Property Name="excluded_cols" Type="Binary" MaxLength="128" FixedLength="false" />
+    <Property Name="excluded_col_count" Type="Int32" Nullable="false" />
+    <Property Name="columns" Type="Binary" MaxLength="128" FixedLength="false" />
+    <Property Name="deleted_cols" Type="Binary" MaxLength="128" FixedLength="false" />
+    <Property Name="resolver_info" Type="String" MaxLength="517" Unicode="true" FixedLength="false" />
+    <Property Name="view_sel_proc" Type="String" MaxLength="290" Unicode="true" FixedLength="false" />
+    <Property Name="gen_cur" Type="Int64" />
+    <Property Name="vertical_partition" Type="Int32" Nullable="false" />
+    <Property Name="identity_support" Type="Int32" Nullable="false" />
+    <Property Name="before_image_objid" Type="Int32" />
+    <Property Name="before_view_objid" Type="Int32" />
+    <Property Name="verify_resolver_signature" Type="Int32" />
+    <Property Name="allow_interactive_resolver" Type="Boolean" Nullable="false" />
+    <Property Name="fast_multicol_updateproc" Type="Boolean" Nullable="false" />
+    <Property Name="check_permissions" Type="Int32" Nullable="false" />
+    <Property Name="maxversion_at_cleanup" Type="Int32" Nullable="false" />
+    <Property Name="processing_order" Type="Int32" Nullable="false" />
+    <Property Name="upload_options" Type="Byte" Nullable="false" />
+    <Property Name="published_in_tran_pub" Type="Boolean" Nullable="false" />
+    <Property Name="lightweight" Type="Boolean" Nullable="false" />
+    <Property Name="procname_postfix" Type="String" MaxLength="32" Unicode="true" FixedLength="true" />
+    <Property Name="well_partitioned_lightweight" Type="Boolean" />
+    <Property Name="before_upd_view_objid" Type="Int32" />
+    <Property Name="delete_tracking" Type="Boolean" />
+    <Property Name="compensate_for_errors" Type="Boolean" Nullable="false" />
+    <Property Name="pub_range" Type="Int64" />
+    <Property Name="range" Type="Int64" />
+    <Property Name="threshold" Type="Int32" />
+    <Property Name="stream_blob_columns" Type="Boolean" Nullable="false" />
+    <Property Name="preserve_rowguidcol" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysmergepartitioninfo">
+    <Key>
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="pubid" />
+    </Key>
+    <Property Name="artid" Type="Guid" Nullable="false" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="partition_view_id" Type="Int32" />
+    <Property Name="repl_view_id" Type="Int32" />
+    <Property Name="partition_deleted_view_rule" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="partition_inserted_view_rule" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="membership_eval_proc_name" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="column_list" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="column_list_blob" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="expand_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="logical_record_parent_nickname" Type="Int32" />
+    <Property Name="logical_record_view" Type="Int32" />
+    <Property Name="logical_record_deleted_view_rule" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="logical_record_level_conflict_detection" Type="Boolean" />
+    <Property Name="logical_record_level_conflict_resolution" Type="Boolean" />
+    <Property Name="partition_options" Type="Byte" />
+  </EntityType>
+  <EntityType Name="sysmergepublications">
+    <Key>
+      <PropertyRef Name="publisher" />
+      <PropertyRef Name="publisher_db" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="enabled_for_internet" />
+      <PropertyRef Name="dynamic_filters" />
+      <PropertyRef Name="snapshot_in_defaultfolder" />
+      <PropertyRef Name="compress_snapshot" />
+      <PropertyRef Name="ftp_port" />
+      <PropertyRef Name="backward_comp_level" />
+      <PropertyRef Name="max_concurrent_merge" />
+      <PropertyRef Name="max_concurrent_dynamic_snapshots" />
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="replicate_ddl" />
+      <PropertyRef Name="allow_subscriber_initiated_snapshot" />
+      <PropertyRef Name="retention_period_unit" />
+      <PropertyRef Name="automatic_reinitialization_policy" />
+    </Key>
+    <Property Name="publisher" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="publisher_db" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="retention" Type="Int32" />
+    <Property Name="publication_type" Type="Byte" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="designmasterid" Type="Guid" />
+    <Property Name="parentid" Type="Guid" />
+    <Property Name="sync_mode" Type="Byte" />
+    <Property Name="allow_push" Type="Int32" />
+    <Property Name="allow_pull" Type="Int32" />
+    <Property Name="allow_anonymous" Type="Int32" />
+    <Property Name="centralized_conflicts" Type="Int32" />
+    <Property Name="status" Type="Byte" />
+    <Property Name="snapshot_ready" Type="Byte" />
+    <Property Name="enabled_for_internet" Type="Boolean" Nullable="false" />
+    <Property Name="dynamic_filters" Type="Boolean" Nullable="false" />
+    <Property Name="snapshot_in_defaultfolder" Type="Boolean" Nullable="false" />
+    <Property Name="alt_snapshot_folder" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="pre_snapshot_script" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="post_snapshot_script" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="compress_snapshot" Type="Boolean" Nullable="false" />
+    <Property Name="ftp_address" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ftp_port" Type="Int32" Nullable="false" />
+    <Property Name="ftp_subdirectory" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ftp_login" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ftp_password" Type="String" MaxLength="524" Unicode="true" FixedLength="false" />
+    <Property Name="conflict_retention" Type="Int32" />
+    <Property Name="keep_before_values" Type="Int32" />
+    <Property Name="allow_subscription_copy" Type="Boolean" />
+    <Property Name="allow_synctoalternate" Type="Boolean" />
+    <Property Name="validate_subscriber_info" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="ad_guidname" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="backward_comp_level" Type="Int32" Nullable="false" />
+    <Property Name="max_concurrent_merge" Type="Int32" Nullable="false" />
+    <Property Name="max_concurrent_dynamic_snapshots" Type="Int32" Nullable="false" />
+    <Property Name="use_partition_groups" Type="Int16" />
+    <Property Name="dynamic_filters_function_list" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="partition_id_eval_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="publication_number" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="replicate_ddl" Type="Int32" Nullable="false" />
+    <Property Name="allow_subscriber_initiated_snapshot" Type="Boolean" Nullable="false" />
+    <Property Name="distributor" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="snapshot_jobid" Type="Binary" MaxLength="16" FixedLength="true" />
+    <Property Name="allow_web_synchronization" Type="Boolean" />
+    <Property Name="web_synchronization_url" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="allow_partition_realignment" Type="Boolean" />
+    <Property Name="retention_period_unit" Type="Byte" Nullable="false" />
+    <Property Name="decentralized_conflicts" Type="Int32" />
+    <Property Name="generation_leveling_threshold" Type="Int32" />
+    <Property Name="automatic_reinitialization_policy" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysmergeschemaarticles">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="objid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="destination_object" />
+      <PropertyRef Name="processing_order" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="Byte" />
+    <Property Name="objid" Type="Int32" Nullable="false" />
+    <Property Name="artid" Type="Guid" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="pre_creation_command" Type="Byte" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="status" Type="Byte" />
+    <Property Name="creation_script" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="schema_option" Type="Binary" MaxLength="8" FixedLength="true" />
+    <Property Name="destination_object" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="destination_owner" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="processing_order" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysmergeschemachange">
+    <Key>
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="schemaversion" />
+      <PropertyRef Name="schemaguid" />
+      <PropertyRef Name="schematype" />
+      <PropertyRef Name="schematext" />
+      <PropertyRef Name="schemastatus" />
+      <PropertyRef Name="schemasubtype" />
+    </Key>
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="artid" Type="Guid" />
+    <Property Name="schemaversion" Type="Int32" Nullable="false" />
+    <Property Name="schemaguid" Type="Guid" Nullable="false" />
+    <Property Name="schematype" Type="Int32" Nullable="false" />
+    <Property Name="schematext" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="schemastatus" Type="Byte" Nullable="false" />
+    <Property Name="schemasubtype" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysmergesubscriptions">
+    <Key>
+      <PropertyRef Name="db_name" />
+      <PropertyRef Name="datasource_type" />
+      <PropertyRef Name="subid" />
+      <PropertyRef Name="replnickname" />
+      <PropertyRef Name="replicastate" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="subscriber_type" />
+      <PropertyRef Name="subscription_type" />
+      <PropertyRef Name="sync_type" />
+      <PropertyRef Name="metadatacleanuptime" />
+      <PropertyRef Name="cleanedup_unsent_changes" />
+      <PropertyRef Name="replica_version" />
+      <PropertyRef Name="supportability_mode" />
+      <PropertyRef Name="subscriber_number" />
+    </Key>
+    <Property Name="subscriber_server" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="db_name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="pubid" Type="Guid" />
+    <Property Name="datasource_type" Type="Int32" Nullable="false" />
+    <Property Name="subid" Type="Guid" Nullable="false" />
+    <Property Name="replnickname" Type="Binary" Nullable="false" MaxLength="6" FixedLength="true" />
+    <Property Name="replicastate" Type="Guid" Nullable="false" />
+    <Property Name="status" Type="Byte" Nullable="false" />
+    <Property Name="subscriber_type" Type="Int32" Nullable="false" />
+    <Property Name="subscription_type" Type="Int32" Nullable="false" />
+    <Property Name="sync_type" Type="Byte" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="priority" Type="Single" />
+    <Property Name="recgen" Type="Int64" />
+    <Property Name="recguid" Type="Guid" />
+    <Property Name="sentgen" Type="Int64" />
+    <Property Name="sentguid" Type="Guid" />
+    <Property Name="schemaversion" Type="Int32" />
+    <Property Name="schemaguid" Type="Guid" />
+    <Property Name="last_validated" Type="DateTime" />
+    <Property Name="attempted_validate" Type="DateTime" />
+    <Property Name="last_sync_date" Type="DateTime" />
+    <Property Name="last_sync_status" Type="Int32" />
+    <Property Name="last_sync_summary" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="metadatacleanuptime" Type="DateTime" Nullable="false" />
+    <Property Name="partition_id" Type="Int32" />
+    <Property Name="cleanedup_unsent_changes" Type="Boolean" Nullable="false" />
+    <Property Name="replica_version" Type="Int32" Nullable="false" />
+    <Property Name="supportability_mode" Type="Int32" Nullable="false" />
+    <Property Name="application_name" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="subscriber_number" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="last_makegeneration_datetime" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="sysmergesubsetfilters">
+    <Key>
+      <PropertyRef Name="filtername" />
+      <PropertyRef Name="join_filterid" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="art_nickname" />
+      <PropertyRef Name="join_articlename" />
+      <PropertyRef Name="join_nickname" />
+      <PropertyRef Name="join_unique_key" />
+      <PropertyRef Name="filter_type" />
+    </Key>
+    <Property Name="filtername" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="join_filterid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pubid" Type="Guid" Nullable="false" />
+    <Property Name="artid" Type="Guid" Nullable="false" />
+    <Property Name="art_nickname" Type="Int32" Nullable="false" />
+    <Property Name="join_articlename" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="join_nickname" Type="Int32" Nullable="false" />
+    <Property Name="join_unique_key" Type="Int32" Nullable="false" />
+    <Property Name="expand_proc" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="join_filterclause" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="filter_type" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysreplservers">
+    <Key>
+      <PropertyRef Name="srvname" />
+    </Key>
+    <Property Name="srvname" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="srvid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Transferer">
+    <Key>
+      <PropertyRef Name="idBien" />
+      <PropertyRef Name="idBonTransfert" />
+      <PropertyRef Name="idSiteSource" />
+      <PropertyRef Name="idEmplaSource" />
+      <PropertyRef Name="idSiteDest" />
+      <PropertyRef Name="idEmplaDest" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idBien" Type="String" Nullable="false" MaxLength="254" Unicode="false" FixedLength="false" />
+    <Property Name="idBonTransfert" Type="Int32" Nullable="false" />
+    <Property Name="idSiteSource" Type="Int32" Nullable="false" />
+    <Property Name="idEmplaSource" Type="Int32" Nullable="false" />
+    <Property Name="idSiteDest" Type="Int32" Nullable="false" />
+    <Property Name="idEmplaDest" Type="Int32" Nullable="false" />
+    <Property Name="reçu" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Bien" Relationship="Model.FK_Transfert_Client" FromRole="Transferer" ToRole="Bien" />
+    <NavigationProperty Name="BonTransfert" Relationship="Model.FK_Transfert_BonTransfert" FromRole="Transferer" ToRole="BonTransfert" />
+    <NavigationProperty Name="Emplacement" Relationship="Model.FK_Transfert_EmplacementDest" FromRole="Transferer" ToRole="Emplacement" />
+    <NavigationProperty Name="Emplacement1" Relationship="Model.FK_Transfert_EmplacementSource" FromRole="Transferer" ToRole="Emplacement" />
+  </EntityType>
+  <EntityType Name="Utilisateur">
+    <Key>
+      <PropertyRef Name="idUtilisateur" />
+    </Key>
+    <Property Name="idUtilisateur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pseudo" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="motDePasse" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Administrateur" Type="Boolean" Nullable="false" />
+    <Property Name="etat" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Inventorier" Relationship="Model.FK_idUtilisateur_Inventorier" FromRole="Utilisateur" ToRole="Inventorier" />
+  </EntityType>
+  <Association Name="FK_CATEGORI_ASSOCIATI_AMORTISS">
+    <End Role="Amortissement" Type="Model.Amortissement" Multiplicity="1" />
+    <End Role="CategorieBien" Type="Model.CategorieBien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Amortissement">
+        <PropertyRef Name="IdAmort" />
+      </Principal>
+      <Dependent Role="CategorieBien">
+        <PropertyRef Name="IdAmort" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BIEN_ASSOCIATI_CATEGORI">
+    <End Role="CategorieBien" Type="Model.CategorieBien" Multiplicity="1" />
+    <End Role="Bien" Type="Model.Bien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieBien">
+        <PropertyRef Name="IdCategorieBien" />
+      </Principal>
+      <Dependent Role="Bien">
+        <PropertyRef Name="IdCategorieBien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bien_Fournisseur">
+    <End Role="Fournisseur" Type="Model.Fournisseur" Multiplicity="0..1" />
+    <End Role="Bien" Type="Model.Bien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="idFournisseur" />
+      </Principal>
+      <Dependent Role="Bien">
+        <PropertyRef Name="idFournisseur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ceder_Bien">
+    <End Role="Bien" Type="Model.Bien" Multiplicity="0..1" />
+    <End Role="Ceder" Type="Model.Ceder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bien">
+        <PropertyRef Name="IdBien" />
+      </Principal>
+      <Dependent Role="Ceder">
+        <PropertyRef Name="IdBien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_Client">
+    <End Role="Bien" Type="Model.Bien" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bien">
+        <PropertyRef Name="IdBien" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idBien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_BonTransfert">
+    <End Role="BonTransfert" Type="Model.BonTransfert" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BonTransfert">
+        <PropertyRef Name="idBonTransfert" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idBonTransfert" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CATEGORI_ASSOCIATI_CATEGORI">
+    <End Role="CategorieBien" Type="Model.CategorieBien" Multiplicity="0..1" />
+    <End Role="CategorieBien1" Type="Model.CategorieBien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieBien">
+        <PropertyRef Name="IdCategorieBien" />
+      </Principal>
+      <Dependent Role="CategorieBien1">
+        <PropertyRef Name="IdCategorieBienPere" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ceder_PVCession">
+    <End Role="PVCession" Type="Model.PVCession" Multiplicity="0..1" />
+    <End Role="Ceder" Type="Model.Ceder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PVCession">
+        <PropertyRef Name="idPVCession" />
+      </Principal>
+      <Dependent Role="Ceder">
+        <PropertyRef Name="idPVCession" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PVCession_Client">
+    <End Role="Client" Type="Model.Client" Multiplicity="0..1" />
+    <End Role="PVCession" Type="Model.PVCession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="idClient" />
+      </Principal>
+      <Dependent Role="PVCession">
+        <PropertyRef Name="idClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLACEM_ASSOCIATI_EMPLACEM">
+    <End Role="Emplacement" Type="Model.Emplacement" Multiplicity="0..1" />
+    <End Role="Emplacement1" Type="Model.Emplacement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+        <PropertyRef Name="IdEmpla" />
+      </Principal>
+      <Dependent Role="Emplacement1">
+        <PropertyRef Name="IdSitePere" />
+        <PropertyRef Name="IdEmplaPere" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLACEM_ASSOCIATI_SITE">
+    <End Role="Site" Type="Model.Site" Multiplicity="1" />
+    <End Role="Emplacement" Type="Model.Emplacement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="IdSite" />
+      </Principal>
+      <Dependent Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResponsableEmpla">
+    <End Role="Responsable" Type="Model.Responsable" Multiplicity="0..1" />
+    <End Role="Emplacement" Type="Model.Emplacement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Responsable">
+        <PropertyRef Name="idResp" />
+      </Principal>
+      <Dependent Role="Emplacement">
+        <PropertyRef Name="idResp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_EmplacementDest">
+    <End Role="Emplacement" Type="Model.Emplacement" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+        <PropertyRef Name="IdEmpla" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idSiteDest" />
+        <PropertyRef Name="idEmplaDest" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_EmplacementSource">
+    <End Role="Emplacement" Type="Model.Emplacement" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+        <PropertyRef Name="IdEmpla" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idSiteSource" />
+        <PropertyRef Name="idEmplaSource" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seTrouveB_Etat">
+    <End Role="Etat" Type="Model.Etat" Multiplicity="1" />
+    <End Role="SeTrouveB" Type="Model.SeTrouveB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Etat">
+        <PropertyRef Name="IdEtat" />
+      </Principal>
+      <Dependent Role="SeTrouveB">
+        <PropertyRef Name="IdEtat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_uidInventaire_Inventorier">
+    <End Role="Inventaire" Type="Model.Inventaire" Multiplicity="1" />
+    <End Role="Inventorier" Type="Model.Inventorier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventaire">
+        <PropertyRef Name="uidInventaire" />
+      </Principal>
+      <Dependent Role="Inventorier">
+        <PropertyRef Name="uidInventaire" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idUtilisateur_Inventorier">
+    <End Role="Utilisateur" Type="Model.Utilisateur" Multiplicity="1" />
+    <End Role="Inventorier" Type="Model.Inventorier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateur">
+        <PropertyRef Name="idUtilisateur" />
+      </Principal>
+      <Dependent Role="Inventorier">
+        <PropertyRef Name="idUtilisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MSmerge_d__parti__78B0F438">
+    <End Role="MSmerge_partition_groups" Type="Model.MSmerge_partition_groups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MSmerge_dynamic_snapshots" Type="Model.MSmerge_dynamic_snapshots" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MSmerge_partition_groups">
+        <PropertyRef Name="partition_id" />
+      </Principal>
+      <Dependent Role="MSmerge_dynamic_snapshots">
+        <PropertyRef Name="partition_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResponsableSite">
+    <End Role="Responsable" Type="Model.Responsable" Multiplicity="0..1" />
+    <End Role="Site" Type="Model.Site" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Responsable">
+        <PropertyRef Name="idResp" />
+      </Principal>
+      <Dependent Role="Site">
+        <PropertyRef Name="idResp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

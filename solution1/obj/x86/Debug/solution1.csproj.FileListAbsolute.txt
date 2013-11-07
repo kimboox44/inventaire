@@ -1,0 +1,322 @@
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\bin\Debug\solution1.exe
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\bin\Debug\solution1.pdb
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.exe
+c:\documents and settings\genicom\mes documents\visual studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.pdb
+C:\Documents and Settings\GENICOM\mes documents\visual studio 2010\Projects\solution1\solution1\bin\Debug\solution1.exe.config
+C:\Documents and Settings\GENICOM\mes documents\visual studio 2010\Projects\solution1\solution1\bin\Debug\BarcodeLib.dll
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRComparereBien.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterOuvrage.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRComparereExemplaire.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRListeBien.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRBienParCategorie.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRBienParInventaireSiteEmpla.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.GestionUtilisateurInventaire.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRBonTransfert.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRRetracerBien.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRPVCession.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRInventairesDeBien.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.FormRapports.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\bin\Debug\AjouterBien.resx
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\bin\Debug\AjouterBien.cs
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\bin\Debug\AjouterBien.Designer.cs
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+C:\Documents and Settings\GENICOM\Mes documents\Visual Studio 2010\Projects\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\Mobility\Projects\solution1\solution1\bin\Debug\solution1.exe.config
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.AjouterOuvrage.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRBonTransfert.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRInventairesDeBien.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRRetracerBien.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRPVCession.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormRapports.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.GestionUtilisateurInventaire.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRBienParInventaireSiteEmpla.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRBienParCategorie.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRListeBien.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRComparereExemplaire.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.FormCRComparereBien.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Mobility\Projects\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Mobility\Projects\solution1\solution1\bin\Debug\AjouterBien.resx
+E:\Mobility\Projects\solution1\solution1\bin\Debug\AjouterBien.cs
+E:\Mobility\Projects\solution1\solution1\bin\Debug\AjouterBien.Designer.cs
+E:\Mobility\Projects\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\Mobility\Projects\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\Mobility\Projects\solution1\solution1\bin\Debug\solution1.exe
+E:\Mobility\Projects\solution1\solution1\bin\Debug\solution1.pdb
+E:\Mobility\Projects\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\Mobility\Projects\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.exe.config
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.exe
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.pdb
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRBonTransfert.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRInventairesDeBien.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRRetracerBien.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRPVCession.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormRapports.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRBienParInventaireSiteEmpla.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRBienParCategorie.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRListeBien.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRComparereExemplaire.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormCRComparereBien.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormAdminImportation.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Mappage.Form1.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.read.2.tlog
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\Mobility\Projects\asset\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.read.3.tlog
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+E:\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.info.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.exe.config
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.exe
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.pdb
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.info.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormAdminImportation.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Mappage.Form1.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.exe
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\solution1.pdb
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\BarcodeLib.dll
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\solution1.exe.config
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.exe
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.pdb
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.resx
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.cs
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\Bien\AjouterBien.Designer.cs
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\Inventaire BDD.mdf
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\Inventaire BDD_log.ldf
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\solution1.exe
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\solution1.pdb
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\BarcodeLib.dll
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\bin\Debug\ButtonBarsControl.dll
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Admin.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.ajout_utilisateur.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.gestion_utilisateur.message.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_suprimer_utilisateur.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.gestion_utilisateur.modifier_utilisateur.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.export_données.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_bloc.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.import_tab.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.import_export.vider_BDD.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Administrateur.Information.inform.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBien.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterClient.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterBonDeTransfert.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Imprimer.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.info.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.AjouterFournisseur.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Formcession.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Authentification.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.FormAdminImportation.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.FormBonsDeTransfert.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.FormPortique.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MAJCession.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MAJClient.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MAJFournisseur.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableEmplacement.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MAJResponsableSite.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.choix_cpt.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Inventaire.gestion_inventaire.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MAJSites.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Mappage.Form1.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBonTransfert.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierClient.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.ModierFournisseur.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.NouvelInventaire.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Comparer2Inventaires.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.GénérerRapport.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.ModifierBien.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.FormInventaire.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.FormGestionCategorie.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.MDIParent.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.OuvrirInventaire.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.PVsCessions.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Rapports.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserCrt_statistique.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.Traçabilité.taraçabilité.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControllisate_ibenpar_catégorie.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Rapport.UserControl_listebiens.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.Resource1.resources
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\solution1.exe.licenses
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\RdlCompile.cache
+C:\Users\Administrateur\Desktop\asset\solution1\solution1\obj\x86\Debug\RdlCompile.compiled
+E:\projets\inventaire\Mobility\Projects\asset\solution1\solution1\bin\Debug\PrintableListView.dll

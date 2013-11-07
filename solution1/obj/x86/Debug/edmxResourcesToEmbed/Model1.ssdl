@@ -1,0 +1,2457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Amortissement" EntityType="Model.Store.Amortissement" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Bien" EntityType="Model.Store.Bien" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BonTransfert" EntityType="Model.Store.BonTransfert" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CategorieBien" EntityType="Model.Store.CategorieBien" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ceder" EntityType="Model.Store.Ceder" store:Type="Tables" store:Schema="dbo" store:Name="Ceder">
+      <DefiningQuery>SELECT 
+      [Ceder].[IdBien] AS [IdBien], 
+      [Ceder].[idPVCession] AS [idPVCession], 
+      [Ceder].[prixCession] AS [prixCession], 
+      [Ceder].[rowguid] AS [rowguid]
+      FROM [dbo].[Ceder] AS [Ceder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Client" EntityType="Model.Store.Client" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Emplacement" EntityType="Model.Store.Emplacement" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Etat" EntityType="Model.Store.Etat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Fournisseur" EntityType="Model.Store.Fournisseur" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventaire" EntityType="Model.Store.Inventaire" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventorier" EntityType="Model.Store.Inventorier" store:Type="Tables" store:Schema="dbo" store:Name="Inventorier">
+      <DefiningQuery>SELECT 
+      [Inventorier].[uidInventaire] AS [uidInventaire], 
+      [Inventorier].[idUtilisateur] AS [idUtilisateur], 
+      [Inventorier].[rowguid] AS [rowguid]
+      FROM [dbo].[Inventorier] AS [Inventorier]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSdynamicsnapshotjobs" EntityType="Model.Store.MSdynamicsnapshotjobs" store:Type="Tables" store:Schema="dbo" store:Name="MSdynamicsnapshotjobs">
+      <DefiningQuery>SELECT 
+      [MSdynamicsnapshotjobs].[id] AS [id], 
+      [MSdynamicsnapshotjobs].[name] AS [name], 
+      [MSdynamicsnapshotjobs].[pubid] AS [pubid], 
+      [MSdynamicsnapshotjobs].[job_id] AS [job_id], 
+      [MSdynamicsnapshotjobs].[agent_id] AS [agent_id], 
+      [MSdynamicsnapshotjobs].[dynamic_filter_login] AS [dynamic_filter_login], 
+      [MSdynamicsnapshotjobs].[dynamic_filter_hostname] AS [dynamic_filter_hostname], 
+      [MSdynamicsnapshotjobs].[dynamic_snapshot_location] AS [dynamic_snapshot_location], 
+      [MSdynamicsnapshotjobs].[partition_id] AS [partition_id], 
+      [MSdynamicsnapshotjobs].[computed_dynsnap_location] AS [computed_dynsnap_location]
+      FROM [dbo].[MSdynamicsnapshotjobs] AS [MSdynamicsnapshotjobs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSdynamicsnapshotviews" EntityType="Model.Store.MSdynamicsnapshotviews" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MSmerge_agent_parameters" EntityType="Model.Store.MSmerge_agent_parameters" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_agent_parameters">
+      <DefiningQuery>SELECT 
+      [MSmerge_agent_parameters].[profile_name] AS [profile_name], 
+      [MSmerge_agent_parameters].[parameter_name] AS [parameter_name], 
+      [MSmerge_agent_parameters].[value] AS [value]
+      FROM [dbo].[MSmerge_agent_parameters] AS [MSmerge_agent_parameters]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_altsyncpartners" EntityType="Model.Store.MSmerge_altsyncpartners" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_altsyncpartners">
+      <DefiningQuery>SELECT 
+      [MSmerge_altsyncpartners].[subid] AS [subid], 
+      [MSmerge_altsyncpartners].[alternate_subid] AS [alternate_subid], 
+      [MSmerge_altsyncpartners].[description] AS [description]
+      FROM [dbo].[MSmerge_altsyncpartners] AS [MSmerge_altsyncpartners]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_articlehistory" EntityType="Model.Store.MSmerge_articlehistory" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_articlehistory">
+      <DefiningQuery>SELECT 
+      [MSmerge_articlehistory].[session_id] AS [session_id], 
+      [MSmerge_articlehistory].[phase_id] AS [phase_id], 
+      [MSmerge_articlehistory].[article_name] AS [article_name], 
+      [MSmerge_articlehistory].[start_time] AS [start_time], 
+      [MSmerge_articlehistory].[duration] AS [duration], 
+      [MSmerge_articlehistory].[inserts] AS [inserts], 
+      [MSmerge_articlehistory].[updates] AS [updates], 
+      [MSmerge_articlehistory].[deletes] AS [deletes], 
+      [MSmerge_articlehistory].[conflicts] AS [conflicts], 
+      [MSmerge_articlehistory].[rows_retried] AS [rows_retried], 
+      [MSmerge_articlehistory].[percent_complete] AS [percent_complete], 
+      [MSmerge_articlehistory].[estimated_changes] AS [estimated_changes], 
+      [MSmerge_articlehistory].[relative_cost] AS [relative_cost]
+      FROM [dbo].[MSmerge_articlehistory] AS [MSmerge_articlehistory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Amortissement" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Amortissement" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Amortissement">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Amortissement].[IdAmort] AS [IdAmort], 
+      [MSmerge_conflict_PubInventaire_Amortissement].[DesigAmort] AS [DesigAmort], 
+      [MSmerge_conflict_PubInventaire_Amortissement].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Amortissement].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Amortissement] AS [MSmerge_conflict_PubInventaire_Amortissement]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Bien" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Bien" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Bien">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Bien].[IdBien] AS [IdBien], 
+      [MSmerge_conflict_PubInventaire_Bien].[IdCategorieBien] AS [IdCategorieBien], 
+      [MSmerge_conflict_PubInventaire_Bien].[IdBienSeq] AS [IdBienSeq], 
+      [MSmerge_conflict_PubInventaire_Bien].[DesigBien] AS [DesigBien], 
+      [MSmerge_conflict_PubInventaire_Bien].[DateAcquisitionBien] AS [DateAcquisitionBien], 
+      [MSmerge_conflict_PubInventaire_Bien].[Particularite] AS [Particularite], 
+      [MSmerge_conflict_PubInventaire_Bien].[Prix] AS [Prix], 
+      [MSmerge_conflict_PubInventaire_Bien].[Photo] AS [Photo], 
+      [MSmerge_conflict_PubInventaire_Bien].[ancienCode] AS [ancienCode], 
+      [MSmerge_conflict_PubInventaire_Bien].[idFournisseur] AS [idFournisseur], 
+      [MSmerge_conflict_PubInventaire_Bien].[numFacture] AS [numFacture], 
+      [MSmerge_conflict_PubInventaire_Bien].[numSerie] AS [numSerie], 
+      [MSmerge_conflict_PubInventaire_Bien].[marque] AS [marque], 
+      [MSmerge_conflict_PubInventaire_Bien].[etat] AS [etat], 
+      [MSmerge_conflict_PubInventaire_Bien].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Bien].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Bien] AS [MSmerge_conflict_PubInventaire_Bien]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_BonTransfert" EntityType="Model.Store.MSmerge_conflict_PubInventaire_BonTransfert" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_BonTransfert">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[idBonTransfert] AS [idBonTransfert], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[dateTransfert] AS [dateTransfert], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[motifTransfert] AS [motifTransfert], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[idSiteSource] AS [idSiteSource], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[idSiteDestination] AS [idSiteDestination], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[etatBonTransfert] AS [etatBonTransfert], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_BonTransfert].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_BonTransfert] AS [MSmerge_conflict_PubInventaire_BonTransfert]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_CategorieBien" EntityType="Model.Store.MSmerge_conflict_PubInventaire_CategorieBien" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_CategorieBien">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_CategorieBien].[IdCategorieBien] AS [IdCategorieBien], 
+      [MSmerge_conflict_PubInventaire_CategorieBien].[IdCategorieBienPere] AS [IdCategorieBienPere], 
+      [MSmerge_conflict_PubInventaire_CategorieBien].[IdAmort] AS [IdAmort], 
+      [MSmerge_conflict_PubInventaire_CategorieBien].[DesigCategorieBien] AS [DesigCategorieBien], 
+      [MSmerge_conflict_PubInventaire_CategorieBien].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_CategorieBien].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_CategorieBien] AS [MSmerge_conflict_PubInventaire_CategorieBien]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Ceder" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Ceder" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Ceder">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Ceder].[IdBien] AS [IdBien], 
+      [MSmerge_conflict_PubInventaire_Ceder].[idPVCession] AS [idPVCession], 
+      [MSmerge_conflict_PubInventaire_Ceder].[prixCession] AS [prixCession], 
+      [MSmerge_conflict_PubInventaire_Ceder].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Ceder].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Ceder] AS [MSmerge_conflict_PubInventaire_Ceder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Client" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Client" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Client">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Client].[idClient] AS [idClient], 
+      [MSmerge_conflict_PubInventaire_Client].[nom] AS [nom], 
+      [MSmerge_conflict_PubInventaire_Client].[spécialité] AS [spécialité], 
+      [MSmerge_conflict_PubInventaire_Client].[adresse] AS [adresse], 
+      [MSmerge_conflict_PubInventaire_Client].[ville] AS [ville], 
+      [MSmerge_conflict_PubInventaire_Client].[wilaya] AS [wilaya], 
+      [MSmerge_conflict_PubInventaire_Client].[pays] AS [pays], 
+      [MSmerge_conflict_PubInventaire_Client].[registreDeCommerce] AS [registreDeCommerce], 
+      [MSmerge_conflict_PubInventaire_Client].[NIF] AS [NIF], 
+      [MSmerge_conflict_PubInventaire_Client].[Téléphone1] AS [Téléphone1], 
+      [MSmerge_conflict_PubInventaire_Client].[Téléphone2] AS [Téléphone2], 
+      [MSmerge_conflict_PubInventaire_Client].[fax] AS [fax], 
+      [MSmerge_conflict_PubInventaire_Client].[email] AS [email], 
+      [MSmerge_conflict_PubInventaire_Client].[etat] AS [etat], 
+      [MSmerge_conflict_PubInventaire_Client].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Client].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Client] AS [MSmerge_conflict_PubInventaire_Client]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Emplacement" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Emplacement" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Emplacement">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Emplacement].[IdSite] AS [IdSite], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[IdEmpla] AS [IdEmpla], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[IdSitePere] AS [IdSitePere], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[IdEmplaPere] AS [IdEmplaPere], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[DesigEmpla] AS [DesigEmpla], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[idEmplaComplet] AS [idEmplaComplet], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[idResp] AS [idResp], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[abrevEmpla] AS [abrevEmpla], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[etatEmpla] AS [etatEmpla], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Emplacement].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Emplacement] AS [MSmerge_conflict_PubInventaire_Emplacement]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Etat" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Etat" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Etat">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Etat].[IdEtat] AS [IdEtat], 
+      [MSmerge_conflict_PubInventaire_Etat].[DesigEtat] AS [DesigEtat], 
+      [MSmerge_conflict_PubInventaire_Etat].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Etat].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Etat] AS [MSmerge_conflict_PubInventaire_Etat]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Fournisseur" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Fournisseur" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Fournisseur">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[idFournisseur] AS [idFournisseur], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[nom] AS [nom], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[spécialité] AS [spécialité], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[adresse] AS [adresse], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[ville] AS [ville], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[wilaya] AS [wilaya], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[pays] AS [pays], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[registreDeCommerce] AS [registreDeCommerce], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[NIF] AS [NIF], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[Téléphone1] AS [Téléphone1], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[Téléphone2] AS [Téléphone2], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[fax] AS [fax], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[email] AS [email], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[etat] AS [etat], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Fournisseur].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Fournisseur] AS [MSmerge_conflict_PubInventaire_Fournisseur]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Inventaire" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Inventaire" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Inventaire">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Inventaire].[uidInventaire] AS [uidInventaire], 
+      [MSmerge_conflict_PubInventaire_Inventaire].[DesigInventaire] AS [DesigInventaire], 
+      [MSmerge_conflict_PubInventaire_Inventaire].[DateInventaire] AS [DateInventaire], 
+      [MSmerge_conflict_PubInventaire_Inventaire].[etat] AS [etat], 
+      [MSmerge_conflict_PubInventaire_Inventaire].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Inventaire].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Inventaire] AS [MSmerge_conflict_PubInventaire_Inventaire]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Inventorier" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Inventorier" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Inventorier">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Inventorier].[uidInventaire] AS [uidInventaire], 
+      [MSmerge_conflict_PubInventaire_Inventorier].[idUtilisateur] AS [idUtilisateur], 
+      [MSmerge_conflict_PubInventaire_Inventorier].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Inventorier].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Inventorier] AS [MSmerge_conflict_PubInventaire_Inventorier]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_PVCession" EntityType="Model.Store.MSmerge_conflict_PubInventaire_PVCession" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_PVCession">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_PVCession].[idPVCession] AS [idPVCession], 
+      [MSmerge_conflict_PubInventaire_PVCession].[DateCession] AS [DateCession], 
+      [MSmerge_conflict_PubInventaire_PVCession].[etat] AS [etat], 
+      [MSmerge_conflict_PubInventaire_PVCession].[numfacture] AS [numfacture], 
+      [MSmerge_conflict_PubInventaire_PVCession].[idClient] AS [idClient], 
+      [MSmerge_conflict_PubInventaire_PVCession].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_PVCession].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_PVCession] AS [MSmerge_conflict_PubInventaire_PVCession]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Responsable" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Responsable" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Responsable">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Responsable].[idResp] AS [idResp], 
+      [MSmerge_conflict_PubInventaire_Responsable].[nomResp] AS [nomResp], 
+      [MSmerge_conflict_PubInventaire_Responsable].[prenomResp] AS [prenomResp], 
+      [MSmerge_conflict_PubInventaire_Responsable].[fonctionResp] AS [fonctionResp], 
+      [MSmerge_conflict_PubInventaire_Responsable].[etatResp] AS [etatResp], 
+      [MSmerge_conflict_PubInventaire_Responsable].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Responsable].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Responsable] AS [MSmerge_conflict_PubInventaire_Responsable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_SeTrouveB" EntityType="Model.Store.MSmerge_conflict_PubInventaire_SeTrouveB" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_SeTrouveB">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[uidInventaire] AS [uidInventaire], 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[IdSite] AS [IdSite], 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[IdEmpla] AS [IdEmpla], 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[IdBien] AS [IdBien], 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[IdEtat] AS [IdEtat], 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_SeTrouveB].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_SeTrouveB] AS [MSmerge_conflict_PubInventaire_SeTrouveB]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Sigle" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Sigle" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Sigle">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Sigle].[IdSigle] AS [IdSigle], 
+      [MSmerge_conflict_PubInventaire_Sigle].[DesigSigle] AS [DesigSigle], 
+      [MSmerge_conflict_PubInventaire_Sigle].[Rubrique] AS [Rubrique], 
+      [MSmerge_conflict_PubInventaire_Sigle].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Sigle].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Sigle] AS [MSmerge_conflict_PubInventaire_Sigle]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Site" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Site" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Site">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Site].[IdSite] AS [IdSite], 
+      [MSmerge_conflict_PubInventaire_Site].[NomSite] AS [NomSite], 
+      [MSmerge_conflict_PubInventaire_Site].[idResp] AS [idResp], 
+      [MSmerge_conflict_PubInventaire_Site].[etatSite] AS [etatSite], 
+      [MSmerge_conflict_PubInventaire_Site].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Site].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Site] AS [MSmerge_conflict_PubInventaire_Site]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Transferer" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Transferer" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Transferer">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Transferer].[idBien] AS [idBien], 
+      [MSmerge_conflict_PubInventaire_Transferer].[idBonTransfert] AS [idBonTransfert], 
+      [MSmerge_conflict_PubInventaire_Transferer].[idSiteSource] AS [idSiteSource], 
+      [MSmerge_conflict_PubInventaire_Transferer].[idEmplaSource] AS [idEmplaSource], 
+      [MSmerge_conflict_PubInventaire_Transferer].[idSiteDest] AS [idSiteDest], 
+      [MSmerge_conflict_PubInventaire_Transferer].[idEmplaDest] AS [idEmplaDest], 
+      [MSmerge_conflict_PubInventaire_Transferer].[reçu] AS [reçu], 
+      [MSmerge_conflict_PubInventaire_Transferer].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Transferer].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Transferer] AS [MSmerge_conflict_PubInventaire_Transferer]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflict_PubInventaire_Utilisateur" EntityType="Model.Store.MSmerge_conflict_PubInventaire_Utilisateur" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflict_PubInventaire_Utilisateur">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[idUtilisateur] AS [idUtilisateur], 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[pseudo] AS [pseudo], 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[motDePasse] AS [motDePasse], 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[Administrateur] AS [Administrateur], 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[etat] AS [etat], 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[rowguid] AS [rowguid], 
+      [MSmerge_conflict_PubInventaire_Utilisateur].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflict_PubInventaire_Utilisateur] AS [MSmerge_conflict_PubInventaire_Utilisateur]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_conflicts_info" EntityType="Model.Store.MSmerge_conflicts_info" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_conflicts_info">
+      <DefiningQuery>SELECT 
+      [MSmerge_conflicts_info].[tablenick] AS [tablenick], 
+      [MSmerge_conflicts_info].[rowguid] AS [rowguid], 
+      [MSmerge_conflicts_info].[origin_datasource] AS [origin_datasource], 
+      [MSmerge_conflicts_info].[conflict_type] AS [conflict_type], 
+      [MSmerge_conflicts_info].[reason_code] AS [reason_code], 
+      [MSmerge_conflicts_info].[reason_text] AS [reason_text], 
+      [MSmerge_conflicts_info].[pubid] AS [pubid], 
+      [MSmerge_conflicts_info].[MSrepl_create_time] AS [MSrepl_create_time], 
+      [MSmerge_conflicts_info].[origin_datasource_id] AS [origin_datasource_id]
+      FROM [dbo].[MSmerge_conflicts_info] AS [MSmerge_conflicts_info]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_contents" EntityType="Model.Store.MSmerge_contents" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_contents">
+      <DefiningQuery>SELECT 
+      [MSmerge_contents].[tablenick] AS [tablenick], 
+      [MSmerge_contents].[rowguid] AS [rowguid], 
+      [MSmerge_contents].[generation] AS [generation], 
+      [MSmerge_contents].[partchangegen] AS [partchangegen], 
+      [MSmerge_contents].[lineage] AS [lineage], 
+      [MSmerge_contents].[colv1] AS [colv1], 
+      [MSmerge_contents].[marker] AS [marker], 
+      [MSmerge_contents].[logical_record_parent_rowguid] AS [logical_record_parent_rowguid], 
+      [MSmerge_contents].[logical_record_lineage] AS [logical_record_lineage]
+      FROM [dbo].[MSmerge_contents] AS [MSmerge_contents]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_current_partition_mappings" EntityType="Model.Store.MSmerge_current_partition_mappings" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_current_partition_mappings">
+      <DefiningQuery>SELECT 
+      [MSmerge_current_partition_mappings].[publication_number] AS [publication_number], 
+      [MSmerge_current_partition_mappings].[tablenick] AS [tablenick], 
+      [MSmerge_current_partition_mappings].[rowguid] AS [rowguid], 
+      [MSmerge_current_partition_mappings].[partition_id] AS [partition_id]
+      FROM [dbo].[MSmerge_current_partition_mappings] AS [MSmerge_current_partition_mappings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_dynamic_snapshots" EntityType="Model.Store.MSmerge_dynamic_snapshots" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MSmerge_errorlineage" EntityType="Model.Store.MSmerge_errorlineage" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_errorlineage">
+      <DefiningQuery>SELECT 
+      [MSmerge_errorlineage].[tablenick] AS [tablenick], 
+      [MSmerge_errorlineage].[rowguid] AS [rowguid], 
+      [MSmerge_errorlineage].[lineage] AS [lineage]
+      FROM [dbo].[MSmerge_errorlineage] AS [MSmerge_errorlineage]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_generation_partition_mappings" EntityType="Model.Store.MSmerge_generation_partition_mappings" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_generation_partition_mappings">
+      <DefiningQuery>SELECT 
+      [MSmerge_generation_partition_mappings].[publication_number] AS [publication_number], 
+      [MSmerge_generation_partition_mappings].[generation] AS [generation], 
+      [MSmerge_generation_partition_mappings].[partition_id] AS [partition_id], 
+      [MSmerge_generation_partition_mappings].[changecount] AS [changecount]
+      FROM [dbo].[MSmerge_generation_partition_mappings] AS [MSmerge_generation_partition_mappings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_genhistory" EntityType="Model.Store.MSmerge_genhistory" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_genhistory">
+      <DefiningQuery>SELECT 
+      [MSmerge_genhistory].[guidsrc] AS [guidsrc], 
+      [MSmerge_genhistory].[pubid] AS [pubid], 
+      [MSmerge_genhistory].[generation] AS [generation], 
+      [MSmerge_genhistory].[art_nick] AS [art_nick], 
+      [MSmerge_genhistory].[nicknames] AS [nicknames], 
+      [MSmerge_genhistory].[coldate] AS [coldate], 
+      [MSmerge_genhistory].[genstatus] AS [genstatus], 
+      [MSmerge_genhistory].[changecount] AS [changecount], 
+      [MSmerge_genhistory].[subscriber_number] AS [subscriber_number]
+      FROM [dbo].[MSmerge_genhistory] AS [MSmerge_genhistory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_history" EntityType="Model.Store.MSmerge_history" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_history">
+      <DefiningQuery>SELECT 
+      [MSmerge_history].[session_id] AS [session_id], 
+      [MSmerge_history].[agent_id] AS [agent_id], 
+      [MSmerge_history].[comments] AS [comments], 
+      [MSmerge_history].[error_id] AS [error_id], 
+      [MSmerge_history].[timestamp] AS [timestamp], 
+      [MSmerge_history].[updateable_row] AS [updateable_row], 
+      [MSmerge_history].[time] AS [time]
+      FROM [dbo].[MSmerge_history] AS [MSmerge_history]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_identity_range" EntityType="Model.Store.MSmerge_identity_range" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_identity_range">
+      <DefiningQuery>SELECT 
+      [MSmerge_identity_range].[subid] AS [subid], 
+      [MSmerge_identity_range].[artid] AS [artid], 
+      [MSmerge_identity_range].[range_begin] AS [range_begin], 
+      [MSmerge_identity_range].[range_end] AS [range_end], 
+      [MSmerge_identity_range].[next_range_begin] AS [next_range_begin], 
+      [MSmerge_identity_range].[next_range_end] AS [next_range_end], 
+      [MSmerge_identity_range].[is_pub_range] AS [is_pub_range], 
+      [MSmerge_identity_range].[max_used] AS [max_used]
+      FROM [dbo].[MSmerge_identity_range] AS [MSmerge_identity_range]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_log_files" EntityType="Model.Store.MSmerge_log_files" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_log_files">
+      <DefiningQuery>SELECT 
+      [MSmerge_log_files].[id] AS [id], 
+      [MSmerge_log_files].[pubid] AS [pubid], 
+      [MSmerge_log_files].[subid] AS [subid], 
+      [MSmerge_log_files].[web_server] AS [web_server], 
+      [MSmerge_log_files].[file_name] AS [file_name], 
+      [MSmerge_log_files].[upload_time] AS [upload_time], 
+      [MSmerge_log_files].[log_file_type] AS [log_file_type], 
+      [MSmerge_log_files].[log_file] AS [log_file]
+      FROM [dbo].[MSmerge_log_files] AS [MSmerge_log_files]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_metadataaction_request" EntityType="Model.Store.MSmerge_metadataaction_request" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_metadataaction_request">
+      <DefiningQuery>SELECT 
+      [MSmerge_metadataaction_request].[tablenick] AS [tablenick], 
+      [MSmerge_metadataaction_request].[rowguid] AS [rowguid], 
+      [MSmerge_metadataaction_request].[action] AS [action], 
+      [MSmerge_metadataaction_request].[generation] AS [generation], 
+      [MSmerge_metadataaction_request].[changed] AS [changed]
+      FROM [dbo].[MSmerge_metadataaction_request] AS [MSmerge_metadataaction_request]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_partition_groups" EntityType="Model.Store.MSmerge_partition_groups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MSmerge_past_partition_mappings" EntityType="Model.Store.MSmerge_past_partition_mappings" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_past_partition_mappings">
+      <DefiningQuery>SELECT 
+      [MSmerge_past_partition_mappings].[publication_number] AS [publication_number], 
+      [MSmerge_past_partition_mappings].[tablenick] AS [tablenick], 
+      [MSmerge_past_partition_mappings].[rowguid] AS [rowguid], 
+      [MSmerge_past_partition_mappings].[partition_id] AS [partition_id], 
+      [MSmerge_past_partition_mappings].[generation] AS [generation], 
+      [MSmerge_past_partition_mappings].[reason] AS [reason]
+      FROM [dbo].[MSmerge_past_partition_mappings] AS [MSmerge_past_partition_mappings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_replinfo" EntityType="Model.Store.MSmerge_replinfo" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_replinfo">
+      <DefiningQuery>SELECT 
+      [MSmerge_replinfo].[repid] AS [repid], 
+      [MSmerge_replinfo].[use_interactive_resolver] AS [use_interactive_resolver], 
+      [MSmerge_replinfo].[validation_level] AS [validation_level], 
+      [MSmerge_replinfo].[resync_gen] AS [resync_gen], 
+      [MSmerge_replinfo].[login_name] AS [login_name], 
+      [MSmerge_replinfo].[hostname] AS [hostname], 
+      [MSmerge_replinfo].[merge_jobid] AS [merge_jobid], 
+      [MSmerge_replinfo].[sync_info] AS [sync_info]
+      FROM [dbo].[MSmerge_replinfo] AS [MSmerge_replinfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_sessions" EntityType="Model.Store.MSmerge_sessions" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_sessions">
+      <DefiningQuery>SELECT 
+      [MSmerge_sessions].[subid] AS [subid], 
+      [MSmerge_sessions].[session_id] AS [session_id], 
+      [MSmerge_sessions].[agent_id] AS [agent_id], 
+      [MSmerge_sessions].[start_time] AS [start_time], 
+      [MSmerge_sessions].[end_time] AS [end_time], 
+      [MSmerge_sessions].[duration] AS [duration], 
+      [MSmerge_sessions].[delivery_time] AS [delivery_time], 
+      [MSmerge_sessions].[upload_time] AS [upload_time], 
+      [MSmerge_sessions].[download_time] AS [download_time], 
+      [MSmerge_sessions].[schema_change_time] AS [schema_change_time], 
+      [MSmerge_sessions].[prepare_snapshot_time] AS [prepare_snapshot_time], 
+      [MSmerge_sessions].[delivery_rate] AS [delivery_rate], 
+      [MSmerge_sessions].[time_remaining] AS [time_remaining], 
+      [MSmerge_sessions].[percent_complete] AS [percent_complete], 
+      [MSmerge_sessions].[upload_inserts] AS [upload_inserts], 
+      [MSmerge_sessions].[upload_updates] AS [upload_updates], 
+      [MSmerge_sessions].[upload_deletes] AS [upload_deletes], 
+      [MSmerge_sessions].[upload_conflicts] AS [upload_conflicts], 
+      [MSmerge_sessions].[upload_rows_retried] AS [upload_rows_retried], 
+      [MSmerge_sessions].[download_inserts] AS [download_inserts], 
+      [MSmerge_sessions].[download_updates] AS [download_updates], 
+      [MSmerge_sessions].[download_deletes] AS [download_deletes], 
+      [MSmerge_sessions].[download_conflicts] AS [download_conflicts], 
+      [MSmerge_sessions].[download_rows_retried] AS [download_rows_retried], 
+      [MSmerge_sessions].[schema_changes] AS [schema_changes], 
+      [MSmerge_sessions].[bulk_inserts] AS [bulk_inserts], 
+      [MSmerge_sessions].[metadata_rows_cleanedup] AS [metadata_rows_cleanedup], 
+      [MSmerge_sessions].[runstatus] AS [runstatus], 
+      [MSmerge_sessions].[estimated_upload_changes] AS [estimated_upload_changes], 
+      [MSmerge_sessions].[estimated_download_changes] AS [estimated_download_changes], 
+      [MSmerge_sessions].[connection_type] AS [connection_type], 
+      [MSmerge_sessions].[timestamp] AS [timestamp], 
+      [MSmerge_sessions].[current_phase_id] AS [current_phase_id], 
+      [MSmerge_sessions].[spid] AS [spid], 
+      [MSmerge_sessions].[spid_login_time] AS [spid_login_time]
+      FROM [dbo].[MSmerge_sessions] AS [MSmerge_sessions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_settingshistory" EntityType="Model.Store.MSmerge_settingshistory" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_settingshistory">
+      <DefiningQuery>SELECT 
+      [MSmerge_settingshistory].[eventtime] AS [eventtime], 
+      [MSmerge_settingshistory].[pubid] AS [pubid], 
+      [MSmerge_settingshistory].[artid] AS [artid], 
+      [MSmerge_settingshistory].[eventtype] AS [eventtype], 
+      [MSmerge_settingshistory].[propertyname] AS [propertyname], 
+      [MSmerge_settingshistory].[previousvalue] AS [previousvalue], 
+      [MSmerge_settingshistory].[newvalue] AS [newvalue], 
+      [MSmerge_settingshistory].[eventtext] AS [eventtext]
+      FROM [dbo].[MSmerge_settingshistory] AS [MSmerge_settingshistory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_supportability_settings" EntityType="Model.Store.MSmerge_supportability_settings" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_supportability_settings">
+      <DefiningQuery>SELECT 
+      [MSmerge_supportability_settings].[pubid] AS [pubid], 
+      [MSmerge_supportability_settings].[subid] AS [subid], 
+      [MSmerge_supportability_settings].[web_server] AS [web_server], 
+      [MSmerge_supportability_settings].[support_options] AS [support_options], 
+      [MSmerge_supportability_settings].[log_severity] AS [log_severity], 
+      [MSmerge_supportability_settings].[log_modules] AS [log_modules], 
+      [MSmerge_supportability_settings].[log_file_path] AS [log_file_path], 
+      [MSmerge_supportability_settings].[log_file_name] AS [log_file_name], 
+      [MSmerge_supportability_settings].[log_file_size] AS [log_file_size], 
+      [MSmerge_supportability_settings].[no_of_log_files] AS [no_of_log_files], 
+      [MSmerge_supportability_settings].[upload_interval] AS [upload_interval], 
+      [MSmerge_supportability_settings].[delete_after_upload] AS [delete_after_upload], 
+      [MSmerge_supportability_settings].[custom_script] AS [custom_script], 
+      [MSmerge_supportability_settings].[message_pattern] AS [message_pattern], 
+      [MSmerge_supportability_settings].[last_log_upload_time] AS [last_log_upload_time]
+      FROM [dbo].[MSmerge_supportability_settings] AS [MSmerge_supportability_settings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSmerge_tombstone" EntityType="Model.Store.MSmerge_tombstone" store:Type="Tables" store:Schema="dbo" store:Name="MSmerge_tombstone">
+      <DefiningQuery>SELECT 
+      [MSmerge_tombstone].[rowguid] AS [rowguid], 
+      [MSmerge_tombstone].[tablenick] AS [tablenick], 
+      [MSmerge_tombstone].[type] AS [type], 
+      [MSmerge_tombstone].[lineage] AS [lineage], 
+      [MSmerge_tombstone].[generation] AS [generation], 
+      [MSmerge_tombstone].[logical_record_parent_rowguid] AS [logical_record_parent_rowguid], 
+      [MSmerge_tombstone].[logical_record_lineage] AS [logical_record_lineage]
+      FROM [dbo].[MSmerge_tombstone] AS [MSmerge_tombstone]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSrepl_errors" EntityType="Model.Store.MSrepl_errors" store:Type="Tables" store:Schema="dbo" store:Name="MSrepl_errors">
+      <DefiningQuery>SELECT 
+      [MSrepl_errors].[id] AS [id], 
+      [MSrepl_errors].[time] AS [time], 
+      [MSrepl_errors].[error_type_id] AS [error_type_id], 
+      [MSrepl_errors].[source_type_id] AS [source_type_id], 
+      [MSrepl_errors].[source_name] AS [source_name], 
+      [MSrepl_errors].[error_code] AS [error_code], 
+      [MSrepl_errors].[error_text] AS [error_text], 
+      [MSrepl_errors].[xact_seqno] AS [xact_seqno], 
+      [MSrepl_errors].[command_id] AS [command_id], 
+      [MSrepl_errors].[session_id] AS [session_id]
+      FROM [dbo].[MSrepl_errors] AS [MSrepl_errors]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PVCession" EntityType="Model.Store.PVCession" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Responsable" EntityType="Model.Store.Responsable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SeTrouveB" EntityType="Model.Store.SeTrouveB" store:Type="Tables" store:Schema="dbo" store:Name="SeTrouveB">
+      <DefiningQuery>SELECT 
+      [SeTrouveB].[uidInventaire] AS [uidInventaire], 
+      [SeTrouveB].[IdSite] AS [IdSite], 
+      [SeTrouveB].[IdEmpla] AS [IdEmpla], 
+      [SeTrouveB].[IdBien] AS [IdBien], 
+      [SeTrouveB].[IdEtat] AS [IdEtat], 
+      [SeTrouveB].[rowguid] AS [rowguid]
+      FROM [dbo].[SeTrouveB] AS [SeTrouveB]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Sigle" EntityType="Model.Store.Sigle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Site" EntityType="Model.Store.Site" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysmergearticles" EntityType="Model.Store.sysmergearticles" store:Type="Tables" store:Schema="dbo" store:Name="sysmergearticles">
+      <DefiningQuery>SELECT 
+      [sysmergearticles].[name] AS [name], 
+      [sysmergearticles].[type] AS [type], 
+      [sysmergearticles].[objid] AS [objid], 
+      [sysmergearticles].[sync_objid] AS [sync_objid], 
+      [sysmergearticles].[view_type] AS [view_type], 
+      [sysmergearticles].[artid] AS [artid], 
+      [sysmergearticles].[description] AS [description], 
+      [sysmergearticles].[pre_creation_command] AS [pre_creation_command], 
+      [sysmergearticles].[pubid] AS [pubid], 
+      [sysmergearticles].[nickname] AS [nickname], 
+      [sysmergearticles].[column_tracking] AS [column_tracking], 
+      [sysmergearticles].[status] AS [status], 
+      [sysmergearticles].[conflict_table] AS [conflict_table], 
+      [sysmergearticles].[creation_script] AS [creation_script], 
+      [sysmergearticles].[conflict_script] AS [conflict_script], 
+      [sysmergearticles].[article_resolver] AS [article_resolver], 
+      [sysmergearticles].[ins_conflict_proc] AS [ins_conflict_proc], 
+      [sysmergearticles].[insert_proc] AS [insert_proc], 
+      [sysmergearticles].[update_proc] AS [update_proc], 
+      [sysmergearticles].[select_proc] AS [select_proc], 
+      [sysmergearticles].[metadata_select_proc] AS [metadata_select_proc], 
+      [sysmergearticles].[delete_proc] AS [delete_proc], 
+      [sysmergearticles].[schema_option] AS [schema_option], 
+      [sysmergearticles].[destination_object] AS [destination_object], 
+      [sysmergearticles].[destination_owner] AS [destination_owner], 
+      [sysmergearticles].[resolver_clsid] AS [resolver_clsid], 
+      [sysmergearticles].[subset_filterclause] AS [subset_filterclause], 
+      [sysmergearticles].[missing_col_count] AS [missing_col_count], 
+      [sysmergearticles].[missing_cols] AS [missing_cols], 
+      [sysmergearticles].[excluded_cols] AS [excluded_cols], 
+      [sysmergearticles].[excluded_col_count] AS [excluded_col_count], 
+      [sysmergearticles].[columns] AS [columns], 
+      [sysmergearticles].[deleted_cols] AS [deleted_cols], 
+      [sysmergearticles].[resolver_info] AS [resolver_info], 
+      [sysmergearticles].[view_sel_proc] AS [view_sel_proc], 
+      [sysmergearticles].[gen_cur] AS [gen_cur], 
+      [sysmergearticles].[vertical_partition] AS [vertical_partition], 
+      [sysmergearticles].[identity_support] AS [identity_support], 
+      [sysmergearticles].[before_image_objid] AS [before_image_objid], 
+      [sysmergearticles].[before_view_objid] AS [before_view_objid], 
+      [sysmergearticles].[verify_resolver_signature] AS [verify_resolver_signature], 
+      [sysmergearticles].[allow_interactive_resolver] AS [allow_interactive_resolver], 
+      [sysmergearticles].[fast_multicol_updateproc] AS [fast_multicol_updateproc], 
+      [sysmergearticles].[check_permissions] AS [check_permissions], 
+      [sysmergearticles].[maxversion_at_cleanup] AS [maxversion_at_cleanup], 
+      [sysmergearticles].[processing_order] AS [processing_order], 
+      [sysmergearticles].[upload_options] AS [upload_options], 
+      [sysmergearticles].[published_in_tran_pub] AS [published_in_tran_pub], 
+      [sysmergearticles].[lightweight] AS [lightweight], 
+      [sysmergearticles].[procname_postfix] AS [procname_postfix], 
+      [sysmergearticles].[well_partitioned_lightweight] AS [well_partitioned_lightweight], 
+      [sysmergearticles].[before_upd_view_objid] AS [before_upd_view_objid], 
+      [sysmergearticles].[delete_tracking] AS [delete_tracking], 
+      [sysmergearticles].[compensate_for_errors] AS [compensate_for_errors], 
+      [sysmergearticles].[pub_range] AS [pub_range], 
+      [sysmergearticles].[range] AS [range], 
+      [sysmergearticles].[threshold] AS [threshold], 
+      [sysmergearticles].[stream_blob_columns] AS [stream_blob_columns], 
+      [sysmergearticles].[preserve_rowguidcol] AS [preserve_rowguidcol]
+      FROM [dbo].[sysmergearticles] AS [sysmergearticles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysmergepartitioninfo" EntityType="Model.Store.sysmergepartitioninfo" store:Type="Tables" store:Schema="dbo" store:Name="sysmergepartitioninfo">
+      <DefiningQuery>SELECT 
+      [sysmergepartitioninfo].[artid] AS [artid], 
+      [sysmergepartitioninfo].[pubid] AS [pubid], 
+      [sysmergepartitioninfo].[partition_view_id] AS [partition_view_id], 
+      [sysmergepartitioninfo].[repl_view_id] AS [repl_view_id], 
+      [sysmergepartitioninfo].[partition_deleted_view_rule] AS [partition_deleted_view_rule], 
+      [sysmergepartitioninfo].[partition_inserted_view_rule] AS [partition_inserted_view_rule], 
+      [sysmergepartitioninfo].[membership_eval_proc_name] AS [membership_eval_proc_name], 
+      [sysmergepartitioninfo].[column_list] AS [column_list], 
+      [sysmergepartitioninfo].[column_list_blob] AS [column_list_blob], 
+      [sysmergepartitioninfo].[expand_proc] AS [expand_proc], 
+      [sysmergepartitioninfo].[logical_record_parent_nickname] AS [logical_record_parent_nickname], 
+      [sysmergepartitioninfo].[logical_record_view] AS [logical_record_view], 
+      [sysmergepartitioninfo].[logical_record_deleted_view_rule] AS [logical_record_deleted_view_rule], 
+      [sysmergepartitioninfo].[logical_record_level_conflict_detection] AS [logical_record_level_conflict_detection], 
+      [sysmergepartitioninfo].[logical_record_level_conflict_resolution] AS [logical_record_level_conflict_resolution], 
+      [sysmergepartitioninfo].[partition_options] AS [partition_options]
+      FROM [dbo].[sysmergepartitioninfo] AS [sysmergepartitioninfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysmergepublications" EntityType="Model.Store.sysmergepublications" store:Type="Tables" store:Schema="dbo" store:Name="sysmergepublications">
+      <DefiningQuery>SELECT 
+      [sysmergepublications].[publisher] AS [publisher], 
+      [sysmergepublications].[publisher_db] AS [publisher_db], 
+      [sysmergepublications].[name] AS [name], 
+      [sysmergepublications].[description] AS [description], 
+      [sysmergepublications].[retention] AS [retention], 
+      [sysmergepublications].[publication_type] AS [publication_type], 
+      [sysmergepublications].[pubid] AS [pubid], 
+      [sysmergepublications].[designmasterid] AS [designmasterid], 
+      [sysmergepublications].[parentid] AS [parentid], 
+      [sysmergepublications].[sync_mode] AS [sync_mode], 
+      [sysmergepublications].[allow_push] AS [allow_push], 
+      [sysmergepublications].[allow_pull] AS [allow_pull], 
+      [sysmergepublications].[allow_anonymous] AS [allow_anonymous], 
+      [sysmergepublications].[centralized_conflicts] AS [centralized_conflicts], 
+      [sysmergepublications].[status] AS [status], 
+      [sysmergepublications].[snapshot_ready] AS [snapshot_ready], 
+      [sysmergepublications].[enabled_for_internet] AS [enabled_for_internet], 
+      [sysmergepublications].[dynamic_filters] AS [dynamic_filters], 
+      [sysmergepublications].[snapshot_in_defaultfolder] AS [snapshot_in_defaultfolder], 
+      [sysmergepublications].[alt_snapshot_folder] AS [alt_snapshot_folder], 
+      [sysmergepublications].[pre_snapshot_script] AS [pre_snapshot_script], 
+      [sysmergepublications].[post_snapshot_script] AS [post_snapshot_script], 
+      [sysmergepublications].[compress_snapshot] AS [compress_snapshot], 
+      [sysmergepublications].[ftp_address] AS [ftp_address], 
+      [sysmergepublications].[ftp_port] AS [ftp_port], 
+      [sysmergepublications].[ftp_subdirectory] AS [ftp_subdirectory], 
+      [sysmergepublications].[ftp_login] AS [ftp_login], 
+      [sysmergepublications].[ftp_password] AS [ftp_password], 
+      [sysmergepublications].[conflict_retention] AS [conflict_retention], 
+      [sysmergepublications].[keep_before_values] AS [keep_before_values], 
+      [sysmergepublications].[allow_subscription_copy] AS [allow_subscription_copy], 
+      [sysmergepublications].[allow_synctoalternate] AS [allow_synctoalternate], 
+      [sysmergepublications].[validate_subscriber_info] AS [validate_subscriber_info], 
+      [sysmergepublications].[ad_guidname] AS [ad_guidname], 
+      [sysmergepublications].[backward_comp_level] AS [backward_comp_level], 
+      [sysmergepublications].[max_concurrent_merge] AS [max_concurrent_merge], 
+      [sysmergepublications].[max_concurrent_dynamic_snapshots] AS [max_concurrent_dynamic_snapshots], 
+      [sysmergepublications].[use_partition_groups] AS [use_partition_groups], 
+      [sysmergepublications].[dynamic_filters_function_list] AS [dynamic_filters_function_list], 
+      [sysmergepublications].[partition_id_eval_proc] AS [partition_id_eval_proc], 
+      [sysmergepublications].[publication_number] AS [publication_number], 
+      [sysmergepublications].[replicate_ddl] AS [replicate_ddl], 
+      [sysmergepublications].[allow_subscriber_initiated_snapshot] AS [allow_subscriber_initiated_snapshot], 
+      [sysmergepublications].[distributor] AS [distributor], 
+      [sysmergepublications].[snapshot_jobid] AS [snapshot_jobid], 
+      [sysmergepublications].[allow_web_synchronization] AS [allow_web_synchronization], 
+      [sysmergepublications].[web_synchronization_url] AS [web_synchronization_url], 
+      [sysmergepublications].[allow_partition_realignment] AS [allow_partition_realignment], 
+      [sysmergepublications].[retention_period_unit] AS [retention_period_unit], 
+      [sysmergepublications].[decentralized_conflicts] AS [decentralized_conflicts], 
+      [sysmergepublications].[generation_leveling_threshold] AS [generation_leveling_threshold], 
+      [sysmergepublications].[automatic_reinitialization_policy] AS [automatic_reinitialization_policy]
+      FROM [dbo].[sysmergepublications] AS [sysmergepublications]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysmergeschemaarticles" EntityType="Model.Store.sysmergeschemaarticles" store:Type="Tables" store:Schema="dbo" store:Name="sysmergeschemaarticles">
+      <DefiningQuery>SELECT 
+      [sysmergeschemaarticles].[name] AS [name], 
+      [sysmergeschemaarticles].[type] AS [type], 
+      [sysmergeschemaarticles].[objid] AS [objid], 
+      [sysmergeschemaarticles].[artid] AS [artid], 
+      [sysmergeschemaarticles].[description] AS [description], 
+      [sysmergeschemaarticles].[pre_creation_command] AS [pre_creation_command], 
+      [sysmergeschemaarticles].[pubid] AS [pubid], 
+      [sysmergeschemaarticles].[status] AS [status], 
+      [sysmergeschemaarticles].[creation_script] AS [creation_script], 
+      [sysmergeschemaarticles].[schema_option] AS [schema_option], 
+      [sysmergeschemaarticles].[destination_object] AS [destination_object], 
+      [sysmergeschemaarticles].[destination_owner] AS [destination_owner], 
+      [sysmergeschemaarticles].[processing_order] AS [processing_order]
+      FROM [dbo].[sysmergeschemaarticles] AS [sysmergeschemaarticles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysmergeschemachange" EntityType="Model.Store.sysmergeschemachange" store:Type="Tables" store:Schema="dbo" store:Name="sysmergeschemachange">
+      <DefiningQuery>SELECT 
+      [sysmergeschemachange].[pubid] AS [pubid], 
+      [sysmergeschemachange].[artid] AS [artid], 
+      [sysmergeschemachange].[schemaversion] AS [schemaversion], 
+      [sysmergeschemachange].[schemaguid] AS [schemaguid], 
+      [sysmergeschemachange].[schematype] AS [schematype], 
+      [sysmergeschemachange].[schematext] AS [schematext], 
+      [sysmergeschemachange].[schemastatus] AS [schemastatus], 
+      [sysmergeschemachange].[schemasubtype] AS [schemasubtype]
+      FROM [dbo].[sysmergeschemachange] AS [sysmergeschemachange]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysmergesubscriptions" EntityType="Model.Store.sysmergesubscriptions" store:Type="Tables" store:Schema="dbo" store:Name="sysmergesubscriptions">
+      <DefiningQuery>SELECT 
+      [sysmergesubscriptions].[subscriber_server] AS [subscriber_server], 
+      [sysmergesubscriptions].[db_name] AS [db_name], 
+      [sysmergesubscriptions].[pubid] AS [pubid], 
+      [sysmergesubscriptions].[datasource_type] AS [datasource_type], 
+      [sysmergesubscriptions].[subid] AS [subid], 
+      [sysmergesubscriptions].[replnickname] AS [replnickname], 
+      [sysmergesubscriptions].[replicastate] AS [replicastate], 
+      [sysmergesubscriptions].[status] AS [status], 
+      [sysmergesubscriptions].[subscriber_type] AS [subscriber_type], 
+      [sysmergesubscriptions].[subscription_type] AS [subscription_type], 
+      [sysmergesubscriptions].[sync_type] AS [sync_type], 
+      [sysmergesubscriptions].[description] AS [description], 
+      [sysmergesubscriptions].[priority] AS [priority], 
+      [sysmergesubscriptions].[recgen] AS [recgen], 
+      [sysmergesubscriptions].[recguid] AS [recguid], 
+      [sysmergesubscriptions].[sentgen] AS [sentgen], 
+      [sysmergesubscriptions].[sentguid] AS [sentguid], 
+      [sysmergesubscriptions].[schemaversion] AS [schemaversion], 
+      [sysmergesubscriptions].[schemaguid] AS [schemaguid], 
+      [sysmergesubscriptions].[last_validated] AS [last_validated], 
+      [sysmergesubscriptions].[attempted_validate] AS [attempted_validate], 
+      [sysmergesubscriptions].[last_sync_date] AS [last_sync_date], 
+      [sysmergesubscriptions].[last_sync_status] AS [last_sync_status], 
+      [sysmergesubscriptions].[last_sync_summary] AS [last_sync_summary], 
+      [sysmergesubscriptions].[metadatacleanuptime] AS [metadatacleanuptime], 
+      [sysmergesubscriptions].[partition_id] AS [partition_id], 
+      [sysmergesubscriptions].[cleanedup_unsent_changes] AS [cleanedup_unsent_changes], 
+      [sysmergesubscriptions].[replica_version] AS [replica_version], 
+      [sysmergesubscriptions].[supportability_mode] AS [supportability_mode], 
+      [sysmergesubscriptions].[application_name] AS [application_name], 
+      [sysmergesubscriptions].[subscriber_number] AS [subscriber_number], 
+      [sysmergesubscriptions].[last_makegeneration_datetime] AS [last_makegeneration_datetime]
+      FROM [dbo].[sysmergesubscriptions] AS [sysmergesubscriptions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysmergesubsetfilters" EntityType="Model.Store.sysmergesubsetfilters" store:Type="Tables" store:Schema="dbo" store:Name="sysmergesubsetfilters">
+      <DefiningQuery>SELECT 
+      [sysmergesubsetfilters].[filtername] AS [filtername], 
+      [sysmergesubsetfilters].[join_filterid] AS [join_filterid], 
+      [sysmergesubsetfilters].[pubid] AS [pubid], 
+      [sysmergesubsetfilters].[artid] AS [artid], 
+      [sysmergesubsetfilters].[art_nickname] AS [art_nickname], 
+      [sysmergesubsetfilters].[join_articlename] AS [join_articlename], 
+      [sysmergesubsetfilters].[join_nickname] AS [join_nickname], 
+      [sysmergesubsetfilters].[join_unique_key] AS [join_unique_key], 
+      [sysmergesubsetfilters].[expand_proc] AS [expand_proc], 
+      [sysmergesubsetfilters].[join_filterclause] AS [join_filterclause], 
+      [sysmergesubsetfilters].[filter_type] AS [filter_type]
+      FROM [dbo].[sysmergesubsetfilters] AS [sysmergesubsetfilters]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysreplservers" EntityType="Model.Store.sysreplservers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Transferer" EntityType="Model.Store.Transferer" store:Type="Tables" store:Schema="dbo" store:Name="Transferer">
+      <DefiningQuery>SELECT 
+      [Transferer].[idBien] AS [idBien], 
+      [Transferer].[idBonTransfert] AS [idBonTransfert], 
+      [Transferer].[idSiteSource] AS [idSiteSource], 
+      [Transferer].[idEmplaSource] AS [idEmplaSource], 
+      [Transferer].[idSiteDest] AS [idSiteDest], 
+      [Transferer].[idEmplaDest] AS [idEmplaDest], 
+      [Transferer].[reçu] AS [reçu], 
+      [Transferer].[rowguid] AS [rowguid]
+      FROM [dbo].[Transferer] AS [Transferer]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Utilisateur" EntityType="Model.Store.Utilisateur" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__MSmerge_d__parti__78B0F438" Association="Model.Store.FK__MSmerge_d__parti__78B0F438">
+      <End Role="MSmerge_partition_groups" EntitySet="MSmerge_partition_groups" />
+      <End Role="MSmerge_dynamic_snapshots" EntitySet="MSmerge_dynamic_snapshots" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BIEN_ASSOCIATI_CATEGORI" Association="Model.Store.FK_BIEN_ASSOCIATI_CATEGORI">
+      <End Role="CategorieBien" EntitySet="CategorieBien" />
+      <End Role="Bien" EntitySet="Bien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bien_Fournisseur" Association="Model.Store.FK_Bien_Fournisseur">
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
+      <End Role="Bien" EntitySet="Bien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CATEGORI_ASSOCIATI_AMORTISS" Association="Model.Store.FK_CATEGORI_ASSOCIATI_AMORTISS">
+      <End Role="Amortissement" EntitySet="Amortissement" />
+      <End Role="CategorieBien" EntitySet="CategorieBien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CATEGORI_ASSOCIATI_CATEGORI" Association="Model.Store.FK_CATEGORI_ASSOCIATI_CATEGORI">
+      <End Role="CategorieBien" EntitySet="CategorieBien" />
+      <End Role="CategorieBien1" EntitySet="CategorieBien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ceder_Bien" Association="Model.Store.FK_ceder_Bien">
+      <End Role="Bien" EntitySet="Bien" />
+      <End Role="Ceder" EntitySet="Ceder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ceder_PVCession" Association="Model.Store.FK_ceder_PVCession">
+      <End Role="PVCession" EntitySet="PVCession" />
+      <End Role="Ceder" EntitySet="Ceder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLACEM_ASSOCIATI_EMPLACEM" Association="Model.Store.FK_EMPLACEM_ASSOCIATI_EMPLACEM">
+      <End Role="Emplacement" EntitySet="Emplacement" />
+      <End Role="Emplacement1" EntitySet="Emplacement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLACEM_ASSOCIATI_SITE" Association="Model.Store.FK_EMPLACEM_ASSOCIATI_SITE">
+      <End Role="Site" EntitySet="Site" />
+      <End Role="Emplacement" EntitySet="Emplacement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idUtilisateur_Inventorier" Association="Model.Store.FK_idUtilisateur_Inventorier">
+      <End Role="Utilisateur" EntitySet="Utilisateur" />
+      <End Role="Inventorier" EntitySet="Inventorier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PVCession_Client" Association="Model.Store.FK_PVCession_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="PVCession" EntitySet="PVCession" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResponsableEmpla" Association="Model.Store.FK_ResponsableEmpla">
+      <End Role="Responsable" EntitySet="Responsable" />
+      <End Role="Emplacement" EntitySet="Emplacement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResponsableSite" Association="Model.Store.FK_ResponsableSite">
+      <End Role="Responsable" EntitySet="Responsable" />
+      <End Role="Site" EntitySet="Site" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seTrouveB_Etat" Association="Model.Store.FK_seTrouveB_Etat">
+      <End Role="Etat" EntitySet="Etat" />
+      <End Role="SeTrouveB" EntitySet="SeTrouveB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_BonTransfert" Association="Model.Store.FK_Transfert_BonTransfert">
+      <End Role="BonTransfert" EntitySet="BonTransfert" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_Client" Association="Model.Store.FK_Transfert_Client">
+      <End Role="Bien" EntitySet="Bien" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_EmplacementDest" Association="Model.Store.FK_Transfert_EmplacementDest">
+      <End Role="Emplacement" EntitySet="Emplacement" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfert_EmplacementSource" Association="Model.Store.FK_Transfert_EmplacementSource">
+      <End Role="Emplacement" EntitySet="Emplacement" />
+      <End Role="Transferer" EntitySet="Transferer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_uidInventaire_Inventorier" Association="Model.Store.FK_uidInventaire_Inventorier">
+      <End Role="Inventaire" EntitySet="Inventaire" />
+      <End Role="Inventorier" EntitySet="Inventorier" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Amortissement">
+    <Key>
+      <PropertyRef Name="IdAmort" />
+    </Key>
+    <Property Name="IdAmort" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DesigAmort" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bien">
+    <Key>
+      <PropertyRef Name="IdBien" />
+    </Key>
+    <Property Name="IdBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="IdCategorieBien" Type="int" Nullable="false" />
+    <Property Name="IdBienSeq" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DesigBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="DateAcquisitionBien" Type="date" />
+    <Property Name="Particularite" Type="varchar" MaxLength="254" />
+    <Property Name="Prix" Type="decimal" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="254" />
+    <Property Name="ancienCode" Type="varchar" MaxLength="30" />
+    <Property Name="idFournisseur" Type="int" />
+    <Property Name="numFacture" Type="varchar" MaxLength="20" />
+    <Property Name="numSerie" Type="varchar" MaxLength="30" />
+    <Property Name="marque" Type="varchar" MaxLength="20" />
+    <Property Name="etat" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BonTransfert">
+    <Key>
+      <PropertyRef Name="idBonTransfert" />
+    </Key>
+    <Property Name="idBonTransfert" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dateTransfert" Type="date" Nullable="false" />
+    <Property Name="motifTransfert" Type="varchar" MaxLength="100" />
+    <Property Name="idSiteSource" Type="int" Nullable="false" />
+    <Property Name="idSiteDestination" Type="int" Nullable="false" />
+    <Property Name="etatBonTransfert" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategorieBien">
+    <Key>
+      <PropertyRef Name="IdCategorieBien" />
+    </Key>
+    <Property Name="IdCategorieBien" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCategorieBienPere" Type="int" />
+    <Property Name="IdAmort" Type="int" Nullable="false" />
+    <Property Name="DesigCategorieBien" Type="varchar" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.Ceder » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="Ceder">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdBien" Type="varchar" MaxLength="254" />
+    <Property Name="idPVCession" Type="int" />
+    <Property Name="prixCession" Type="int" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="idClient" />
+    </Key>
+    <Property Name="idClient" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="spécialité" Type="varchar" MaxLength="50" />
+    <Property Name="adresse" Type="varchar" MaxLength="50" />
+    <Property Name="ville" Type="varchar" MaxLength="20" />
+    <Property Name="wilaya" Type="varchar" MaxLength="20" />
+    <Property Name="pays" Type="varchar" MaxLength="20" />
+    <Property Name="registreDeCommerce" Type="varchar" MaxLength="20" />
+    <Property Name="NIF" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone1" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone2" Type="varchar" MaxLength="20" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="20" />
+    <Property Name="etat" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emplacement">
+    <Key>
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+    </Key>
+    <Property Name="IdSite" Type="int" Nullable="false" />
+    <Property Name="IdEmpla" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdSitePere" Type="int" />
+    <Property Name="IdEmplaPere" Type="int" />
+    <Property Name="DesigEmpla" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="idEmplaComplet" Type="nchar" MaxLength="9" />
+    <Property Name="idResp" Type="int" />
+    <Property Name="abrevEmpla" Type="varchar" MaxLength="20" />
+    <Property Name="etatEmpla" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Etat">
+    <Key>
+      <PropertyRef Name="IdEtat" />
+    </Key>
+    <Property Name="IdEtat" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DesigEtat" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fournisseur">
+    <Key>
+      <PropertyRef Name="idFournisseur" />
+    </Key>
+    <Property Name="idFournisseur" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="spécialité" Type="varchar" MaxLength="50" />
+    <Property Name="adresse" Type="varchar" MaxLength="50" />
+    <Property Name="ville" Type="varchar" MaxLength="20" />
+    <Property Name="wilaya" Type="varchar" MaxLength="20" />
+    <Property Name="pays" Type="varchar" MaxLength="20" />
+    <Property Name="registreDeCommerce" Type="varchar" MaxLength="20" />
+    <Property Name="NIF" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone1" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone2" Type="varchar" MaxLength="20" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="20" />
+    <Property Name="etat" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Inventaire">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+    </Key>
+    <Property Name="uidInventaire" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DesigInventaire" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="DateInventaire" Type="datetime" Nullable="false" />
+    <Property Name="etat" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.Inventorier » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="Inventorier">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="idUtilisateur" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idUtilisateur" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSdynamicsnapshotjobs » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSdynamicsnapshotjobs">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="job_id" />
+      <PropertyRef Name="agent_id" />
+      <PropertyRef Name="dynamic_snapshot_location" />
+      <PropertyRef Name="partition_id" />
+      <PropertyRef Name="computed_dynsnap_location" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="job_id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="agent_id" Type="int" Nullable="false" />
+    <Property Name="dynamic_filter_login" Type="nvarchar" MaxLength="128" />
+    <Property Name="dynamic_filter_hostname" Type="nvarchar" MaxLength="128" />
+    <Property Name="dynamic_snapshot_location" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="partition_id" Type="int" Nullable="false" />
+    <Property Name="computed_dynsnap_location" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSdynamicsnapshotviews">
+    <Key>
+      <PropertyRef Name="dynamic_snapshot_view_name" />
+    </Key>
+    <Property Name="dynamic_snapshot_view_name" Type="nvarchar" Nullable="false" MaxLength="128" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_agent_parameters » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_agent_parameters">
+    <Key>
+      <PropertyRef Name="profile_name" />
+      <PropertyRef Name="parameter_name" />
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="profile_name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="parameter_name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_altsyncpartners » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_altsyncpartners">
+    <Key>
+      <PropertyRef Name="subid" />
+      <PropertyRef Name="alternate_subid" />
+    </Key>
+    <Property Name="subid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="alternate_subid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_articlehistory » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_articlehistory">
+    <Key>
+      <PropertyRef Name="session_id" />
+      <PropertyRef Name="start_time" />
+      <PropertyRef Name="inserts" />
+      <PropertyRef Name="updates" />
+      <PropertyRef Name="deletes" />
+      <PropertyRef Name="conflicts" />
+      <PropertyRef Name="rows_retried" />
+      <PropertyRef Name="percent_complete" />
+      <PropertyRef Name="relative_cost" />
+    </Key>
+    <Property Name="session_id" Type="int" Nullable="false" />
+    <Property Name="phase_id" Type="int" />
+    <Property Name="article_name" Type="nvarchar" MaxLength="128" />
+    <Property Name="start_time" Type="datetime" Nullable="false" />
+    <Property Name="duration" Type="int" />
+    <Property Name="inserts" Type="int" Nullable="false" />
+    <Property Name="updates" Type="int" Nullable="false" />
+    <Property Name="deletes" Type="int" Nullable="false" />
+    <Property Name="conflicts" Type="int" Nullable="false" />
+    <Property Name="rows_retried" Type="int" Nullable="false" />
+    <Property Name="percent_complete" Type="decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="estimated_changes" Type="int" />
+    <Property Name="relative_cost" Type="decimal" Nullable="false" Precision="12" Scale="2" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Amortissement » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Amortissement">
+    <Key>
+      <PropertyRef Name="IdAmort" />
+      <PropertyRef Name="DesigAmort" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdAmort" Type="int" Nullable="false" />
+    <Property Name="DesigAmort" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Bien » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Bien">
+    <Key>
+      <PropertyRef Name="IdBien" />
+      <PropertyRef Name="IdCategorieBien" />
+      <PropertyRef Name="IdBienSeq" />
+      <PropertyRef Name="DesigBien" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="IdCategorieBien" Type="int" Nullable="false" />
+    <Property Name="IdBienSeq" Type="int" Nullable="false" />
+    <Property Name="DesigBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="DateAcquisitionBien" Type="nvarchar" MaxLength="10" />
+    <Property Name="Particularite" Type="varchar" MaxLength="254" />
+    <Property Name="Prix" Type="decimal" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="254" />
+    <Property Name="ancienCode" Type="varchar" MaxLength="30" />
+    <Property Name="idFournisseur" Type="int" />
+    <Property Name="numFacture" Type="varchar" MaxLength="20" />
+    <Property Name="numSerie" Type="varchar" MaxLength="30" />
+    <Property Name="marque" Type="varchar" MaxLength="20" />
+    <Property Name="etat" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_BonTransfert » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_BonTransfert">
+    <Key>
+      <PropertyRef Name="idBonTransfert" />
+      <PropertyRef Name="dateTransfert" />
+      <PropertyRef Name="idSiteSource" />
+      <PropertyRef Name="idSiteDestination" />
+      <PropertyRef Name="etatBonTransfert" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idBonTransfert" Type="int" Nullable="false" />
+    <Property Name="dateTransfert" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="motifTransfert" Type="varchar" MaxLength="100" />
+    <Property Name="idSiteSource" Type="int" Nullable="false" />
+    <Property Name="idSiteDestination" Type="int" Nullable="false" />
+    <Property Name="etatBonTransfert" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_CategorieBien » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_CategorieBien">
+    <Key>
+      <PropertyRef Name="IdCategorieBien" />
+      <PropertyRef Name="IdAmort" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdCategorieBien" Type="int" Nullable="false" />
+    <Property Name="IdCategorieBienPere" Type="int" />
+    <Property Name="IdAmort" Type="int" Nullable="false" />
+    <Property Name="DesigCategorieBien" Type="varchar" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Ceder » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Ceder">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdBien" Type="varchar" MaxLength="254" />
+    <Property Name="idPVCession" Type="int" />
+    <Property Name="prixCession" Type="int" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Client » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Client">
+    <Key>
+      <PropertyRef Name="idClient" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idClient" Type="int" Nullable="false" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="spécialité" Type="varchar" MaxLength="50" />
+    <Property Name="adresse" Type="varchar" MaxLength="50" />
+    <Property Name="ville" Type="varchar" MaxLength="20" />
+    <Property Name="wilaya" Type="varchar" MaxLength="20" />
+    <Property Name="pays" Type="varchar" MaxLength="20" />
+    <Property Name="registreDeCommerce" Type="varchar" MaxLength="20" />
+    <Property Name="NIF" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone1" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone2" Type="varchar" MaxLength="20" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="20" />
+    <Property Name="etat" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Emplacement » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Emplacement">
+    <Key>
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+      <PropertyRef Name="DesigEmpla" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdSite" Type="int" Nullable="false" />
+    <Property Name="IdEmpla" Type="int" Nullable="false" />
+    <Property Name="IdSitePere" Type="int" />
+    <Property Name="IdEmplaPere" Type="int" />
+    <Property Name="DesigEmpla" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="idEmplaComplet" Type="nchar" MaxLength="9" />
+    <Property Name="idResp" Type="int" />
+    <Property Name="abrevEmpla" Type="varchar" MaxLength="20" />
+    <Property Name="etatEmpla" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Etat » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Etat">
+    <Key>
+      <PropertyRef Name="IdEtat" />
+      <PropertyRef Name="DesigEtat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdEtat" Type="int" Nullable="false" />
+    <Property Name="DesigEtat" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Fournisseur » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Fournisseur">
+    <Key>
+      <PropertyRef Name="idFournisseur" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idFournisseur" Type="int" Nullable="false" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="spécialité" Type="varchar" MaxLength="50" />
+    <Property Name="adresse" Type="varchar" MaxLength="50" />
+    <Property Name="ville" Type="varchar" MaxLength="20" />
+    <Property Name="wilaya" Type="varchar" MaxLength="20" />
+    <Property Name="pays" Type="varchar" MaxLength="20" />
+    <Property Name="registreDeCommerce" Type="varchar" MaxLength="20" />
+    <Property Name="NIF" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone1" Type="varchar" MaxLength="20" />
+    <Property Name="Téléphone2" Type="varchar" MaxLength="20" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="20" />
+    <Property Name="etat" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Inventaire » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Inventaire">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="DesigInventaire" />
+      <PropertyRef Name="DateInventaire" />
+      <PropertyRef Name="etat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DesigInventaire" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="DateInventaire" Type="datetime" Nullable="false" />
+    <Property Name="etat" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Inventorier » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Inventorier">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="idUtilisateur" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idUtilisateur" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_PVCession » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_PVCession">
+    <Key>
+      <PropertyRef Name="idPVCession" />
+      <PropertyRef Name="DateCession" />
+      <PropertyRef Name="etat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idPVCession" Type="int" Nullable="false" />
+    <Property Name="DateCession" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="etat" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="numfacture" Type="varchar" MaxLength="20" />
+    <Property Name="idClient" Type="int" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Responsable » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Responsable">
+    <Key>
+      <PropertyRef Name="idResp" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idResp" Type="int" Nullable="false" />
+    <Property Name="nomResp" Type="varchar" MaxLength="30" />
+    <Property Name="prenomResp" Type="varchar" MaxLength="30" />
+    <Property Name="fonctionResp" Type="varchar" MaxLength="30" />
+    <Property Name="etatResp" Type="varchar" MaxLength="30" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_SeTrouveB » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_SeTrouveB">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+      <PropertyRef Name="IdBien" />
+      <PropertyRef Name="IdEtat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IdSite" Type="int" Nullable="false" />
+    <Property Name="IdEmpla" Type="int" Nullable="false" />
+    <Property Name="IdBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="IdEtat" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Sigle » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Sigle">
+    <Key>
+      <PropertyRef Name="IdSigle" />
+      <PropertyRef Name="DesigSigle" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdSigle" Type="int" Nullable="false" />
+    <Property Name="DesigSigle" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="Rubrique" Type="varchar" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Site » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Site">
+    <Key>
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="NomSite" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="IdSite" Type="int" Nullable="false" />
+    <Property Name="NomSite" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="idResp" Type="int" />
+    <Property Name="etatSite" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Transferer » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Transferer">
+    <Key>
+      <PropertyRef Name="idBien" />
+      <PropertyRef Name="idBonTransfert" />
+      <PropertyRef Name="idSiteSource" />
+      <PropertyRef Name="idEmplaSource" />
+      <PropertyRef Name="idSiteDest" />
+      <PropertyRef Name="idEmplaDest" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="idBonTransfert" Type="int" Nullable="false" />
+    <Property Name="idSiteSource" Type="int" Nullable="false" />
+    <Property Name="idEmplaSource" Type="int" Nullable="false" />
+    <Property Name="idSiteDest" Type="int" Nullable="false" />
+    <Property Name="idEmplaDest" Type="int" Nullable="false" />
+    <Property Name="reçu" Type="bit" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflict_PubInventaire_Utilisateur » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflict_PubInventaire_Utilisateur">
+    <Key>
+      <PropertyRef Name="idUtilisateur" />
+      <PropertyRef Name="pseudo" />
+      <PropertyRef Name="motDePasse" />
+      <PropertyRef Name="Administrateur" />
+      <PropertyRef Name="etat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idUtilisateur" Type="int" Nullable="false" />
+    <Property Name="pseudo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="motDePasse" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Administrateur" Type="bit" Nullable="false" />
+    <Property Name="etat" Type="nchar" Nullable="false" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_conflicts_info » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_conflicts_info">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="MSrepl_create_time" />
+    </Key>
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="origin_datasource" Type="nvarchar" MaxLength="255" />
+    <Property Name="conflict_type" Type="int" />
+    <Property Name="reason_code" Type="int" />
+    <Property Name="reason_text" Type="nvarchar" MaxLength="720" />
+    <Property Name="pubid" Type="uniqueidentifier" />
+    <Property Name="MSrepl_create_time" Type="datetime" Nullable="false" />
+    <Property Name="origin_datasource_id" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_contents » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_contents">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="generation" />
+      <PropertyRef Name="lineage" />
+    </Key>
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="generation" Type="bigint" Nullable="false" />
+    <Property Name="partchangegen" Type="bigint" />
+    <Property Name="lineage" Type="varbinary" Nullable="false" MaxLength="311" />
+    <Property Name="colv1" Type="varbinary" MaxLength="2953" />
+    <Property Name="marker" Type="uniqueidentifier" />
+    <Property Name="logical_record_parent_rowguid" Type="uniqueidentifier" />
+    <Property Name="logical_record_lineage" Type="varbinary" MaxLength="311" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_current_partition_mappings » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_current_partition_mappings">
+    <Key>
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="partition_id" />
+    </Key>
+    <Property Name="publication_number" Type="smallint" Nullable="false" />
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="partition_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSmerge_dynamic_snapshots">
+    <Key>
+      <PropertyRef Name="partition_id" />
+    </Key>
+    <Property Name="partition_id" Type="int" Nullable="false" />
+    <Property Name="dynamic_snapshot_location" Type="nvarchar" MaxLength="255" />
+    <Property Name="last_updated" Type="datetime" />
+    <Property Name="last_started" Type="datetime" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_errorlineage » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_errorlineage">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="lineage" Type="varbinary" MaxLength="311" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_generation_partition_mappings » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_generation_partition_mappings">
+    <Key>
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="generation" />
+      <PropertyRef Name="partition_id" />
+      <PropertyRef Name="changecount" />
+    </Key>
+    <Property Name="publication_number" Type="smallint" Nullable="false" />
+    <Property Name="generation" Type="bigint" Nullable="false" />
+    <Property Name="partition_id" Type="int" Nullable="false" />
+    <Property Name="changecount" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_genhistory » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_genhistory">
+    <Key>
+      <PropertyRef Name="guidsrc" />
+      <PropertyRef Name="generation" />
+      <PropertyRef Name="nicknames" />
+      <PropertyRef Name="coldate" />
+      <PropertyRef Name="genstatus" />
+      <PropertyRef Name="changecount" />
+      <PropertyRef Name="subscriber_number" />
+    </Key>
+    <Property Name="guidsrc" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="pubid" Type="uniqueidentifier" />
+    <Property Name="generation" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="art_nick" Type="int" />
+    <Property Name="nicknames" Type="varbinary" Nullable="false" MaxLength="1001" />
+    <Property Name="coldate" Type="datetime" Nullable="false" />
+    <Property Name="genstatus" Type="tinyint" Nullable="false" />
+    <Property Name="changecount" Type="int" Nullable="false" />
+    <Property Name="subscriber_number" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_history » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_history">
+    <Key>
+      <PropertyRef Name="agent_id" />
+      <PropertyRef Name="comments" />
+      <PropertyRef Name="error_id" />
+      <PropertyRef Name="timestamp" />
+      <PropertyRef Name="updateable_row" />
+      <PropertyRef Name="time" />
+    </Key>
+    <Property Name="session_id" Type="int" />
+    <Property Name="agent_id" Type="int" Nullable="false" />
+    <Property Name="comments" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="error_id" Type="int" Nullable="false" />
+    <Property Name="timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="updateable_row" Type="bit" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_identity_range » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_identity_range">
+    <Key>
+      <PropertyRef Name="subid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="is_pub_range" />
+    </Key>
+    <Property Name="subid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="artid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="range_begin" Type="numeric" Precision="38" />
+    <Property Name="range_end" Type="numeric" Precision="38" />
+    <Property Name="next_range_begin" Type="numeric" Precision="38" />
+    <Property Name="next_range_end" Type="numeric" Precision="38" />
+    <Property Name="is_pub_range" Type="bit" Nullable="false" />
+    <Property Name="max_used" Type="numeric" Precision="38" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_log_files » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_log_files">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="file_name" />
+      <PropertyRef Name="upload_time" />
+      <PropertyRef Name="log_file_type" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pubid" Type="uniqueidentifier" />
+    <Property Name="subid" Type="uniqueidentifier" />
+    <Property Name="web_server" Type="nvarchar" MaxLength="128" />
+    <Property Name="file_name" Type="nvarchar" Nullable="false" MaxLength="2000" />
+    <Property Name="upload_time" Type="datetime" Nullable="false" />
+    <Property Name="log_file_type" Type="int" Nullable="false" />
+    <Property Name="log_file" Type="varbinary(max)" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_metadataaction_request » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_metadataaction_request">
+    <Key>
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="action" />
+    </Key>
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="action" Type="tinyint" Nullable="false" />
+    <Property Name="generation" Type="bigint" />
+    <Property Name="changed" Type="int" />
+  </EntityType>
+  <EntityType Name="MSmerge_partition_groups">
+    <Key>
+      <PropertyRef Name="partition_id" />
+    </Key>
+    <Property Name="partition_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="publication_number" Type="smallint" Nullable="false" />
+    <Property Name="maxgen_whenadded" Type="bigint" />
+    <Property Name="using_partition_groups" Type="bit" />
+    <Property Name="is_partition_active" Type="bit" Nullable="false" />
+    <Property Name="HOST_NAME_FN" Type="nvarchar" MaxLength="260" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_past_partition_mappings » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_past_partition_mappings">
+    <Key>
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="partition_id" />
+      <PropertyRef Name="reason" />
+    </Key>
+    <Property Name="publication_number" Type="smallint" Nullable="false" />
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="partition_id" Type="int" Nullable="false" />
+    <Property Name="generation" Type="bigint" />
+    <Property Name="reason" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_replinfo » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_replinfo">
+    <Key>
+      <PropertyRef Name="repid" />
+      <PropertyRef Name="use_interactive_resolver" />
+      <PropertyRef Name="validation_level" />
+      <PropertyRef Name="resync_gen" />
+      <PropertyRef Name="login_name" />
+      <PropertyRef Name="sync_info" />
+    </Key>
+    <Property Name="repid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="use_interactive_resolver" Type="bit" Nullable="false" />
+    <Property Name="validation_level" Type="int" Nullable="false" />
+    <Property Name="resync_gen" Type="bigint" Nullable="false" />
+    <Property Name="login_name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="hostname" Type="nvarchar" MaxLength="128" />
+    <Property Name="merge_jobid" Type="binary" MaxLength="16" />
+    <Property Name="sync_info" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_sessions » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_sessions">
+    <Key>
+      <PropertyRef Name="session_id" />
+      <PropertyRef Name="agent_id" />
+      <PropertyRef Name="delivery_time" />
+      <PropertyRef Name="upload_time" />
+      <PropertyRef Name="download_time" />
+      <PropertyRef Name="schema_change_time" />
+      <PropertyRef Name="prepare_snapshot_time" />
+      <PropertyRef Name="delivery_rate" />
+      <PropertyRef Name="time_remaining" />
+      <PropertyRef Name="percent_complete" />
+      <PropertyRef Name="runstatus" />
+      <PropertyRef Name="timestamp" />
+    </Key>
+    <Property Name="subid" Type="uniqueidentifier" />
+    <Property Name="session_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="agent_id" Type="int" Nullable="false" />
+    <Property Name="start_time" Type="datetime" />
+    <Property Name="end_time" Type="datetime" />
+    <Property Name="duration" Type="int" />
+    <Property Name="delivery_time" Type="int" Nullable="false" />
+    <Property Name="upload_time" Type="int" Nullable="false" />
+    <Property Name="download_time" Type="int" Nullable="false" />
+    <Property Name="schema_change_time" Type="int" Nullable="false" />
+    <Property Name="prepare_snapshot_time" Type="int" Nullable="false" />
+    <Property Name="delivery_rate" Type="decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="time_remaining" Type="int" Nullable="false" />
+    <Property Name="percent_complete" Type="decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="upload_inserts" Type="int" />
+    <Property Name="upload_updates" Type="int" />
+    <Property Name="upload_deletes" Type="int" />
+    <Property Name="upload_conflicts" Type="int" />
+    <Property Name="upload_rows_retried" Type="int" />
+    <Property Name="download_inserts" Type="int" />
+    <Property Name="download_updates" Type="int" />
+    <Property Name="download_deletes" Type="int" />
+    <Property Name="download_conflicts" Type="int" />
+    <Property Name="download_rows_retried" Type="int" />
+    <Property Name="schema_changes" Type="int" />
+    <Property Name="bulk_inserts" Type="int" />
+    <Property Name="metadata_rows_cleanedup" Type="int" />
+    <Property Name="runstatus" Type="int" Nullable="false" />
+    <Property Name="estimated_upload_changes" Type="int" />
+    <Property Name="estimated_download_changes" Type="int" />
+    <Property Name="connection_type" Type="int" />
+    <Property Name="timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="current_phase_id" Type="int" />
+    <Property Name="spid" Type="smallint" />
+    <Property Name="spid_login_time" Type="datetime" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_settingshistory » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_settingshistory">
+    <Key>
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="eventtype" />
+    </Key>
+    <Property Name="eventtime" Type="datetime" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="artid" Type="uniqueidentifier" />
+    <Property Name="eventtype" Type="tinyint" Nullable="false" />
+    <Property Name="propertyname" Type="nvarchar" MaxLength="128" />
+    <Property Name="previousvalue" Type="nvarchar" MaxLength="128" />
+    <Property Name="newvalue" Type="nvarchar" MaxLength="128" />
+    <Property Name="eventtext" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_supportability_settings » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_supportability_settings">
+    <Key>
+      <PropertyRef Name="support_options" />
+      <PropertyRef Name="log_severity" />
+      <PropertyRef Name="log_modules" />
+      <PropertyRef Name="log_file_size" />
+      <PropertyRef Name="no_of_log_files" />
+      <PropertyRef Name="upload_interval" />
+      <PropertyRef Name="delete_after_upload" />
+    </Key>
+    <Property Name="pubid" Type="uniqueidentifier" />
+    <Property Name="subid" Type="uniqueidentifier" />
+    <Property Name="web_server" Type="nvarchar" MaxLength="128" />
+    <Property Name="support_options" Type="int" Nullable="false" />
+    <Property Name="log_severity" Type="int" Nullable="false" />
+    <Property Name="log_modules" Type="int" Nullable="false" />
+    <Property Name="log_file_path" Type="nvarchar" MaxLength="255" />
+    <Property Name="log_file_name" Type="nvarchar" MaxLength="128" />
+    <Property Name="log_file_size" Type="int" Nullable="false" />
+    <Property Name="no_of_log_files" Type="int" Nullable="false" />
+    <Property Name="upload_interval" Type="int" Nullable="false" />
+    <Property Name="delete_after_upload" Type="int" Nullable="false" />
+    <Property Name="custom_script" Type="nvarchar" MaxLength="2048" />
+    <Property Name="message_pattern" Type="nvarchar" MaxLength="2000" />
+    <Property Name="last_log_upload_time" Type="datetime" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSmerge_tombstone » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSmerge_tombstone">
+    <Key>
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="tablenick" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="lineage" />
+      <PropertyRef Name="generation" />
+    </Key>
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="tablenick" Type="int" Nullable="false" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="lineage" Type="varbinary" Nullable="false" MaxLength="311" />
+    <Property Name="generation" Type="bigint" Nullable="false" />
+    <Property Name="logical_record_parent_rowguid" Type="uniqueidentifier" />
+    <Property Name="logical_record_lineage" Type="varbinary" MaxLength="311" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.MSrepl_errors » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="MSrepl_errors">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="time" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="error_type_id" Type="int" />
+    <Property Name="source_type_id" Type="int" />
+    <Property Name="source_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="error_code" Type="nvarchar" MaxLength="128" />
+    <Property Name="error_text" Type="ntext" />
+    <Property Name="xact_seqno" Type="varbinary" MaxLength="16" />
+    <Property Name="command_id" Type="int" />
+    <Property Name="session_id" Type="int" />
+  </EntityType>
+  <EntityType Name="PVCession">
+    <Key>
+      <PropertyRef Name="idPVCession" />
+    </Key>
+    <Property Name="idPVCession" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateCession" Type="date" Nullable="false" />
+    <Property Name="etat" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="numfacture" Type="varchar" MaxLength="20" />
+    <Property Name="idClient" Type="int" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Responsable">
+    <Key>
+      <PropertyRef Name="idResp" />
+    </Key>
+    <Property Name="idResp" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nomResp" Type="varchar" MaxLength="30" />
+    <Property Name="prenomResp" Type="varchar" MaxLength="30" />
+    <Property Name="fonctionResp" Type="varchar" MaxLength="30" />
+    <Property Name="etatResp" Type="varchar" MaxLength="30" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.SeTrouveB » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="SeTrouveB">
+    <Key>
+      <PropertyRef Name="uidInventaire" />
+      <PropertyRef Name="IdSite" />
+      <PropertyRef Name="IdEmpla" />
+      <PropertyRef Name="IdBien" />
+      <PropertyRef Name="IdEtat" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="uidInventaire" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IdSite" Type="int" Nullable="false" />
+    <Property Name="IdEmpla" Type="int" Nullable="false" />
+    <Property Name="IdBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="IdEtat" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sigle">
+    <Key>
+      <PropertyRef Name="IdSigle" />
+    </Key>
+    <Property Name="IdSigle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DesigSigle" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="Rubrique" Type="varchar" MaxLength="254" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="IdSite" />
+    </Key>
+    <Property Name="IdSite" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NomSite" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="idResp" Type="int" />
+    <Property Name="etatSite" Type="varchar" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergearticles » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergearticles">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="objid" />
+      <PropertyRef Name="sync_objid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="column_tracking" />
+      <PropertyRef Name="destination_object" />
+      <PropertyRef Name="excluded_col_count" />
+      <PropertyRef Name="vertical_partition" />
+      <PropertyRef Name="identity_support" />
+      <PropertyRef Name="allow_interactive_resolver" />
+      <PropertyRef Name="fast_multicol_updateproc" />
+      <PropertyRef Name="check_permissions" />
+      <PropertyRef Name="maxversion_at_cleanup" />
+      <PropertyRef Name="processing_order" />
+      <PropertyRef Name="upload_options" />
+      <PropertyRef Name="published_in_tran_pub" />
+      <PropertyRef Name="lightweight" />
+      <PropertyRef Name="compensate_for_errors" />
+      <PropertyRef Name="stream_blob_columns" />
+      <PropertyRef Name="preserve_rowguidcol" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="type" Type="tinyint" />
+    <Property Name="objid" Type="int" Nullable="false" />
+    <Property Name="sync_objid" Type="int" Nullable="false" />
+    <Property Name="view_type" Type="tinyint" />
+    <Property Name="artid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="pre_creation_command" Type="tinyint" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="nickname" Type="int" Nullable="false" />
+    <Property Name="column_tracking" Type="int" Nullable="false" />
+    <Property Name="status" Type="tinyint" />
+    <Property Name="conflict_table" Type="nvarchar" MaxLength="128" />
+    <Property Name="creation_script" Type="nvarchar" MaxLength="255" />
+    <Property Name="conflict_script" Type="nvarchar" MaxLength="255" />
+    <Property Name="article_resolver" Type="nvarchar" MaxLength="255" />
+    <Property Name="ins_conflict_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="insert_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="update_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="select_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="metadata_select_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="delete_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="schema_option" Type="binary" MaxLength="8" />
+    <Property Name="destination_object" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="destination_owner" Type="nvarchar" MaxLength="128" />
+    <Property Name="resolver_clsid" Type="nvarchar" MaxLength="50" />
+    <Property Name="subset_filterclause" Type="nvarchar" MaxLength="1000" />
+    <Property Name="missing_col_count" Type="int" />
+    <Property Name="missing_cols" Type="varbinary" MaxLength="128" />
+    <Property Name="excluded_cols" Type="varbinary" MaxLength="128" />
+    <Property Name="excluded_col_count" Type="int" Nullable="false" />
+    <Property Name="columns" Type="varbinary" MaxLength="128" />
+    <Property Name="deleted_cols" Type="varbinary" MaxLength="128" />
+    <Property Name="resolver_info" Type="nvarchar" MaxLength="517" />
+    <Property Name="view_sel_proc" Type="nvarchar" MaxLength="290" />
+    <Property Name="gen_cur" Type="bigint" />
+    <Property Name="vertical_partition" Type="int" Nullable="false" />
+    <Property Name="identity_support" Type="int" Nullable="false" />
+    <Property Name="before_image_objid" Type="int" />
+    <Property Name="before_view_objid" Type="int" />
+    <Property Name="verify_resolver_signature" Type="int" />
+    <Property Name="allow_interactive_resolver" Type="bit" Nullable="false" />
+    <Property Name="fast_multicol_updateproc" Type="bit" Nullable="false" />
+    <Property Name="check_permissions" Type="int" Nullable="false" />
+    <Property Name="maxversion_at_cleanup" Type="int" Nullable="false" />
+    <Property Name="processing_order" Type="int" Nullable="false" />
+    <Property Name="upload_options" Type="tinyint" Nullable="false" />
+    <Property Name="published_in_tran_pub" Type="bit" Nullable="false" />
+    <Property Name="lightweight" Type="bit" Nullable="false" />
+    <Property Name="procname_postfix" Type="nchar" MaxLength="32" />
+    <Property Name="well_partitioned_lightweight" Type="bit" />
+    <Property Name="before_upd_view_objid" Type="int" />
+    <Property Name="delete_tracking" Type="bit" />
+    <Property Name="compensate_for_errors" Type="bit" Nullable="false" />
+    <Property Name="pub_range" Type="bigint" />
+    <Property Name="range" Type="bigint" />
+    <Property Name="threshold" Type="int" />
+    <Property Name="stream_blob_columns" Type="bit" Nullable="false" />
+    <Property Name="preserve_rowguidcol" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergepartitioninfo » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergepartitioninfo">
+    <Key>
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="pubid" />
+    </Key>
+    <Property Name="artid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="partition_view_id" Type="int" />
+    <Property Name="repl_view_id" Type="int" />
+    <Property Name="partition_deleted_view_rule" Type="nvarchar(max)" />
+    <Property Name="partition_inserted_view_rule" Type="nvarchar(max)" />
+    <Property Name="membership_eval_proc_name" Type="nvarchar" MaxLength="128" />
+    <Property Name="column_list" Type="nvarchar(max)" />
+    <Property Name="column_list_blob" Type="nvarchar(max)" />
+    <Property Name="expand_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="logical_record_parent_nickname" Type="int" />
+    <Property Name="logical_record_view" Type="int" />
+    <Property Name="logical_record_deleted_view_rule" Type="nvarchar(max)" />
+    <Property Name="logical_record_level_conflict_detection" Type="bit" />
+    <Property Name="logical_record_level_conflict_resolution" Type="bit" />
+    <Property Name="partition_options" Type="tinyint" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergepublications » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergepublications">
+    <Key>
+      <PropertyRef Name="publisher" />
+      <PropertyRef Name="publisher_db" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="enabled_for_internet" />
+      <PropertyRef Name="dynamic_filters" />
+      <PropertyRef Name="snapshot_in_defaultfolder" />
+      <PropertyRef Name="compress_snapshot" />
+      <PropertyRef Name="ftp_port" />
+      <PropertyRef Name="backward_comp_level" />
+      <PropertyRef Name="max_concurrent_merge" />
+      <PropertyRef Name="max_concurrent_dynamic_snapshots" />
+      <PropertyRef Name="publication_number" />
+      <PropertyRef Name="replicate_ddl" />
+      <PropertyRef Name="allow_subscriber_initiated_snapshot" />
+      <PropertyRef Name="retention_period_unit" />
+      <PropertyRef Name="automatic_reinitialization_policy" />
+    </Key>
+    <Property Name="publisher" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="publisher_db" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="retention" Type="int" />
+    <Property Name="publication_type" Type="tinyint" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="designmasterid" Type="uniqueidentifier" />
+    <Property Name="parentid" Type="uniqueidentifier" />
+    <Property Name="sync_mode" Type="tinyint" />
+    <Property Name="allow_push" Type="int" />
+    <Property Name="allow_pull" Type="int" />
+    <Property Name="allow_anonymous" Type="int" />
+    <Property Name="centralized_conflicts" Type="int" />
+    <Property Name="status" Type="tinyint" />
+    <Property Name="snapshot_ready" Type="tinyint" />
+    <Property Name="enabled_for_internet" Type="bit" Nullable="false" />
+    <Property Name="dynamic_filters" Type="bit" Nullable="false" />
+    <Property Name="snapshot_in_defaultfolder" Type="bit" Nullable="false" />
+    <Property Name="alt_snapshot_folder" Type="nvarchar" MaxLength="255" />
+    <Property Name="pre_snapshot_script" Type="nvarchar" MaxLength="255" />
+    <Property Name="post_snapshot_script" Type="nvarchar" MaxLength="255" />
+    <Property Name="compress_snapshot" Type="bit" Nullable="false" />
+    <Property Name="ftp_address" Type="nvarchar" MaxLength="128" />
+    <Property Name="ftp_port" Type="int" Nullable="false" />
+    <Property Name="ftp_subdirectory" Type="nvarchar" MaxLength="255" />
+    <Property Name="ftp_login" Type="nvarchar" MaxLength="128" />
+    <Property Name="ftp_password" Type="nvarchar" MaxLength="524" />
+    <Property Name="conflict_retention" Type="int" />
+    <Property Name="keep_before_values" Type="int" />
+    <Property Name="allow_subscription_copy" Type="bit" />
+    <Property Name="allow_synctoalternate" Type="bit" />
+    <Property Name="validate_subscriber_info" Type="nvarchar" MaxLength="500" />
+    <Property Name="ad_guidname" Type="nvarchar" MaxLength="128" />
+    <Property Name="backward_comp_level" Type="int" Nullable="false" />
+    <Property Name="max_concurrent_merge" Type="int" Nullable="false" />
+    <Property Name="max_concurrent_dynamic_snapshots" Type="int" Nullable="false" />
+    <Property Name="use_partition_groups" Type="smallint" />
+    <Property Name="dynamic_filters_function_list" Type="nvarchar" MaxLength="500" />
+    <Property Name="partition_id_eval_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="publication_number" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="replicate_ddl" Type="int" Nullable="false" />
+    <Property Name="allow_subscriber_initiated_snapshot" Type="bit" Nullable="false" />
+    <Property Name="distributor" Type="nvarchar" MaxLength="128" />
+    <Property Name="snapshot_jobid" Type="binary" MaxLength="16" />
+    <Property Name="allow_web_synchronization" Type="bit" />
+    <Property Name="web_synchronization_url" Type="nvarchar" MaxLength="500" />
+    <Property Name="allow_partition_realignment" Type="bit" />
+    <Property Name="retention_period_unit" Type="tinyint" Nullable="false" />
+    <Property Name="decentralized_conflicts" Type="int" />
+    <Property Name="generation_leveling_threshold" Type="int" />
+    <Property Name="automatic_reinitialization_policy" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergeschemaarticles » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergeschemaarticles">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="objid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="destination_object" />
+      <PropertyRef Name="processing_order" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="type" Type="tinyint" />
+    <Property Name="objid" Type="int" Nullable="false" />
+    <Property Name="artid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="pre_creation_command" Type="tinyint" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="status" Type="tinyint" />
+    <Property Name="creation_script" Type="nvarchar" MaxLength="255" />
+    <Property Name="schema_option" Type="binary" MaxLength="8" />
+    <Property Name="destination_object" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="destination_owner" Type="nvarchar" MaxLength="128" />
+    <Property Name="processing_order" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergeschemachange » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergeschemachange">
+    <Key>
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="schemaversion" />
+      <PropertyRef Name="schemaguid" />
+      <PropertyRef Name="schematype" />
+      <PropertyRef Name="schematext" />
+      <PropertyRef Name="schemastatus" />
+      <PropertyRef Name="schemasubtype" />
+    </Key>
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="artid" Type="uniqueidentifier" />
+    <Property Name="schemaversion" Type="int" Nullable="false" />
+    <Property Name="schemaguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="schematype" Type="int" Nullable="false" />
+    <Property Name="schematext" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="schemastatus" Type="tinyint" Nullable="false" />
+    <Property Name="schemasubtype" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergesubscriptions » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergesubscriptions">
+    <Key>
+      <PropertyRef Name="db_name" />
+      <PropertyRef Name="datasource_type" />
+      <PropertyRef Name="subid" />
+      <PropertyRef Name="replnickname" />
+      <PropertyRef Name="replicastate" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="subscriber_type" />
+      <PropertyRef Name="subscription_type" />
+      <PropertyRef Name="sync_type" />
+      <PropertyRef Name="metadatacleanuptime" />
+      <PropertyRef Name="cleanedup_unsent_changes" />
+      <PropertyRef Name="replica_version" />
+      <PropertyRef Name="supportability_mode" />
+      <PropertyRef Name="subscriber_number" />
+    </Key>
+    <Property Name="subscriber_server" Type="nvarchar" MaxLength="128" />
+    <Property Name="db_name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="pubid" Type="uniqueidentifier" />
+    <Property Name="datasource_type" Type="int" Nullable="false" />
+    <Property Name="subid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="replnickname" Type="binary" Nullable="false" MaxLength="6" />
+    <Property Name="replicastate" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="status" Type="tinyint" Nullable="false" />
+    <Property Name="subscriber_type" Type="int" Nullable="false" />
+    <Property Name="subscription_type" Type="int" Nullable="false" />
+    <Property Name="sync_type" Type="tinyint" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="priority" Type="real" />
+    <Property Name="recgen" Type="bigint" />
+    <Property Name="recguid" Type="uniqueidentifier" />
+    <Property Name="sentgen" Type="bigint" />
+    <Property Name="sentguid" Type="uniqueidentifier" />
+    <Property Name="schemaversion" Type="int" />
+    <Property Name="schemaguid" Type="uniqueidentifier" />
+    <Property Name="last_validated" Type="datetime" />
+    <Property Name="attempted_validate" Type="datetime" />
+    <Property Name="last_sync_date" Type="datetime" />
+    <Property Name="last_sync_status" Type="int" />
+    <Property Name="last_sync_summary" Type="nvarchar" MaxLength="128" />
+    <Property Name="metadatacleanuptime" Type="datetime" Nullable="false" />
+    <Property Name="partition_id" Type="int" />
+    <Property Name="cleanedup_unsent_changes" Type="bit" Nullable="false" />
+    <Property Name="replica_version" Type="int" Nullable="false" />
+    <Property Name="supportability_mode" Type="int" Nullable="false" />
+    <Property Name="application_name" Type="nvarchar" MaxLength="128" />
+    <Property Name="subscriber_number" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="last_makegeneration_datetime" Type="datetime" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.sysmergesubsetfilters » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="sysmergesubsetfilters">
+    <Key>
+      <PropertyRef Name="filtername" />
+      <PropertyRef Name="join_filterid" />
+      <PropertyRef Name="pubid" />
+      <PropertyRef Name="artid" />
+      <PropertyRef Name="art_nickname" />
+      <PropertyRef Name="join_articlename" />
+      <PropertyRef Name="join_nickname" />
+      <PropertyRef Name="join_unique_key" />
+      <PropertyRef Name="filter_type" />
+    </Key>
+    <Property Name="filtername" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="join_filterid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pubid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="artid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="art_nickname" Type="int" Nullable="false" />
+    <Property Name="join_articlename" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="join_nickname" Type="int" Nullable="false" />
+    <Property Name="join_unique_key" Type="int" Nullable="false" />
+    <Property Name="expand_proc" Type="nvarchar" MaxLength="128" />
+    <Property Name="join_filterclause" Type="nvarchar" MaxLength="1000" />
+    <Property Name="filter_type" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysreplservers">
+    <Key>
+      <PropertyRef Name="srvname" />
+    </Key>
+    <Property Name="srvname" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="srvid" Type="int" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6002: La table/vue « Inventaire BDD.dbo.Transferer » n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.
+      -->
+  <EntityType Name="Transferer">
+    <Key>
+      <PropertyRef Name="idBien" />
+      <PropertyRef Name="idBonTransfert" />
+      <PropertyRef Name="idSiteSource" />
+      <PropertyRef Name="idEmplaSource" />
+      <PropertyRef Name="idSiteDest" />
+      <PropertyRef Name="idEmplaDest" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="idBien" Type="varchar" Nullable="false" MaxLength="254" />
+    <Property Name="idBonTransfert" Type="int" Nullable="false" />
+    <Property Name="idSiteSource" Type="int" Nullable="false" />
+    <Property Name="idEmplaSource" Type="int" Nullable="false" />
+    <Property Name="idSiteDest" Type="int" Nullable="false" />
+    <Property Name="idEmplaDest" Type="int" Nullable="false" />
+    <Property Name="reçu" Type="bit" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Utilisateur">
+    <Key>
+      <PropertyRef Name="idUtilisateur" />
+    </Key>
+    <Property Name="idUtilisateur" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pseudo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="motDePasse" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Administrateur" Type="bit" Nullable="false" />
+    <Property Name="etat" Type="nchar" Nullable="false" MaxLength="20" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__MSmerge_d__parti__78B0F438">
+    <End Role="MSmerge_partition_groups" Type="Model.Store.MSmerge_partition_groups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MSmerge_dynamic_snapshots" Type="Model.Store.MSmerge_dynamic_snapshots" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MSmerge_partition_groups">
+        <PropertyRef Name="partition_id" />
+      </Principal>
+      <Dependent Role="MSmerge_dynamic_snapshots">
+        <PropertyRef Name="partition_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BIEN_ASSOCIATI_CATEGORI">
+    <End Role="CategorieBien" Type="Model.Store.CategorieBien" Multiplicity="1" />
+    <End Role="Bien" Type="Model.Store.Bien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieBien">
+        <PropertyRef Name="IdCategorieBien" />
+      </Principal>
+      <Dependent Role="Bien">
+        <PropertyRef Name="IdCategorieBien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bien_Fournisseur">
+    <End Role="Fournisseur" Type="Model.Store.Fournisseur" Multiplicity="0..1" />
+    <End Role="Bien" Type="Model.Store.Bien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="idFournisseur" />
+      </Principal>
+      <Dependent Role="Bien">
+        <PropertyRef Name="idFournisseur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CATEGORI_ASSOCIATI_AMORTISS">
+    <End Role="Amortissement" Type="Model.Store.Amortissement" Multiplicity="1" />
+    <End Role="CategorieBien" Type="Model.Store.CategorieBien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Amortissement">
+        <PropertyRef Name="IdAmort" />
+      </Principal>
+      <Dependent Role="CategorieBien">
+        <PropertyRef Name="IdAmort" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CATEGORI_ASSOCIATI_CATEGORI">
+    <End Role="CategorieBien" Type="Model.Store.CategorieBien" Multiplicity="0..1" />
+    <End Role="CategorieBien1" Type="Model.Store.CategorieBien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieBien">
+        <PropertyRef Name="IdCategorieBien" />
+      </Principal>
+      <Dependent Role="CategorieBien1">
+        <PropertyRef Name="IdCategorieBienPere" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ceder_Bien">
+    <End Role="Bien" Type="Model.Store.Bien" Multiplicity="0..1" />
+    <End Role="Ceder" Type="Model.Store.Ceder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bien">
+        <PropertyRef Name="IdBien" />
+      </Principal>
+      <Dependent Role="Ceder">
+        <PropertyRef Name="IdBien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ceder_PVCession">
+    <End Role="PVCession" Type="Model.Store.PVCession" Multiplicity="0..1" />
+    <End Role="Ceder" Type="Model.Store.Ceder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PVCession">
+        <PropertyRef Name="idPVCession" />
+      </Principal>
+      <Dependent Role="Ceder">
+        <PropertyRef Name="idPVCession" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLACEM_ASSOCIATI_EMPLACEM">
+    <End Role="Emplacement" Type="Model.Store.Emplacement" Multiplicity="0..1" />
+    <End Role="Emplacement1" Type="Model.Store.Emplacement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+        <PropertyRef Name="IdEmpla" />
+      </Principal>
+      <Dependent Role="Emplacement1">
+        <PropertyRef Name="IdSitePere" />
+        <PropertyRef Name="IdEmplaPere" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLACEM_ASSOCIATI_SITE">
+    <End Role="Site" Type="Model.Store.Site" Multiplicity="1" />
+    <End Role="Emplacement" Type="Model.Store.Emplacement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="IdSite" />
+      </Principal>
+      <Dependent Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idUtilisateur_Inventorier">
+    <End Role="Utilisateur" Type="Model.Store.Utilisateur" Multiplicity="1" />
+    <End Role="Inventorier" Type="Model.Store.Inventorier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateur">
+        <PropertyRef Name="idUtilisateur" />
+      </Principal>
+      <Dependent Role="Inventorier">
+        <PropertyRef Name="idUtilisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PVCession_Client">
+    <End Role="Client" Type="Model.Store.Client" Multiplicity="0..1" />
+    <End Role="PVCession" Type="Model.Store.PVCession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="idClient" />
+      </Principal>
+      <Dependent Role="PVCession">
+        <PropertyRef Name="idClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResponsableEmpla">
+    <End Role="Responsable" Type="Model.Store.Responsable" Multiplicity="0..1" />
+    <End Role="Emplacement" Type="Model.Store.Emplacement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Responsable">
+        <PropertyRef Name="idResp" />
+      </Principal>
+      <Dependent Role="Emplacement">
+        <PropertyRef Name="idResp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResponsableSite">
+    <End Role="Responsable" Type="Model.Store.Responsable" Multiplicity="0..1" />
+    <End Role="Site" Type="Model.Store.Site" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Responsable">
+        <PropertyRef Name="idResp" />
+      </Principal>
+      <Dependent Role="Site">
+        <PropertyRef Name="idResp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seTrouveB_Etat">
+    <End Role="Etat" Type="Model.Store.Etat" Multiplicity="1" />
+    <End Role="SeTrouveB" Type="Model.Store.SeTrouveB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Etat">
+        <PropertyRef Name="IdEtat" />
+      </Principal>
+      <Dependent Role="SeTrouveB">
+        <PropertyRef Name="IdEtat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_BonTransfert">
+    <End Role="BonTransfert" Type="Model.Store.BonTransfert" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Store.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BonTransfert">
+        <PropertyRef Name="idBonTransfert" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idBonTransfert" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_Client">
+    <End Role="Bien" Type="Model.Store.Bien" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Store.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bien">
+        <PropertyRef Name="IdBien" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idBien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_EmplacementDest">
+    <End Role="Emplacement" Type="Model.Store.Emplacement" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Store.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+        <PropertyRef Name="IdEmpla" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idSiteDest" />
+        <PropertyRef Name="idEmplaDest" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfert_EmplacementSource">
+    <End Role="Emplacement" Type="Model.Store.Emplacement" Multiplicity="1" />
+    <End Role="Transferer" Type="Model.Store.Transferer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplacement">
+        <PropertyRef Name="IdSite" />
+        <PropertyRef Name="IdEmpla" />
+      </Principal>
+      <Dependent Role="Transferer">
+        <PropertyRef Name="idSiteSource" />
+        <PropertyRef Name="idEmplaSource" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_uidInventaire_Inventorier">
+    <End Role="Inventaire" Type="Model.Store.Inventaire" Multiplicity="1" />
+    <End Role="Inventorier" Type="Model.Store.Inventorier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventaire">
+        <PropertyRef Name="uidInventaire" />
+      </Principal>
+      <Dependent Role="Inventorier">
+        <PropertyRef Name="uidInventaire" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Erreurs détectées durant la génération :
+      Avertissement 6013: Aucune clé primaire n'est définie pour la table/vue 'Inventaire BDD.dbo.RapportBien' ; en outre, aucune clé primaire valide n'a pu être déduite. Cette table/vue a été exclue. Pour utiliser l'entité, vous devez passer en revue votre schéma, ajouter les clés appropriées et supprimer le commentaire associé.
+      
+      <EntityType Name="RapportBien">
+        <Property Name="IdBien" Type="varchar" MaxLength="254" />
+        <Property Name="DesigBien" Type="varchar" MaxLength="254" />
+        <Property Name="DesigCategorieBien" Type="varchar" MaxLength="254" />
+        <Property Name="DateAcquisitionBien" Type="datetime" />
+        <Property Name="DesigEtatInit" Type="varchar" MaxLength="254" />
+        <Property Name="DesigEtatFin" Type="varchar" MaxLength="254" />
+        <Property Name="numFacture" Type="varchar" MaxLength="254" />
+        <Property Name="numSerie" Type="varchar" MaxLength="254" />
+        <Property Name="marque" Type="varchar" MaxLength="254" />
+        <Property Name="Prix" Type="decimal" />
+        <Property Name="DesigEmpla1" Type="varchar" MaxLength="254" />
+        <Property Name="DesigEmpla2" Type="varchar" MaxLength="254" />
+        <Property Name="Information" Type="varchar" MaxLength="254" />
+      </EntityType>-->
+</Schema>

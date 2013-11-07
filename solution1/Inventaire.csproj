@@ -1,0 +1,1114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7418F29D-C8BA-4FF0-BDEC-F05ECA319A53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>solution1</RootNamespace>
+    <AssemblyName>solution1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/solution1/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\..\Bureau\Aforge\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\..\..\..\..\Bureau\Aforge\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>.\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ButtonBarsControl">
+      <HintPath>.\ButtonBarsControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a" />
+    <Reference Include="DevExpress.Charts.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a" />
+    <Reference Include="DevExpress.Persistent.Base.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v11.1.UI, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.DataDesign.Interfaces, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Design, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Windows.Design.Host, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PrintableListView">
+      <HintPath>C:\Users\Malik\Desktop\TestSolution\PrintableListView\bin\Release\PrintableListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrateur\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\ajout_utilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\ajout_utilisateur.designer.cs">
+      <DependentUpon>ajout_utilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\message.Designer.cs">
+      <DependentUpon>message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\modifier_suprimer_utilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\modifier_suprimer_utilisateur.designer.cs">
+      <DependentUpon>modifier_suprimer_utilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\modifier_utilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\modifier_utilisateur.designer.cs">
+      <DependentUpon>modifier_utilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\import export\export données.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\import export\export données.Designer.cs">
+      <DependentUpon>export données.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\import export\import_bloc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\import export\import_bloc.Designer.cs">
+      <DependentUpon>import_bloc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\import export\import_tab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\import export\import_tab.Designer.cs">
+      <DependentUpon>import_tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\import export\vider BDD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\import export\vider BDD.Designer.cs">
+      <DependentUpon>vider BDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\Information\inform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrateur\Information\inform.Designer.cs">
+      <DependentUpon>inform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bien\AjouterBien.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Bien\AjouterBien.Designer.cs">
+      <DependentUpon>AjouterBien.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Client\AjouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\AjouterClient.Designer.cs">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="detail\Imprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detail\Imprimer.Designer.cs">
+      <DependentUpon>Imprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\Information\info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur\Information\info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\Information\information.Designer.cs">
+      <DependentUpon>information.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Fournisseur\AjouterFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseur\AjouterFournisseur.Designer.cs">
+      <DependentUpon>AjouterFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bien\Bien.cs" />
+    <Compile Include="Bon de transfert\AjouterBonDeTransfert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bon de transfert\AjouterBonDeTransfert.Designer.cs">
+      <DependentUpon>AjouterBonDeTransfert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bien\CategorieBien.cs" />
+    <Compile Include="Cession\Formcession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cession\Formcession.Designer.cs">
+      <DependentUpon>Formcession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\Authentification\Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur\Authentification\Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet11.cs">
+      <DependentUpon>DataSet11.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet9.cs">
+      <DependentUpon>DataSet9.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bon de transfert\FormBonsDeTransfert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bon de transfert\FormBonsDeTransfert.Designer.cs">
+      <DependentUpon>FormBonsDeTransfert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPortique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPortique.Designer.cs">
+      <DependentUpon>FormPortique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cession\MAJCession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cession\MAJCession.Designer.cs">
+      <DependentUpon>MAJCession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\MAJClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\MAJClient.Designer.cs">
+      <DependentUpon>MAJClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur\MAJFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseur\MAJFournisseur.Designer.cs">
+      <DependentUpon>MAJFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\MAJResponsableEmplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\MAJResponsableEmplacement.Designer.cs">
+      <DependentUpon>MAJResponsableEmplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\MAJResponsableSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur\gestion utilisateur\MAJResponsableSite.Designer.cs">
+      <DependentUpon>MAJResponsableSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\choix_cpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\choix_cpt.designer.cs">
+      <DependentUpon>choix_cpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\gestion_inventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\gestion_inventaire.Designer.cs">
+      <DependentUpon>gestion_inventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\MAJSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\MAJSites.Designer.cs">
+      <DependentUpon>MAJSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bon de transfert\ModifierBonTransfert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bon de transfert\ModifierBonTransfert.Designer.cs">
+      <DependentUpon>ModifierBonTransfert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ModifierClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\ModifierClient.Designer.cs">
+      <DependentUpon>ModifierClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur\ModifierFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseur\ModifierFournisseur.Designer.cs">
+      <DependentUpon>ModifierFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\NouvelInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\NouvelInventaire.Designer.cs">
+      <DependentUpon>NouvelInventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet8.cs">
+      <DependentUpon>DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\Comparer2Inventaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\Comparer2Inventaires.designer.cs">
+      <DependentUpon>Comparer2Inventaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet2.cs">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GénérerRapports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GénérerRapports.Designer.cs">
+      <DependentUpon>GénérerRapports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bien\ModifierBien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bien\ModifierBien.Designer.cs">
+      <DependentUpon>ModifierBien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\FormInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\FormInventaire.designer.cs">
+      <DependentUpon>FormInventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bien\FormGestionCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bien\FormGestionCategorie.Designer.cs">
+      <DependentUpon>FormGestionCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaConnexion.cs" />
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventaire\OuvrirInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventaire\OuvrirInventaire.Designer.cs">
+      <DependentUpon>OuvrirInventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur\Authentification\privilege.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Cession\PVsCessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cession\PVsCessions.Designer.cs">
+      <DependentUpon>PVsCessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\DataSet_bien.cs">
+      <DependentUpon>DataSet_bien.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\DataSet_bien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_bien.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\Stat\DataSet_stat.cs">
+      <DependentUpon>DataSet_stat.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\Stat\DataSet_stat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_stat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\Rapports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapport\Rapports.designer.cs">
+      <DependentUpon>Rapports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\Stat\UserCrt_statistique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rapport\Stat\UserCrt_statistique.Designer.cs">
+      <DependentUpon>UserCrt_statistique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\Traçabilité\DataSet_taraça.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_taraça.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\Traçabilité\taraçabilité.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rapport\Traçabilité\taraçabilité.Designer.cs">
+      <DependentUpon>taraçabilité.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\UC_bien_pers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rapport\UC_bien_pers.Designer.cs">
+      <DependentUpon>UC_bien_pers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\UserControllisate_bienpar catégorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rapport\UserControllisate_bienpar catégorie.Designer.cs">
+      <DependentUpon>UserControllisate_bienpar catégorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\UserControl_listebiens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rapport\UserControl_listebiens.Designer.cs">
+      <DependentUpon>UserControl_listebiens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrateur\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\gestion utilisateur\ajout_utilisateur.resx">
+      <DependentUpon>ajout_utilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\gestion utilisateur\message.resx">
+      <DependentUpon>message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\gestion utilisateur\modifier_suprimer_utilisateur.resx">
+      <DependentUpon>modifier_suprimer_utilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\gestion utilisateur\modifier_utilisateur.resx">
+      <DependentUpon>modifier_utilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\import export\export données.resx">
+      <DependentUpon>export données.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\import export\import_bloc.resx">
+      <DependentUpon>import_bloc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\import export\import_tab.resx">
+      <DependentUpon>import_tab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\import export\vider BDD.resx">
+      <DependentUpon>vider BDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\Information\inform.resx">
+      <DependentUpon>inform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bien\AjouterBien.resx">
+      <DependentUpon>AjouterBien.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\AjouterClient.resx">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bon de transfert\AjouterBonDeTransfert.resx">
+      <DependentUpon>AjouterBonDeTransfert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detail\Imprimer.resx">
+      <DependentUpon>Imprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\Information\info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\AjouterFournisseur.resx">
+      <DependentUpon>AjouterFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cession\Formcession.resx">
+      <DependentUpon>Formcession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\Authentification\Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bon de transfert\FormBonsDeTransfert.resx">
+      <DependentUpon>FormBonsDeTransfert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPortique.resx">
+      <DependentUpon>FormPortique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cession\MAJCession.resx">
+      <DependentUpon>MAJCession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\MAJClient.resx">
+      <DependentUpon>MAJClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\MAJFournisseur.resx">
+      <DependentUpon>MAJFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\gestion utilisateur\MAJResponsableEmplacement.resx">
+      <DependentUpon>MAJResponsableEmplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur\gestion utilisateur\MAJResponsableSite.resx">
+      <DependentUpon>MAJResponsableSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\choix_cpt.resx">
+      <DependentUpon>choix_cpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\gestion_inventaire.resx">
+      <DependentUpon>gestion_inventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\MAJSites.resx">
+      <DependentUpon>MAJSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bon de transfert\ModifierBonTransfert.resx">
+      <DependentUpon>ModifierBonTransfert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\ModifierClient.resx">
+      <DependentUpon>ModifierClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\ModifierFournisseur.resx">
+      <DependentUpon>ModifierFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\NouvelInventaire.resx">
+      <DependentUpon>NouvelInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\Comparer2Inventaires.resx">
+      <DependentUpon>Comparer2Inventaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GénérerRapports.resx">
+      <DependentUpon>GénérerRapports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bien\ModifierBien.resx">
+      <DependentUpon>ModifierBien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\FormInventaire.resx">
+      <DependentUpon>FormInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bien\FormGestionCategorie.resx">
+      <DependentUpon>FormGestionCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventaire\OuvrirInventaire.resx">
+      <DependentUpon>OuvrirInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cession\PVsCessions.resx">
+      <DependentUpon>PVsCessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\Rapports.resx">
+      <DependentUpon>Rapports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\Rapport_listebien.rdlc" />
+    <EmbeddedResource Include="Rapport\Report1.rdlc" />
+    <EmbeddedResource Include="Rapport\Report_lsbien.rdlc" />
+    <EmbeddedResource Include="Rapport\Stat\Report_sat2.rdlc" />
+    <EmbeddedResource Include="Rapport\Stat\Report_stat.rdlc" />
+    <EmbeddedResource Include="Rapport\Stat\UserCrt_statistique.resx">
+      <DependentUpon>UserCrt_statistique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\Traçabilité\taraçabilité.resx">
+      <DependentUpon>taraçabilité.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\UC_bien_pers.resx">
+      <DependentUpon>UC_bien_pers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\UserControllisate_bienpar catégorie.resx">
+      <DependentUpon>UserControllisate_bienpar catégorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\UserControl_listebiens.resx">
+      <DependentUpon>UserControl_listebiens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet10.xsc">
+      <DependentUpon>DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet10.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet10.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet10.xss">
+      <DependentUpon>DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet11.xsc">
+      <DependentUpon>DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet11.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet11.xss">
+      <DependentUpon>DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet12.xsc">
+      <DependentUpon>DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet12.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet12.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet12.xss">
+      <DependentUpon>DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet13.xsc">
+      <DependentUpon>DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet13.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet13.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet13.xss">
+      <DependentUpon>DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet14.xsc">
+      <DependentUpon>DataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet14.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet14.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet14.xss">
+      <DependentUpon>DataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet5.xsc">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet5.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet5.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet5.xss">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet6.xsc">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet6.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet6.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet6.xss">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet7.xsc">
+      <DependentUpon>DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet7.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet7.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet7.xss">
+      <DependentUpon>DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet8.xsc">
+      <DependentUpon>DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet8.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet8.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet8.xss">
+      <DependentUpon>DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet9.xsc">
+      <DependentUpon>DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet9.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet9.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet9.xss">
+      <DependentUpon>DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Administrateur\Information\information.xsc">
+      <DependentUpon>information.xsd</DependentUpon>
+    </None>
+    <None Include="Administrateur\Information\information.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>information.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Administrateur\Information\information.xss">
+      <DependentUpon>information.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\solution1.Rapport.DataSet_bien.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rapport\DataSet_bien.xsc">
+      <DependentUpon>DataSet_bien.xsd</DependentUpon>
+    </None>
+    <None Include="Rapport\DataSet_bien.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_bien.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rapport\DataSet_bien.xss">
+      <DependentUpon>DataSet_bien.xsd</DependentUpon>
+    </None>
+    <None Include="Rapport\Stat\DataSet_stat.xsc">
+      <DependentUpon>DataSet_stat.xsd</DependentUpon>
+    </None>
+    <None Include="Rapport\Stat\DataSet_stat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_stat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rapport\Stat\DataSet_stat.xss">
+      <DependentUpon>DataSet_stat.xsd</DependentUpon>
+    </None>
+    <None Include="Rapport\Traçabilité\DataSet_taraça.xsc">
+      <DependentUpon>DataSet_taraça.xsd</DependentUpon>
+    </None>
+    <None Include="Rapport\Traçabilité\DataSet_taraça.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_taraça.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rapport\Traçabilité\DataSet_taraça.xss">
+      <DependentUpon>DataSet_taraça.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimer.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emplacementSup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perdu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perdu16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deplacé16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deplacé16x161.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nouveau16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TousBiens16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfertsBien.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransfertsBien.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventaire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PVTransfert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventaire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventaire1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InventaireFixedassets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventaire2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InventaireParEmplacement.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre-1.jpg" />
+    <None Include="Resources\Sans titre-2.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\agt.bmp" />
+    <None Include="Resources\Login Manager.png" />
+    <None Include="Resources\2rightarrow %28%29.png" />
+    <None Include="Resources\2rightarrow %282%29.png" />
+    <None Include="Resources\3D-Home-642.png" />
+    <None Include="Resources\bleu-emplacement-code-pin-icone-3724-96.png" />
+    <None Include="Resources\interrogation.png" />
+    <None Include="Resources\folder_tar.png" />
+    <None Include="Resources\file-manager.ico.png" />
+    <None Include="Resources\User-group-256.png" />
+    <None Include="Resources\exit-64.png" />
+    <None Include="Resources\site.png" />
+    <None Include="Resources\NetByte Design Studio - 0084.png" />
+    <None Include="Resources\3D-Home-641.png" />
+    <None Include="Resources\3D-Home-64.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\5572445.jpg" />
+    <None Include="Resources\logo_2.png" />
+    <None Include="Resources\goutte d%27eau2.jpg" />
+    <None Include="Resources\goutte d%27eau1.jpg" />
+    <None Include="Resources\goutte d%27eau.jpg" />
+    <None Include="Resources\Sans titre.PNG" />
+    <None Include="Resources\closed folder.png" />
+    <None Include="Resources\1211777560.png" />
+    <None Include="Resources\images.JPG" />
+    <None Include="Resources\free-icons-round-up-7.jpg" />
+    <None Include="Resources\Sogral.jpg" />
+    <None Include="Resources\Logo.bmp" />
+    <None Include="Resources\CB.jpeg" />
+    <None Include="Resources\ImageCodeBarre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Inventaire BDD.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inventaire BDD_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Inventaire BDD.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\vider bdd1.png" />
+    <None Include="Resources\export bdd1.png" />
+    <None Include="Resources\export bdd.png" />
+    <None Include="Resources\vider bdd.png" />
+    <None Include="Resources\reminders.png" />
+    <None Include="Resources\Download File213213.ico" />
+    <None Include="Resources\doc.png" />
+    <None Include="Resources\NetByte Design Studio - 0110.png" />
+    <None Include="Resources\Folder %28Open%29.png" />
+    <None Include="Resources\db_add.png" />
+    <None Include="Resources\save3.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\1041.png" />
+    <None Include="Resources\button_ok.png" />
+    <None Include="Resources\ban.jpg" />
+    <None Include="Resources\ark2.png" />
+    <None Include="Resources\Sans titre-1..jpg" />
+    <None Include="Resources\save2.png" />
+    <None Include="Resources\gpgsm.png" />
+    <None Include="Resources\NetByte Design Studio - 0007.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

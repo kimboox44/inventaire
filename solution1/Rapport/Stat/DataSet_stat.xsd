@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_stat" targetNamespace="http://tempuri.org/DataSet_stat.xsd" xmlns:mstns="http://tempuri.org/DataSet_stat.xsd" xmlns="http://tempuri.org/DataSet_stat.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="datarapport" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="datarapport (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.solution1.Properties.Settings.GlobalReference.Default.datarapport" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BienTableAdapter" GeneratorDataComponentClassName="BienTableAdapter" Name="Bien" UserDataComponentName="BienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="datarapport (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     COUNT(*) AS Expr1, SeTrouveB.uidInventaire, Etat.DesigEtat
+FROM         SeTrouveB INNER JOIN
+                      Bien ON SeTrouveB.IdBien = Bien.IdBien INNER JOIN
+                      Etat ON Etat.IdEtat = SeTrouveB.IdEtat INNER JOIN
+                      Site ON Site.IdSite = SeTrouveB.IdSite INNER JOIN
+                      Emplacement ON Emplacement.idEmplaComplet = SeTrouveB.IdEmpla INNER JOIN
+                      Inventaire ON Inventaire.uidInventaire = SeTrouveB.uidInventaire
+WHERE     (Bien.etat = 'Non Supprimé')
+GROUP BY SeTrouveB.uidInventaire, Etat.DesigEtat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="uidInventaire" DataSetColumn="uidInventaire" />
+              <Mapping SourceColumn="DesigEtat" DataSetColumn="DesigEtat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CategorieBienTableAdapter" GeneratorDataComponentClassName="CategorieBienTableAdapter" Name="CategorieBien" UserDataComponentName="CategorieBienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="datarapport (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select COUNT(*),SeTrouveB.uidInventaire ,CategorieBien.DesigCategorieBien from Bien join SeTrouveB on bien.IdBien=SeTrouveB.IdBien join CategorieBien on CategorieBien.IdCategorieBien=bien.IdCategorieBien group by SeTrouveB.uidInventaire, CategorieBien.DesigCategorieBien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DesigCategorieBien" DataSetColumn="DesigCategorieBien" />
+              <Mapping SourceColumn="Column1" DataSetColumn="Column1" />
+              <Mapping SourceColumn="uidInventaire" DataSetColumn="uidInventaire" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_stat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_stat" msprop:Generator_UserDSName="DataSet_stat">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bien" msprop:Generator_TableClassName="BienDataTable" msprop:Generator_TableVarName="tableBien" msprop:Generator_TablePropName="Bien" msprop:Generator_RowDeletingName="BienRowDeleting" msprop:Generator_UserTableName="Bien" msprop:Generator_RowChangingName="BienRowChanging" msprop:Generator_RowEvHandlerName="BienRowChangeEventHandler" msprop:Generator_RowDeletedName="BienRowDeleted" msprop:Generator_RowEvArgName="BienRowChangeEvent" msprop:Generator_RowChangedName="BienRowChanged" msprop:Generator_RowClassName="BienRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+              <xs:element name="uidInventaire" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnuidInventaire" msprop:Generator_ColumnPropNameInRow="uidInventaire" msprop:Generator_ColumnPropNameInTable="uidInventaireColumn" msprop:Generator_UserColumnName="uidInventaire" type="xs:string" />
+              <xs:element name="DesigEtat" msprop:Generator_ColumnVarNameInTable="columnDesigEtat" msprop:Generator_ColumnPropNameInRow="DesigEtat" msprop:Generator_ColumnPropNameInTable="DesigEtatColumn" msprop:Generator_UserColumnName="DesigEtat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CategorieBien" msprop:Generator_TableClassName="CategorieBienDataTable" msprop:Generator_TableVarName="tableCategorieBien" msprop:Generator_TablePropName="CategorieBien" msprop:Generator_RowDeletingName="CategorieBienRowDeleting" msprop:Generator_UserTableName="CategorieBien" msprop:Generator_RowChangingName="CategorieBienRowChanging" msprop:Generator_RowEvHandlerName="CategorieBienRowChangeEventHandler" msprop:Generator_RowDeletedName="CategorieBienRowDeleted" msprop:Generator_RowEvArgName="CategorieBienRowChangeEvent" msprop:Generator_RowChangedName="CategorieBienRowChanged" msprop:Generator_RowClassName="CategorieBienRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DesigCategorieBien" msprop:Generator_ColumnVarNameInTable="columnDesigCategorieBien" msprop:Generator_ColumnPropNameInRow="DesigCategorieBien" msprop:Generator_ColumnPropNameInTable="DesigCategorieBienColumn" msprop:Generator_UserColumnName="DesigCategorieBien" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnColumn1" msprop:Generator_ColumnPropNameInRow="Column1" msprop:Generator_ColumnPropNameInTable="Column1Column" msprop:Generator_UserColumnName="Column1" type="xs:int" minOccurs="0" />
+              <xs:element name="uidInventaire" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnuidInventaire" msprop:Generator_ColumnPropNameInRow="uidInventaire" msprop:Generator_ColumnPropNameInTable="uidInventaireColumn" msprop:Generator_UserColumnName="uidInventaire" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

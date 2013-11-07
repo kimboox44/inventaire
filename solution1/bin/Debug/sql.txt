@@ -1,0 +1,18 @@
+CREATE DATABASE [EmployeesDB]
+COLLATE SQL_Latin1_General_CP1_CI_AS
+GO
+USE [EmployeesDB]
+GO
+
+CREATE TABLE [dbo].[Employees] (
+[Name] [char] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL ,
+[Rsvp] [int] NULL ,
+[Requests] [nvarchar] (4000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY];
+
+
+ALTER TABLE [dbo].[Employees] WITH NOCHECK ADD
+CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED
+(
+[Name]
+) ON [PRIMARY];

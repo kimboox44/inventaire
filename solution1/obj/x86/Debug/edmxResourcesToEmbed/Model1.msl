@@ -1,0 +1,1071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Inventaire_BDDEntities1">
+    <EntitySetMapping Name="Amortissement">
+      <EntityTypeMapping TypeName="Model.Amortissement">
+        <MappingFragment StoreEntitySet="Amortissement">
+          <ScalarProperty Name="IdAmort" ColumnName="IdAmort" />
+          <ScalarProperty Name="DesigAmort" ColumnName="DesigAmort" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bien">
+      <EntityTypeMapping TypeName="Model.Bien">
+        <MappingFragment StoreEntitySet="Bien">
+          <ScalarProperty Name="IdBien" ColumnName="IdBien" />
+          <ScalarProperty Name="IdCategorieBien" ColumnName="IdCategorieBien" />
+          <ScalarProperty Name="IdBienSeq" ColumnName="IdBienSeq" />
+          <ScalarProperty Name="DesigBien" ColumnName="DesigBien" />
+          <ScalarProperty Name="DateAcquisitionBien" ColumnName="DateAcquisitionBien" />
+          <ScalarProperty Name="Particularite" ColumnName="Particularite" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="ancienCode" ColumnName="ancienCode" />
+          <ScalarProperty Name="idFournisseur" ColumnName="idFournisseur" />
+          <ScalarProperty Name="numFacture" ColumnName="numFacture" />
+          <ScalarProperty Name="numSerie" ColumnName="numSerie" />
+          <ScalarProperty Name="marque" ColumnName="marque" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonTransfert">
+      <EntityTypeMapping TypeName="Model.BonTransfert">
+        <MappingFragment StoreEntitySet="BonTransfert">
+          <ScalarProperty Name="idBonTransfert" ColumnName="idBonTransfert" />
+          <ScalarProperty Name="dateTransfert" ColumnName="dateTransfert" />
+          <ScalarProperty Name="motifTransfert" ColumnName="motifTransfert" />
+          <ScalarProperty Name="idSiteSource" ColumnName="idSiteSource" />
+          <ScalarProperty Name="idSiteDestination" ColumnName="idSiteDestination" />
+          <ScalarProperty Name="etatBonTransfert" ColumnName="etatBonTransfert" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieBien">
+      <EntityTypeMapping TypeName="Model.CategorieBien">
+        <MappingFragment StoreEntitySet="CategorieBien">
+          <ScalarProperty Name="IdCategorieBien" ColumnName="IdCategorieBien" />
+          <ScalarProperty Name="IdCategorieBienPere" ColumnName="IdCategorieBienPere" />
+          <ScalarProperty Name="IdAmort" ColumnName="IdAmort" />
+          <ScalarProperty Name="DesigCategorieBien" ColumnName="DesigCategorieBien" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ceder">
+      <EntityTypeMapping TypeName="Model.Ceder">
+        <MappingFragment StoreEntitySet="Ceder">
+          <ScalarProperty Name="IdBien" ColumnName="IdBien" />
+          <ScalarProperty Name="idPVCession" ColumnName="idPVCession" />
+          <ScalarProperty Name="prixCession" ColumnName="prixCession" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="Model.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="idClient" ColumnName="idClient" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="spécialité" ColumnName="spécialité" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="wilaya" ColumnName="wilaya" />
+          <ScalarProperty Name="pays" ColumnName="pays" />
+          <ScalarProperty Name="registreDeCommerce" ColumnName="registreDeCommerce" />
+          <ScalarProperty Name="NIF" ColumnName="NIF" />
+          <ScalarProperty Name="Téléphone1" ColumnName="Téléphone1" />
+          <ScalarProperty Name="Téléphone2" ColumnName="Téléphone2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emplacement">
+      <EntityTypeMapping TypeName="Model.Emplacement">
+        <MappingFragment StoreEntitySet="Emplacement">
+          <ScalarProperty Name="IdSite" ColumnName="IdSite" />
+          <ScalarProperty Name="IdEmpla" ColumnName="IdEmpla" />
+          <ScalarProperty Name="IdSitePere" ColumnName="IdSitePere" />
+          <ScalarProperty Name="IdEmplaPere" ColumnName="IdEmplaPere" />
+          <ScalarProperty Name="DesigEmpla" ColumnName="DesigEmpla" />
+          <ScalarProperty Name="idEmplaComplet" ColumnName="idEmplaComplet" />
+          <ScalarProperty Name="idResp" ColumnName="idResp" />
+          <ScalarProperty Name="abrevEmpla" ColumnName="abrevEmpla" />
+          <ScalarProperty Name="etatEmpla" ColumnName="etatEmpla" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Etat">
+      <EntityTypeMapping TypeName="Model.Etat">
+        <MappingFragment StoreEntitySet="Etat">
+          <ScalarProperty Name="IdEtat" ColumnName="IdEtat" />
+          <ScalarProperty Name="DesigEtat" ColumnName="DesigEtat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fournisseur">
+      <EntityTypeMapping TypeName="Model.Fournisseur">
+        <MappingFragment StoreEntitySet="Fournisseur">
+          <ScalarProperty Name="idFournisseur" ColumnName="idFournisseur" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="spécialité" ColumnName="spécialité" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="wilaya" ColumnName="wilaya" />
+          <ScalarProperty Name="pays" ColumnName="pays" />
+          <ScalarProperty Name="registreDeCommerce" ColumnName="registreDeCommerce" />
+          <ScalarProperty Name="NIF" ColumnName="NIF" />
+          <ScalarProperty Name="Téléphone1" ColumnName="Téléphone1" />
+          <ScalarProperty Name="Téléphone2" ColumnName="Téléphone2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventaire">
+      <EntityTypeMapping TypeName="Model.Inventaire">
+        <MappingFragment StoreEntitySet="Inventaire">
+          <ScalarProperty Name="uidInventaire" ColumnName="uidInventaire" />
+          <ScalarProperty Name="DesigInventaire" ColumnName="DesigInventaire" />
+          <ScalarProperty Name="DateInventaire" ColumnName="DateInventaire" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventorier">
+      <EntityTypeMapping TypeName="Model.Inventorier">
+        <MappingFragment StoreEntitySet="Inventorier">
+          <ScalarProperty Name="uidInventaire" ColumnName="uidInventaire" />
+          <ScalarProperty Name="idUtilisateur" ColumnName="idUtilisateur" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSdynamicsnapshotjobs">
+      <EntityTypeMapping TypeName="Model.MSdynamicsnapshotjobs">
+        <MappingFragment StoreEntitySet="MSdynamicsnapshotjobs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="job_id" ColumnName="job_id" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+          <ScalarProperty Name="dynamic_filter_login" ColumnName="dynamic_filter_login" />
+          <ScalarProperty Name="dynamic_filter_hostname" ColumnName="dynamic_filter_hostname" />
+          <ScalarProperty Name="dynamic_snapshot_location" ColumnName="dynamic_snapshot_location" />
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+          <ScalarProperty Name="computed_dynsnap_location" ColumnName="computed_dynsnap_location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSdynamicsnapshotviews">
+      <EntityTypeMapping TypeName="Model.MSdynamicsnapshotviews">
+        <MappingFragment StoreEntitySet="MSdynamicsnapshotviews">
+          <ScalarProperty Name="dynamic_snapshot_view_name" ColumnName="dynamic_snapshot_view_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_agent_parameters">
+      <EntityTypeMapping TypeName="Model.MSmerge_agent_parameters">
+        <MappingFragment StoreEntitySet="MSmerge_agent_parameters">
+          <ScalarProperty Name="profile_name" ColumnName="profile_name" />
+          <ScalarProperty Name="parameter_name" ColumnName="parameter_name" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_altsyncpartners">
+      <EntityTypeMapping TypeName="Model.MSmerge_altsyncpartners">
+        <MappingFragment StoreEntitySet="MSmerge_altsyncpartners">
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="alternate_subid" ColumnName="alternate_subid" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_articlehistory">
+      <EntityTypeMapping TypeName="Model.MSmerge_articlehistory">
+        <MappingFragment StoreEntitySet="MSmerge_articlehistory">
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+          <ScalarProperty Name="phase_id" ColumnName="phase_id" />
+          <ScalarProperty Name="article_name" ColumnName="article_name" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="inserts" ColumnName="inserts" />
+          <ScalarProperty Name="updates" ColumnName="updates" />
+          <ScalarProperty Name="deletes" ColumnName="deletes" />
+          <ScalarProperty Name="conflicts" ColumnName="conflicts" />
+          <ScalarProperty Name="rows_retried" ColumnName="rows_retried" />
+          <ScalarProperty Name="percent_complete" ColumnName="percent_complete" />
+          <ScalarProperty Name="estimated_changes" ColumnName="estimated_changes" />
+          <ScalarProperty Name="relative_cost" ColumnName="relative_cost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Amortissement">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Amortissement">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Amortissement">
+          <ScalarProperty Name="IdAmort" ColumnName="IdAmort" />
+          <ScalarProperty Name="DesigAmort" ColumnName="DesigAmort" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Bien">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Bien">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Bien">
+          <ScalarProperty Name="IdBien" ColumnName="IdBien" />
+          <ScalarProperty Name="IdCategorieBien" ColumnName="IdCategorieBien" />
+          <ScalarProperty Name="IdBienSeq" ColumnName="IdBienSeq" />
+          <ScalarProperty Name="DesigBien" ColumnName="DesigBien" />
+          <ScalarProperty Name="DateAcquisitionBien" ColumnName="DateAcquisitionBien" />
+          <ScalarProperty Name="Particularite" ColumnName="Particularite" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="ancienCode" ColumnName="ancienCode" />
+          <ScalarProperty Name="idFournisseur" ColumnName="idFournisseur" />
+          <ScalarProperty Name="numFacture" ColumnName="numFacture" />
+          <ScalarProperty Name="numSerie" ColumnName="numSerie" />
+          <ScalarProperty Name="marque" ColumnName="marque" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_BonTransfert">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_BonTransfert">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_BonTransfert">
+          <ScalarProperty Name="idBonTransfert" ColumnName="idBonTransfert" />
+          <ScalarProperty Name="dateTransfert" ColumnName="dateTransfert" />
+          <ScalarProperty Name="motifTransfert" ColumnName="motifTransfert" />
+          <ScalarProperty Name="idSiteSource" ColumnName="idSiteSource" />
+          <ScalarProperty Name="idSiteDestination" ColumnName="idSiteDestination" />
+          <ScalarProperty Name="etatBonTransfert" ColumnName="etatBonTransfert" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_CategorieBien">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_CategorieBien">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_CategorieBien">
+          <ScalarProperty Name="IdCategorieBien" ColumnName="IdCategorieBien" />
+          <ScalarProperty Name="IdCategorieBienPere" ColumnName="IdCategorieBienPere" />
+          <ScalarProperty Name="IdAmort" ColumnName="IdAmort" />
+          <ScalarProperty Name="DesigCategorieBien" ColumnName="DesigCategorieBien" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Ceder">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Ceder">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Ceder">
+          <ScalarProperty Name="IdBien" ColumnName="IdBien" />
+          <ScalarProperty Name="idPVCession" ColumnName="idPVCession" />
+          <ScalarProperty Name="prixCession" ColumnName="prixCession" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Client">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Client">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Client">
+          <ScalarProperty Name="idClient" ColumnName="idClient" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="spécialité" ColumnName="spécialité" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="wilaya" ColumnName="wilaya" />
+          <ScalarProperty Name="pays" ColumnName="pays" />
+          <ScalarProperty Name="registreDeCommerce" ColumnName="registreDeCommerce" />
+          <ScalarProperty Name="NIF" ColumnName="NIF" />
+          <ScalarProperty Name="Téléphone1" ColumnName="Téléphone1" />
+          <ScalarProperty Name="Téléphone2" ColumnName="Téléphone2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Emplacement">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Emplacement">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Emplacement">
+          <ScalarProperty Name="IdSite" ColumnName="IdSite" />
+          <ScalarProperty Name="IdEmpla" ColumnName="IdEmpla" />
+          <ScalarProperty Name="IdSitePere" ColumnName="IdSitePere" />
+          <ScalarProperty Name="IdEmplaPere" ColumnName="IdEmplaPere" />
+          <ScalarProperty Name="DesigEmpla" ColumnName="DesigEmpla" />
+          <ScalarProperty Name="idEmplaComplet" ColumnName="idEmplaComplet" />
+          <ScalarProperty Name="idResp" ColumnName="idResp" />
+          <ScalarProperty Name="abrevEmpla" ColumnName="abrevEmpla" />
+          <ScalarProperty Name="etatEmpla" ColumnName="etatEmpla" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Etat">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Etat">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Etat">
+          <ScalarProperty Name="IdEtat" ColumnName="IdEtat" />
+          <ScalarProperty Name="DesigEtat" ColumnName="DesigEtat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Fournisseur">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Fournisseur">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Fournisseur">
+          <ScalarProperty Name="idFournisseur" ColumnName="idFournisseur" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="spécialité" ColumnName="spécialité" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="wilaya" ColumnName="wilaya" />
+          <ScalarProperty Name="pays" ColumnName="pays" />
+          <ScalarProperty Name="registreDeCommerce" ColumnName="registreDeCommerce" />
+          <ScalarProperty Name="NIF" ColumnName="NIF" />
+          <ScalarProperty Name="Téléphone1" ColumnName="Téléphone1" />
+          <ScalarProperty Name="Téléphone2" ColumnName="Téléphone2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Inventaire">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Inventaire">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Inventaire">
+          <ScalarProperty Name="uidInventaire" ColumnName="uidInventaire" />
+          <ScalarProperty Name="DesigInventaire" ColumnName="DesigInventaire" />
+          <ScalarProperty Name="DateInventaire" ColumnName="DateInventaire" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Inventorier">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Inventorier">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Inventorier">
+          <ScalarProperty Name="uidInventaire" ColumnName="uidInventaire" />
+          <ScalarProperty Name="idUtilisateur" ColumnName="idUtilisateur" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_PVCession">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_PVCession">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_PVCession">
+          <ScalarProperty Name="idPVCession" ColumnName="idPVCession" />
+          <ScalarProperty Name="DateCession" ColumnName="DateCession" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="numfacture" ColumnName="numfacture" />
+          <ScalarProperty Name="idClient" ColumnName="idClient" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Responsable">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Responsable">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Responsable">
+          <ScalarProperty Name="idResp" ColumnName="idResp" />
+          <ScalarProperty Name="nomResp" ColumnName="nomResp" />
+          <ScalarProperty Name="prenomResp" ColumnName="prenomResp" />
+          <ScalarProperty Name="fonctionResp" ColumnName="fonctionResp" />
+          <ScalarProperty Name="etatResp" ColumnName="etatResp" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_SeTrouveB">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_SeTrouveB">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_SeTrouveB">
+          <ScalarProperty Name="uidInventaire" ColumnName="uidInventaire" />
+          <ScalarProperty Name="IdSite" ColumnName="IdSite" />
+          <ScalarProperty Name="IdEmpla" ColumnName="IdEmpla" />
+          <ScalarProperty Name="IdBien" ColumnName="IdBien" />
+          <ScalarProperty Name="IdEtat" ColumnName="IdEtat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Sigle">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Sigle">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Sigle">
+          <ScalarProperty Name="IdSigle" ColumnName="IdSigle" />
+          <ScalarProperty Name="DesigSigle" ColumnName="DesigSigle" />
+          <ScalarProperty Name="Rubrique" ColumnName="Rubrique" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Site">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Site">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Site">
+          <ScalarProperty Name="IdSite" ColumnName="IdSite" />
+          <ScalarProperty Name="NomSite" ColumnName="NomSite" />
+          <ScalarProperty Name="idResp" ColumnName="idResp" />
+          <ScalarProperty Name="etatSite" ColumnName="etatSite" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Transferer">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Transferer">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Transferer">
+          <ScalarProperty Name="idBien" ColumnName="idBien" />
+          <ScalarProperty Name="idBonTransfert" ColumnName="idBonTransfert" />
+          <ScalarProperty Name="idSiteSource" ColumnName="idSiteSource" />
+          <ScalarProperty Name="idEmplaSource" ColumnName="idEmplaSource" />
+          <ScalarProperty Name="idSiteDest" ColumnName="idSiteDest" />
+          <ScalarProperty Name="idEmplaDest" ColumnName="idEmplaDest" />
+          <ScalarProperty Name="reçu" ColumnName="reçu" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflict_PubInventaire_Utilisateur">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflict_PubInventaire_Utilisateur">
+        <MappingFragment StoreEntitySet="MSmerge_conflict_PubInventaire_Utilisateur">
+          <ScalarProperty Name="idUtilisateur" ColumnName="idUtilisateur" />
+          <ScalarProperty Name="pseudo" ColumnName="pseudo" />
+          <ScalarProperty Name="motDePasse" ColumnName="motDePasse" />
+          <ScalarProperty Name="Administrateur" ColumnName="Administrateur" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_conflicts_info">
+      <EntityTypeMapping TypeName="Model.MSmerge_conflicts_info">
+        <MappingFragment StoreEntitySet="MSmerge_conflicts_info">
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="origin_datasource" ColumnName="origin_datasource" />
+          <ScalarProperty Name="conflict_type" ColumnName="conflict_type" />
+          <ScalarProperty Name="reason_code" ColumnName="reason_code" />
+          <ScalarProperty Name="reason_text" ColumnName="reason_text" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="MSrepl_create_time" ColumnName="MSrepl_create_time" />
+          <ScalarProperty Name="origin_datasource_id" ColumnName="origin_datasource_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_contents">
+      <EntityTypeMapping TypeName="Model.MSmerge_contents">
+        <MappingFragment StoreEntitySet="MSmerge_contents">
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="generation" ColumnName="generation" />
+          <ScalarProperty Name="partchangegen" ColumnName="partchangegen" />
+          <ScalarProperty Name="lineage" ColumnName="lineage" />
+          <ScalarProperty Name="colv1" ColumnName="colv1" />
+          <ScalarProperty Name="marker" ColumnName="marker" />
+          <ScalarProperty Name="logical_record_parent_rowguid" ColumnName="logical_record_parent_rowguid" />
+          <ScalarProperty Name="logical_record_lineage" ColumnName="logical_record_lineage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_current_partition_mappings">
+      <EntityTypeMapping TypeName="Model.MSmerge_current_partition_mappings">
+        <MappingFragment StoreEntitySet="MSmerge_current_partition_mappings">
+          <ScalarProperty Name="publication_number" ColumnName="publication_number" />
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_dynamic_snapshots">
+      <EntityTypeMapping TypeName="Model.MSmerge_dynamic_snapshots">
+        <MappingFragment StoreEntitySet="MSmerge_dynamic_snapshots">
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+          <ScalarProperty Name="dynamic_snapshot_location" ColumnName="dynamic_snapshot_location" />
+          <ScalarProperty Name="last_updated" ColumnName="last_updated" />
+          <ScalarProperty Name="last_started" ColumnName="last_started" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_errorlineage">
+      <EntityTypeMapping TypeName="Model.MSmerge_errorlineage">
+        <MappingFragment StoreEntitySet="MSmerge_errorlineage">
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="lineage" ColumnName="lineage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_generation_partition_mappings">
+      <EntityTypeMapping TypeName="Model.MSmerge_generation_partition_mappings">
+        <MappingFragment StoreEntitySet="MSmerge_generation_partition_mappings">
+          <ScalarProperty Name="publication_number" ColumnName="publication_number" />
+          <ScalarProperty Name="generation" ColumnName="generation" />
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+          <ScalarProperty Name="changecount" ColumnName="changecount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_genhistory">
+      <EntityTypeMapping TypeName="Model.MSmerge_genhistory">
+        <MappingFragment StoreEntitySet="MSmerge_genhistory">
+          <ScalarProperty Name="guidsrc" ColumnName="guidsrc" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="generation" ColumnName="generation" />
+          <ScalarProperty Name="art_nick" ColumnName="art_nick" />
+          <ScalarProperty Name="nicknames" ColumnName="nicknames" />
+          <ScalarProperty Name="coldate" ColumnName="coldate" />
+          <ScalarProperty Name="genstatus" ColumnName="genstatus" />
+          <ScalarProperty Name="changecount" ColumnName="changecount" />
+          <ScalarProperty Name="subscriber_number" ColumnName="subscriber_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_history">
+      <EntityTypeMapping TypeName="Model.MSmerge_history">
+        <MappingFragment StoreEntitySet="MSmerge_history">
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="error_id" ColumnName="error_id" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="updateable_row" ColumnName="updateable_row" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_identity_range">
+      <EntityTypeMapping TypeName="Model.MSmerge_identity_range">
+        <MappingFragment StoreEntitySet="MSmerge_identity_range">
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="range_begin" ColumnName="range_begin" />
+          <ScalarProperty Name="range_end" ColumnName="range_end" />
+          <ScalarProperty Name="next_range_begin" ColumnName="next_range_begin" />
+          <ScalarProperty Name="next_range_end" ColumnName="next_range_end" />
+          <ScalarProperty Name="is_pub_range" ColumnName="is_pub_range" />
+          <ScalarProperty Name="max_used" ColumnName="max_used" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_log_files">
+      <EntityTypeMapping TypeName="Model.MSmerge_log_files">
+        <MappingFragment StoreEntitySet="MSmerge_log_files">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="web_server" ColumnName="web_server" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="upload_time" ColumnName="upload_time" />
+          <ScalarProperty Name="log_file_type" ColumnName="log_file_type" />
+          <ScalarProperty Name="log_file" ColumnName="log_file" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_metadataaction_request">
+      <EntityTypeMapping TypeName="Model.MSmerge_metadataaction_request">
+        <MappingFragment StoreEntitySet="MSmerge_metadataaction_request">
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="generation" ColumnName="generation" />
+          <ScalarProperty Name="changed" ColumnName="changed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_partition_groups">
+      <EntityTypeMapping TypeName="Model.MSmerge_partition_groups">
+        <MappingFragment StoreEntitySet="MSmerge_partition_groups">
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+          <ScalarProperty Name="publication_number" ColumnName="publication_number" />
+          <ScalarProperty Name="maxgen_whenadded" ColumnName="maxgen_whenadded" />
+          <ScalarProperty Name="using_partition_groups" ColumnName="using_partition_groups" />
+          <ScalarProperty Name="is_partition_active" ColumnName="is_partition_active" />
+          <ScalarProperty Name="HOST_NAME_FN" ColumnName="HOST_NAME_FN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_past_partition_mappings">
+      <EntityTypeMapping TypeName="Model.MSmerge_past_partition_mappings">
+        <MappingFragment StoreEntitySet="MSmerge_past_partition_mappings">
+          <ScalarProperty Name="publication_number" ColumnName="publication_number" />
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+          <ScalarProperty Name="generation" ColumnName="generation" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_replinfo">
+      <EntityTypeMapping TypeName="Model.MSmerge_replinfo">
+        <MappingFragment StoreEntitySet="MSmerge_replinfo">
+          <ScalarProperty Name="repid" ColumnName="repid" />
+          <ScalarProperty Name="use_interactive_resolver" ColumnName="use_interactive_resolver" />
+          <ScalarProperty Name="validation_level" ColumnName="validation_level" />
+          <ScalarProperty Name="resync_gen" ColumnName="resync_gen" />
+          <ScalarProperty Name="login_name" ColumnName="login_name" />
+          <ScalarProperty Name="hostname" ColumnName="hostname" />
+          <ScalarProperty Name="merge_jobid" ColumnName="merge_jobid" />
+          <ScalarProperty Name="sync_info" ColumnName="sync_info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_sessions">
+      <EntityTypeMapping TypeName="Model.MSmerge_sessions">
+        <MappingFragment StoreEntitySet="MSmerge_sessions">
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="delivery_time" ColumnName="delivery_time" />
+          <ScalarProperty Name="upload_time" ColumnName="upload_time" />
+          <ScalarProperty Name="download_time" ColumnName="download_time" />
+          <ScalarProperty Name="schema_change_time" ColumnName="schema_change_time" />
+          <ScalarProperty Name="prepare_snapshot_time" ColumnName="prepare_snapshot_time" />
+          <ScalarProperty Name="delivery_rate" ColumnName="delivery_rate" />
+          <ScalarProperty Name="time_remaining" ColumnName="time_remaining" />
+          <ScalarProperty Name="percent_complete" ColumnName="percent_complete" />
+          <ScalarProperty Name="upload_inserts" ColumnName="upload_inserts" />
+          <ScalarProperty Name="upload_updates" ColumnName="upload_updates" />
+          <ScalarProperty Name="upload_deletes" ColumnName="upload_deletes" />
+          <ScalarProperty Name="upload_conflicts" ColumnName="upload_conflicts" />
+          <ScalarProperty Name="upload_rows_retried" ColumnName="upload_rows_retried" />
+          <ScalarProperty Name="download_inserts" ColumnName="download_inserts" />
+          <ScalarProperty Name="download_updates" ColumnName="download_updates" />
+          <ScalarProperty Name="download_deletes" ColumnName="download_deletes" />
+          <ScalarProperty Name="download_conflicts" ColumnName="download_conflicts" />
+          <ScalarProperty Name="download_rows_retried" ColumnName="download_rows_retried" />
+          <ScalarProperty Name="schema_changes" ColumnName="schema_changes" />
+          <ScalarProperty Name="bulk_inserts" ColumnName="bulk_inserts" />
+          <ScalarProperty Name="metadata_rows_cleanedup" ColumnName="metadata_rows_cleanedup" />
+          <ScalarProperty Name="runstatus" ColumnName="runstatus" />
+          <ScalarProperty Name="estimated_upload_changes" ColumnName="estimated_upload_changes" />
+          <ScalarProperty Name="estimated_download_changes" ColumnName="estimated_download_changes" />
+          <ScalarProperty Name="connection_type" ColumnName="connection_type" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="current_phase_id" ColumnName="current_phase_id" />
+          <ScalarProperty Name="spid" ColumnName="spid" />
+          <ScalarProperty Name="spid_login_time" ColumnName="spid_login_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_settingshistory">
+      <EntityTypeMapping TypeName="Model.MSmerge_settingshistory">
+        <MappingFragment StoreEntitySet="MSmerge_settingshistory">
+          <ScalarProperty Name="eventtime" ColumnName="eventtime" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="eventtype" ColumnName="eventtype" />
+          <ScalarProperty Name="propertyname" ColumnName="propertyname" />
+          <ScalarProperty Name="previousvalue" ColumnName="previousvalue" />
+          <ScalarProperty Name="newvalue" ColumnName="newvalue" />
+          <ScalarProperty Name="eventtext" ColumnName="eventtext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_supportability_settings">
+      <EntityTypeMapping TypeName="Model.MSmerge_supportability_settings">
+        <MappingFragment StoreEntitySet="MSmerge_supportability_settings">
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="web_server" ColumnName="web_server" />
+          <ScalarProperty Name="support_options" ColumnName="support_options" />
+          <ScalarProperty Name="log_severity" ColumnName="log_severity" />
+          <ScalarProperty Name="log_modules" ColumnName="log_modules" />
+          <ScalarProperty Name="log_file_path" ColumnName="log_file_path" />
+          <ScalarProperty Name="log_file_name" ColumnName="log_file_name" />
+          <ScalarProperty Name="log_file_size" ColumnName="log_file_size" />
+          <ScalarProperty Name="no_of_log_files" ColumnName="no_of_log_files" />
+          <ScalarProperty Name="upload_interval" ColumnName="upload_interval" />
+          <ScalarProperty Name="delete_after_upload" ColumnName="delete_after_upload" />
+          <ScalarProperty Name="custom_script" ColumnName="custom_script" />
+          <ScalarProperty Name="message_pattern" ColumnName="message_pattern" />
+          <ScalarProperty Name="last_log_upload_time" ColumnName="last_log_upload_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSmerge_tombstone">
+      <EntityTypeMapping TypeName="Model.MSmerge_tombstone">
+        <MappingFragment StoreEntitySet="MSmerge_tombstone">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="tablenick" ColumnName="tablenick" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="lineage" ColumnName="lineage" />
+          <ScalarProperty Name="generation" ColumnName="generation" />
+          <ScalarProperty Name="logical_record_parent_rowguid" ColumnName="logical_record_parent_rowguid" />
+          <ScalarProperty Name="logical_record_lineage" ColumnName="logical_record_lineage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSrepl_errors">
+      <EntityTypeMapping TypeName="Model.MSrepl_errors">
+        <MappingFragment StoreEntitySet="MSrepl_errors">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="error_type_id" ColumnName="error_type_id" />
+          <ScalarProperty Name="source_type_id" ColumnName="source_type_id" />
+          <ScalarProperty Name="source_name" ColumnName="source_name" />
+          <ScalarProperty Name="error_code" ColumnName="error_code" />
+          <ScalarProperty Name="error_text" ColumnName="error_text" />
+          <ScalarProperty Name="xact_seqno" ColumnName="xact_seqno" />
+          <ScalarProperty Name="command_id" ColumnName="command_id" />
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PVCession">
+      <EntityTypeMapping TypeName="Model.PVCession">
+        <MappingFragment StoreEntitySet="PVCession">
+          <ScalarProperty Name="idPVCession" ColumnName="idPVCession" />
+          <ScalarProperty Name="DateCession" ColumnName="DateCession" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="numfacture" ColumnName="numfacture" />
+          <ScalarProperty Name="idClient" ColumnName="idClient" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Responsable">
+      <EntityTypeMapping TypeName="Model.Responsable">
+        <MappingFragment StoreEntitySet="Responsable">
+          <ScalarProperty Name="idResp" ColumnName="idResp" />
+          <ScalarProperty Name="nomResp" ColumnName="nomResp" />
+          <ScalarProperty Name="prenomResp" ColumnName="prenomResp" />
+          <ScalarProperty Name="fonctionResp" ColumnName="fonctionResp" />
+          <ScalarProperty Name="etatResp" ColumnName="etatResp" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeTrouveB">
+      <EntityTypeMapping TypeName="Model.SeTrouveB">
+        <MappingFragment StoreEntitySet="SeTrouveB">
+          <ScalarProperty Name="uidInventaire" ColumnName="uidInventaire" />
+          <ScalarProperty Name="IdSite" ColumnName="IdSite" />
+          <ScalarProperty Name="IdEmpla" ColumnName="IdEmpla" />
+          <ScalarProperty Name="IdBien" ColumnName="IdBien" />
+          <ScalarProperty Name="IdEtat" ColumnName="IdEtat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sigle">
+      <EntityTypeMapping TypeName="Model.Sigle">
+        <MappingFragment StoreEntitySet="Sigle">
+          <ScalarProperty Name="IdSigle" ColumnName="IdSigle" />
+          <ScalarProperty Name="DesigSigle" ColumnName="DesigSigle" />
+          <ScalarProperty Name="Rubrique" ColumnName="Rubrique" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Site">
+      <EntityTypeMapping TypeName="Model.Site">
+        <MappingFragment StoreEntitySet="Site">
+          <ScalarProperty Name="IdSite" ColumnName="IdSite" />
+          <ScalarProperty Name="NomSite" ColumnName="NomSite" />
+          <ScalarProperty Name="idResp" ColumnName="idResp" />
+          <ScalarProperty Name="etatSite" ColumnName="etatSite" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergearticles">
+      <EntityTypeMapping TypeName="Model.sysmergearticles">
+        <MappingFragment StoreEntitySet="sysmergearticles">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="objid" ColumnName="objid" />
+          <ScalarProperty Name="sync_objid" ColumnName="sync_objid" />
+          <ScalarProperty Name="view_type" ColumnName="view_type" />
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="pre_creation_command" ColumnName="pre_creation_command" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="column_tracking" ColumnName="column_tracking" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="conflict_table" ColumnName="conflict_table" />
+          <ScalarProperty Name="creation_script" ColumnName="creation_script" />
+          <ScalarProperty Name="conflict_script" ColumnName="conflict_script" />
+          <ScalarProperty Name="article_resolver" ColumnName="article_resolver" />
+          <ScalarProperty Name="ins_conflict_proc" ColumnName="ins_conflict_proc" />
+          <ScalarProperty Name="insert_proc" ColumnName="insert_proc" />
+          <ScalarProperty Name="update_proc" ColumnName="update_proc" />
+          <ScalarProperty Name="select_proc" ColumnName="select_proc" />
+          <ScalarProperty Name="metadata_select_proc" ColumnName="metadata_select_proc" />
+          <ScalarProperty Name="delete_proc" ColumnName="delete_proc" />
+          <ScalarProperty Name="schema_option" ColumnName="schema_option" />
+          <ScalarProperty Name="destination_object" ColumnName="destination_object" />
+          <ScalarProperty Name="destination_owner" ColumnName="destination_owner" />
+          <ScalarProperty Name="resolver_clsid" ColumnName="resolver_clsid" />
+          <ScalarProperty Name="subset_filterclause" ColumnName="subset_filterclause" />
+          <ScalarProperty Name="missing_col_count" ColumnName="missing_col_count" />
+          <ScalarProperty Name="missing_cols" ColumnName="missing_cols" />
+          <ScalarProperty Name="excluded_cols" ColumnName="excluded_cols" />
+          <ScalarProperty Name="excluded_col_count" ColumnName="excluded_col_count" />
+          <ScalarProperty Name="columns" ColumnName="columns" />
+          <ScalarProperty Name="deleted_cols" ColumnName="deleted_cols" />
+          <ScalarProperty Name="resolver_info" ColumnName="resolver_info" />
+          <ScalarProperty Name="view_sel_proc" ColumnName="view_sel_proc" />
+          <ScalarProperty Name="gen_cur" ColumnName="gen_cur" />
+          <ScalarProperty Name="vertical_partition" ColumnName="vertical_partition" />
+          <ScalarProperty Name="identity_support" ColumnName="identity_support" />
+          <ScalarProperty Name="before_image_objid" ColumnName="before_image_objid" />
+          <ScalarProperty Name="before_view_objid" ColumnName="before_view_objid" />
+          <ScalarProperty Name="verify_resolver_signature" ColumnName="verify_resolver_signature" />
+          <ScalarProperty Name="allow_interactive_resolver" ColumnName="allow_interactive_resolver" />
+          <ScalarProperty Name="fast_multicol_updateproc" ColumnName="fast_multicol_updateproc" />
+          <ScalarProperty Name="check_permissions" ColumnName="check_permissions" />
+          <ScalarProperty Name="maxversion_at_cleanup" ColumnName="maxversion_at_cleanup" />
+          <ScalarProperty Name="processing_order" ColumnName="processing_order" />
+          <ScalarProperty Name="upload_options" ColumnName="upload_options" />
+          <ScalarProperty Name="published_in_tran_pub" ColumnName="published_in_tran_pub" />
+          <ScalarProperty Name="lightweight" ColumnName="lightweight" />
+          <ScalarProperty Name="procname_postfix" ColumnName="procname_postfix" />
+          <ScalarProperty Name="well_partitioned_lightweight" ColumnName="well_partitioned_lightweight" />
+          <ScalarProperty Name="before_upd_view_objid" ColumnName="before_upd_view_objid" />
+          <ScalarProperty Name="delete_tracking" ColumnName="delete_tracking" />
+          <ScalarProperty Name="compensate_for_errors" ColumnName="compensate_for_errors" />
+          <ScalarProperty Name="pub_range" ColumnName="pub_range" />
+          <ScalarProperty Name="range" ColumnName="range" />
+          <ScalarProperty Name="threshold" ColumnName="threshold" />
+          <ScalarProperty Name="stream_blob_columns" ColumnName="stream_blob_columns" />
+          <ScalarProperty Name="preserve_rowguidcol" ColumnName="preserve_rowguidcol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergepartitioninfo">
+      <EntityTypeMapping TypeName="Model.sysmergepartitioninfo">
+        <MappingFragment StoreEntitySet="sysmergepartitioninfo">
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="partition_view_id" ColumnName="partition_view_id" />
+          <ScalarProperty Name="repl_view_id" ColumnName="repl_view_id" />
+          <ScalarProperty Name="partition_deleted_view_rule" ColumnName="partition_deleted_view_rule" />
+          <ScalarProperty Name="partition_inserted_view_rule" ColumnName="partition_inserted_view_rule" />
+          <ScalarProperty Name="membership_eval_proc_name" ColumnName="membership_eval_proc_name" />
+          <ScalarProperty Name="column_list" ColumnName="column_list" />
+          <ScalarProperty Name="column_list_blob" ColumnName="column_list_blob" />
+          <ScalarProperty Name="expand_proc" ColumnName="expand_proc" />
+          <ScalarProperty Name="logical_record_parent_nickname" ColumnName="logical_record_parent_nickname" />
+          <ScalarProperty Name="logical_record_view" ColumnName="logical_record_view" />
+          <ScalarProperty Name="logical_record_deleted_view_rule" ColumnName="logical_record_deleted_view_rule" />
+          <ScalarProperty Name="logical_record_level_conflict_detection" ColumnName="logical_record_level_conflict_detection" />
+          <ScalarProperty Name="logical_record_level_conflict_resolution" ColumnName="logical_record_level_conflict_resolution" />
+          <ScalarProperty Name="partition_options" ColumnName="partition_options" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergepublications">
+      <EntityTypeMapping TypeName="Model.sysmergepublications">
+        <MappingFragment StoreEntitySet="sysmergepublications">
+          <ScalarProperty Name="publisher" ColumnName="publisher" />
+          <ScalarProperty Name="publisher_db" ColumnName="publisher_db" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="retention" ColumnName="retention" />
+          <ScalarProperty Name="publication_type" ColumnName="publication_type" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="designmasterid" ColumnName="designmasterid" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="sync_mode" ColumnName="sync_mode" />
+          <ScalarProperty Name="allow_push" ColumnName="allow_push" />
+          <ScalarProperty Name="allow_pull" ColumnName="allow_pull" />
+          <ScalarProperty Name="allow_anonymous" ColumnName="allow_anonymous" />
+          <ScalarProperty Name="centralized_conflicts" ColumnName="centralized_conflicts" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="snapshot_ready" ColumnName="snapshot_ready" />
+          <ScalarProperty Name="enabled_for_internet" ColumnName="enabled_for_internet" />
+          <ScalarProperty Name="dynamic_filters" ColumnName="dynamic_filters" />
+          <ScalarProperty Name="snapshot_in_defaultfolder" ColumnName="snapshot_in_defaultfolder" />
+          <ScalarProperty Name="alt_snapshot_folder" ColumnName="alt_snapshot_folder" />
+          <ScalarProperty Name="pre_snapshot_script" ColumnName="pre_snapshot_script" />
+          <ScalarProperty Name="post_snapshot_script" ColumnName="post_snapshot_script" />
+          <ScalarProperty Name="compress_snapshot" ColumnName="compress_snapshot" />
+          <ScalarProperty Name="ftp_address" ColumnName="ftp_address" />
+          <ScalarProperty Name="ftp_port" ColumnName="ftp_port" />
+          <ScalarProperty Name="ftp_subdirectory" ColumnName="ftp_subdirectory" />
+          <ScalarProperty Name="ftp_login" ColumnName="ftp_login" />
+          <ScalarProperty Name="ftp_password" ColumnName="ftp_password" />
+          <ScalarProperty Name="conflict_retention" ColumnName="conflict_retention" />
+          <ScalarProperty Name="keep_before_values" ColumnName="keep_before_values" />
+          <ScalarProperty Name="allow_subscription_copy" ColumnName="allow_subscription_copy" />
+          <ScalarProperty Name="allow_synctoalternate" ColumnName="allow_synctoalternate" />
+          <ScalarProperty Name="validate_subscriber_info" ColumnName="validate_subscriber_info" />
+          <ScalarProperty Name="ad_guidname" ColumnName="ad_guidname" />
+          <ScalarProperty Name="backward_comp_level" ColumnName="backward_comp_level" />
+          <ScalarProperty Name="max_concurrent_merge" ColumnName="max_concurrent_merge" />
+          <ScalarProperty Name="max_concurrent_dynamic_snapshots" ColumnName="max_concurrent_dynamic_snapshots" />
+          <ScalarProperty Name="use_partition_groups" ColumnName="use_partition_groups" />
+          <ScalarProperty Name="dynamic_filters_function_list" ColumnName="dynamic_filters_function_list" />
+          <ScalarProperty Name="partition_id_eval_proc" ColumnName="partition_id_eval_proc" />
+          <ScalarProperty Name="publication_number" ColumnName="publication_number" />
+          <ScalarProperty Name="replicate_ddl" ColumnName="replicate_ddl" />
+          <ScalarProperty Name="allow_subscriber_initiated_snapshot" ColumnName="allow_subscriber_initiated_snapshot" />
+          <ScalarProperty Name="distributor" ColumnName="distributor" />
+          <ScalarProperty Name="snapshot_jobid" ColumnName="snapshot_jobid" />
+          <ScalarProperty Name="allow_web_synchronization" ColumnName="allow_web_synchronization" />
+          <ScalarProperty Name="web_synchronization_url" ColumnName="web_synchronization_url" />
+          <ScalarProperty Name="allow_partition_realignment" ColumnName="allow_partition_realignment" />
+          <ScalarProperty Name="retention_period_unit" ColumnName="retention_period_unit" />
+          <ScalarProperty Name="decentralized_conflicts" ColumnName="decentralized_conflicts" />
+          <ScalarProperty Name="generation_leveling_threshold" ColumnName="generation_leveling_threshold" />
+          <ScalarProperty Name="automatic_reinitialization_policy" ColumnName="automatic_reinitialization_policy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergeschemaarticles">
+      <EntityTypeMapping TypeName="Model.sysmergeschemaarticles">
+        <MappingFragment StoreEntitySet="sysmergeschemaarticles">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="objid" ColumnName="objid" />
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="pre_creation_command" ColumnName="pre_creation_command" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="creation_script" ColumnName="creation_script" />
+          <ScalarProperty Name="schema_option" ColumnName="schema_option" />
+          <ScalarProperty Name="destination_object" ColumnName="destination_object" />
+          <ScalarProperty Name="destination_owner" ColumnName="destination_owner" />
+          <ScalarProperty Name="processing_order" ColumnName="processing_order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergeschemachange">
+      <EntityTypeMapping TypeName="Model.sysmergeschemachange">
+        <MappingFragment StoreEntitySet="sysmergeschemachange">
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="schemaversion" ColumnName="schemaversion" />
+          <ScalarProperty Name="schemaguid" ColumnName="schemaguid" />
+          <ScalarProperty Name="schematype" ColumnName="schematype" />
+          <ScalarProperty Name="schematext" ColumnName="schematext" />
+          <ScalarProperty Name="schemastatus" ColumnName="schemastatus" />
+          <ScalarProperty Name="schemasubtype" ColumnName="schemasubtype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergesubscriptions">
+      <EntityTypeMapping TypeName="Model.sysmergesubscriptions">
+        <MappingFragment StoreEntitySet="sysmergesubscriptions">
+          <ScalarProperty Name="subscriber_server" ColumnName="subscriber_server" />
+          <ScalarProperty Name="db_name" ColumnName="db_name" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="datasource_type" ColumnName="datasource_type" />
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="replnickname" ColumnName="replnickname" />
+          <ScalarProperty Name="replicastate" ColumnName="replicastate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="subscriber_type" ColumnName="subscriber_type" />
+          <ScalarProperty Name="subscription_type" ColumnName="subscription_type" />
+          <ScalarProperty Name="sync_type" ColumnName="sync_type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="recgen" ColumnName="recgen" />
+          <ScalarProperty Name="recguid" ColumnName="recguid" />
+          <ScalarProperty Name="sentgen" ColumnName="sentgen" />
+          <ScalarProperty Name="sentguid" ColumnName="sentguid" />
+          <ScalarProperty Name="schemaversion" ColumnName="schemaversion" />
+          <ScalarProperty Name="schemaguid" ColumnName="schemaguid" />
+          <ScalarProperty Name="last_validated" ColumnName="last_validated" />
+          <ScalarProperty Name="attempted_validate" ColumnName="attempted_validate" />
+          <ScalarProperty Name="last_sync_date" ColumnName="last_sync_date" />
+          <ScalarProperty Name="last_sync_status" ColumnName="last_sync_status" />
+          <ScalarProperty Name="last_sync_summary" ColumnName="last_sync_summary" />
+          <ScalarProperty Name="metadatacleanuptime" ColumnName="metadatacleanuptime" />
+          <ScalarProperty Name="partition_id" ColumnName="partition_id" />
+          <ScalarProperty Name="cleanedup_unsent_changes" ColumnName="cleanedup_unsent_changes" />
+          <ScalarProperty Name="replica_version" ColumnName="replica_version" />
+          <ScalarProperty Name="supportability_mode" ColumnName="supportability_mode" />
+          <ScalarProperty Name="application_name" ColumnName="application_name" />
+          <ScalarProperty Name="subscriber_number" ColumnName="subscriber_number" />
+          <ScalarProperty Name="last_makegeneration_datetime" ColumnName="last_makegeneration_datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysmergesubsetfilters">
+      <EntityTypeMapping TypeName="Model.sysmergesubsetfilters">
+        <MappingFragment StoreEntitySet="sysmergesubsetfilters">
+          <ScalarProperty Name="filtername" ColumnName="filtername" />
+          <ScalarProperty Name="join_filterid" ColumnName="join_filterid" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="art_nickname" ColumnName="art_nickname" />
+          <ScalarProperty Name="join_articlename" ColumnName="join_articlename" />
+          <ScalarProperty Name="join_nickname" ColumnName="join_nickname" />
+          <ScalarProperty Name="join_unique_key" ColumnName="join_unique_key" />
+          <ScalarProperty Name="expand_proc" ColumnName="expand_proc" />
+          <ScalarProperty Name="join_filterclause" ColumnName="join_filterclause" />
+          <ScalarProperty Name="filter_type" ColumnName="filter_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysreplservers">
+      <EntityTypeMapping TypeName="Model.sysreplservers">
+        <MappingFragment StoreEntitySet="sysreplservers">
+          <ScalarProperty Name="srvname" ColumnName="srvname" />
+          <ScalarProperty Name="srvid" ColumnName="srvid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transferer">
+      <EntityTypeMapping TypeName="Model.Transferer">
+        <MappingFragment StoreEntitySet="Transferer">
+          <ScalarProperty Name="idBien" ColumnName="idBien" />
+          <ScalarProperty Name="idBonTransfert" ColumnName="idBonTransfert" />
+          <ScalarProperty Name="idSiteSource" ColumnName="idSiteSource" />
+          <ScalarProperty Name="idEmplaSource" ColumnName="idEmplaSource" />
+          <ScalarProperty Name="idSiteDest" ColumnName="idSiteDest" />
+          <ScalarProperty Name="idEmplaDest" ColumnName="idEmplaDest" />
+          <ScalarProperty Name="reçu" ColumnName="reçu" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateur">
+      <EntityTypeMapping TypeName="Model.Utilisateur">
+        <MappingFragment StoreEntitySet="Utilisateur">
+          <ScalarProperty Name="idUtilisateur" ColumnName="idUtilisateur" />
+          <ScalarProperty Name="pseudo" ColumnName="pseudo" />
+          <ScalarProperty Name="motDePasse" ColumnName="motDePasse" />
+          <ScalarProperty Name="Administrateur" ColumnName="Administrateur" />
+          <ScalarProperty Name="etat" ColumnName="etat" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
