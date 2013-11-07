@@ -12,6 +12,9 @@ namespace solution1
     {
         //un chngement
 
+
+        // TODO : qddssd 
+        // encore
         // un deuxieme changement
         string connectionString = ConfigurationManager.ConnectionStrings["connectString1"].ConnectionString;    
         public void ajouterCategorieBien0(string a,string b)//!a&&b
