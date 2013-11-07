@@ -11,6 +11,8 @@ namespace solution1
     class CategorieBien
     {
         //un chngement
+
+        // un deuxieme changement
         string connectionString = ConfigurationManager.ConnectionStrings["connectString1"].ConnectionString;    
         public void ajouterCategorieBien0(string a,string b)//!a&&b
         {
