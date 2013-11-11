@@ -698,9 +698,11 @@ namespace solution1
             for (int index = 0; index < ((ListView)sender).SelectedItems.Count; index++)
             {
                 String identifiant = ((ListViewItem)((ListView)sender).SelectedItems[index]).SubItems[0].Text;
+                String anciencode = ((ListViewItem)((ListView)sender).SelectedItems[index]).SubItems[1].Text;
                 String designation = ((ListViewItem)((ListView)sender).SelectedItems[index]).SubItems[2].Text;
                 String date = ((ListViewItem)((ListView)sender).SelectedItems[index]).SubItems[3].Text;
                 Bien bien = new Bien(identifiant);
+                bien.SetAncien(anciencode);
                 bien.setDesignation(designation);
                 bien.setDate(date);
                 listBien.Add(bien);

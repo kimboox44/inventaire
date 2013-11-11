@@ -379,7 +379,7 @@ namespace solution1
             e.Graphics.DrawImage(m_Bitmap, posLogo);
             e.Graphics.DrawImage((Image)dGVCodeBarres.Rows[numCodeBarres].Cells[0].Value, posBacode);
             e.Graphics.DrawString(listeBien[numCodeBarres].getDesignation(), font, textBrush, tabBounds, stringFlags);
-           // e.Graphics.DrawString(listeBien[numCodeBarres].getDate(), font, textBrush, tabBoundDate, stringFlags);
+            e.Graphics.DrawString(listeBien[numCodeBarres].getAncien(), font, textBrush, tabBoundDate, stringFlags);
         }
         
         private void txtWidth_KeyPress(object sender, KeyPressEventArgs e)
@@ -414,10 +414,7 @@ namespace solution1
             ((Image)dGVCodeBarres.Rows[0].Cells[0].Value).Save("E:/Mobility/Projects/asset/solution1/solution1/Resources/CB.jpeg");
         }
 
-        private void dGVCodeBarres_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void dGVCodeBarres_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {

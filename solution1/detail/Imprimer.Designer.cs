@@ -435,7 +435,7 @@
             this.dGVCodeBarres.RowTemplate.Height = 100;
             this.dGVCodeBarres.Size = new System.Drawing.Size(342, 338);
             this.dGVCodeBarres.TabIndex = 37;
-            this.dGVCodeBarres.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVCodeBarres_CellContentClick);
+            //this.dGVCodeBarres.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVCodeBarres_CellContentClick);
             this.dGVCodeBarres.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dGVCodeBarres_CellPainting);
             // 
             // ColumnCB

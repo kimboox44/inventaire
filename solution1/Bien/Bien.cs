@@ -55,6 +55,15 @@ namespace solution1
         {
             return this.dateAquisition;
         }
+        public String getAncien()
+        {
+            return this.ancienCode;
+        }
+        public void SetAncien(String anciencode)
+        {
+            this.ancienCode = anciencode;
+        }
+
         public void setDate(String dateAquisition)
         {
             this.dateAquisition = dateAquisition;
