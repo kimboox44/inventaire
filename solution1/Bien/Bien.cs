@@ -131,7 +131,35 @@ namespace solution1
         }
         public int modifierBien(string idBien)
         {
-            string requete = "UPDATE Bien SET IdCategorieBien = " 
+            var temp = (float)this.prix;
+            string price2 = temp.ToString(".##");
+
+            var connection = new SqlConnection(connectionString);
+            var SqlCommand = new SqlCommand("UpdateBien", connection)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            SqlCommand.Parameters.Add("@idBien", SqlDbType.VarChar, 254).Value = idBien.ToString();
+            SqlCommand.Parameters.Add("@idcategorieBien", SqlDbType.Int).Value = this.idcategorieBien;
+            SqlCommand.Parameters.Add("@DesigBien", SqlDbType.VarChar, 254).Value = this.desigBien;
+            SqlCommand.Parameters.Add("@DateAcquisitionBien", SqlDbType.Date).Value = this.dateAquisition;
+            SqlCommand.Parameters.Add("@Particularite", SqlDbType.VarChar, 254).Value = this.particularite;
+            SqlCommand.Parameters.Add("@photo", SqlDbType.NVarChar).Value = this.photo;
+            SqlCommand.Parameters.Add("@prix", SqlDbType.Float).Value = price2;
+            SqlCommand.Parameters.Add("@ancienCode", SqlDbType.VarChar, 30).Value = this.ancienCode;
+            SqlCommand.Parameters.Add("@idFournisseur", SqlDbType.Int).Value = DBNull.Value;
+            SqlCommand.Parameters.Add("@numFacture", SqlDbType.VarChar, 20).Value = this.numFacture;
+            SqlCommand.Parameters.Add("@numSerie", SqlDbType.VarChar, 30).Value = this.numSerie;
+            SqlCommand.Parameters.Add("@marque", SqlDbType.VarChar, 20).Value = this.marque;
+            SqlCommand.Parameters.Add("@etat", SqlDbType.VarChar, 20).Value = this.etatBien;
+
+            connection.Open();
+            int number = SqlCommand.ExecuteNonQuery();
+            connection.Close();
+            return number;
+            
+            
+            /*  string requete = "UPDATE Bien SET IdCategorieBien = " 
                 + this.idcategorieBien + " ,DesigBien = '"
                 + this.desigBien + "' , DateAcquisitionBien = '"
                 + this.dateAquisition + "', Particularite = '"
@@ -145,7 +173,7 @@ namespace solution1
                 + this.marque + "', etat = 'Non supprimé' WHERE IdBien = '" + idBien +"'";
            
                 
-            return MaConnexion.ExecuteUpdate(connectionString, requete);
+            return MaConnexion.ExecuteUpdate(connectionString, requete);*/
         }
 
         public int supprimerBien(string uidInventaire, string idEmpla)

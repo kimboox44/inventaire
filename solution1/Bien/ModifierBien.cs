@@ -941,6 +941,12 @@ namespace solution1
             date = myTime.ToString("dd/MM/yyyy");
         }
 
+        private void dTPDateAcquisition_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime myTime = this.dTPDateAcquisition.Value;
+            date = myTime.ToString("dd/MM/yyyy");
+        }
+
       
     }
 }
