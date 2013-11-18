@@ -65,12 +65,20 @@ namespace solution1
         {
             string messageErreur = null;
             if (tBRaisonSociale.Text != "")
+
+                if (tBAdresse.Text !="")
+
+                    if (tBEmail.Text != "")
+
+                        if (tBRegistreDeCommerce.Text !="")
+
+                            if (tBTél1.Text !="")
             {
                 
             }
             else
             {
-                messageErreur = "Veuillez entrer la raison sociale du client";
+                messageErreur = "Veuillez entrer tous les chapms obligatoires";
             }
             return messageErreur;
         }

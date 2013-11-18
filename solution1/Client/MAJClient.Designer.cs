@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAJClient));
             this.groupBoxMAJClient = new System.Windows.Forms.GroupBox();
             this.rBRaisonSociale = new System.Windows.Forms.RadioButton();
             this.rBIdentifiant = new System.Windows.Forms.RadioButton();
             this.rBTous = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dGVClients = new System.Windows.Forms.DataGridView();
-            this.ColumnModifier = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColumnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tBRaisonSociale = new System.Windows.Forms.TextBox();
+            this.tBIdentifiant = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.ColumnModifier = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ColumnSupprimer = new System.Windows.Forms.DataGridViewImageColumn();
             this.ColumnIdClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSpécialité = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,9 +53,6 @@
             this.ColumnTéléphone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tBRaisonSociale = new System.Windows.Forms.TextBox();
-            this.tBIdentifiant = new System.Windows.Forms.TextBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.groupBoxMAJClient.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVClients)).BeginInit();
@@ -59,9 +60,9 @@
             // 
             // groupBoxMAJClient
             // 
-            this.groupBoxMAJClient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxMAJClient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxMAJClient.BackColor = System.Drawing.Color.Gainsboro;
             this.groupBoxMAJClient.Controls.Add(this.rBRaisonSociale);
             this.groupBoxMAJClient.Controls.Add(this.rBIdentifiant);
@@ -116,9 +117,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dGVClients);
             this.groupBox2.Location = new System.Drawing.Point(6, 88);
             this.groupBox2.Name = "groupBox2";
@@ -130,9 +131,9 @@
             // 
             // dGVClients
             // 
-            this.dGVClients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVClients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dGVClients.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dGVClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -158,9 +159,38 @@
             this.dGVClients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVClients_CellClick);
             this.dGVClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVClients_CellContentClick);
             // 
+            // tBRaisonSociale
+            // 
+            this.tBRaisonSociale.Location = new System.Drawing.Point(141, 62);
+            this.tBRaisonSociale.Name = "tBRaisonSociale";
+            this.tBRaisonSociale.Size = new System.Drawing.Size(198, 20);
+            this.tBRaisonSociale.TabIndex = 24;
+            this.tBRaisonSociale.TextChanged += new System.EventHandler(this.tBRaisonSociale_TextChanged);
+            this.tBRaisonSociale.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tBRaisonSociale_MouseDown);
+            // 
+            // tBIdentifiant
+            // 
+            this.tBIdentifiant.Location = new System.Drawing.Point(141, 39);
+            this.tBIdentifiant.Name = "tBIdentifiant";
+            this.tBIdentifiant.Size = new System.Drawing.Size(198, 20);
+            this.tBIdentifiant.TabIndex = 22;
+            this.tBIdentifiant.TextChanged += new System.EventHandler(this.tBIdentifiant_TextChanged);
+            this.tBIdentifiant.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tBIdentifiant_MouseDown);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.Gainsboro;
+            this.statusStrip1.Location = new System.Drawing.Point(0, 405);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(765, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // ColumnModifier
             // 
             this.ColumnModifier.HeaderText = "";
+            this.ColumnModifier.Image = ((System.Drawing.Image)(resources.GetObject("ColumnModifier.Image")));
+            this.ColumnModifier.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.ColumnModifier.Name = "ColumnModifier";
             this.ColumnModifier.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ColumnModifier.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -169,6 +199,8 @@
             // ColumnSupprimer
             // 
             this.ColumnSupprimer.HeaderText = "";
+            this.ColumnSupprimer.Image = ((System.Drawing.Image)(resources.GetObject("ColumnSupprimer.Image")));
+            this.ColumnSupprimer.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.ColumnSupprimer.Name = "ColumnSupprimer";
             this.ColumnSupprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ColumnSupprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -239,33 +271,6 @@
             this.ColumnEmail.HeaderText = "Email";
             this.ColumnEmail.Name = "ColumnEmail";
             // 
-            // tBRaisonSociale
-            // 
-            this.tBRaisonSociale.Location = new System.Drawing.Point(141, 62);
-            this.tBRaisonSociale.Name = "tBRaisonSociale";
-            this.tBRaisonSociale.Size = new System.Drawing.Size(198, 20);
-            this.tBRaisonSociale.TabIndex = 24;
-            this.tBRaisonSociale.TextChanged += new System.EventHandler(this.tBRaisonSociale_TextChanged);
-            this.tBRaisonSociale.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tBRaisonSociale_MouseDown);
-            // 
-            // tBIdentifiant
-            // 
-            this.tBIdentifiant.Location = new System.Drawing.Point(141, 39);
-            this.tBIdentifiant.Name = "tBIdentifiant";
-            this.tBIdentifiant.Size = new System.Drawing.Size(198, 20);
-            this.tBIdentifiant.TabIndex = 22;
-            this.tBIdentifiant.TextChanged += new System.EventHandler(this.tBIdentifiant_TextChanged);
-            this.tBIdentifiant.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tBIdentifiant_MouseDown);
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.BackColor = System.Drawing.Color.Gainsboro;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 405);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(765, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // MAJClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,8 +302,8 @@
         private System.Windows.Forms.RadioButton rBTous;
         private System.Windows.Forms.TextBox tBRaisonSociale;
         private System.Windows.Forms.TextBox tBIdentifiant;
-        private System.Windows.Forms.DataGridViewButtonColumn ColumnModifier;
-        private System.Windows.Forms.DataGridViewButtonColumn ColumnSupprimer;
+        private System.Windows.Forms.DataGridViewImageColumn ColumnModifier;
+        private System.Windows.Forms.DataGridViewImageColumn ColumnSupprimer;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNom;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSpécialité;
