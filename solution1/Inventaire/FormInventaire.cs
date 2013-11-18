@@ -958,5 +958,25 @@ namespace solution1
 
         }
 
+        private void cloturéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string reque = "update inventaire set caract='Cloturé' where uidInventaire='" + uidInventaire + "'";
+            MaConnexion.ExecuteUpdate(connectionString, reque);
+            FormInventaire formInventaire = new FormInventaire(mDIParent, uidInventaire);
+            formInventaire.MdiParent = this.MdiParent;
+            //formInventaire.Text = ((structInventaire)lBinventaire.SelectedItem).DesigInventaire;
+            formInventaire.Show();
+            this.Close();
+
+            string req = "select type from inventaire where uidInventaire='" + uidInventaire.ToString() + "'";
+            DataSet type = MaConnexion.ExecuteSelect(connectionString, req);
+            if (type.Tables[0].Rows[0][0].ToString() == "Comptable")
+            {
+                MessageBox.Show("il n'existe plus d'inventaire comptable \n vous devriez ajouter un inventaire Comptable !!");
+                Inventaire.choix_cpt ch = new Inventaire.choix_cpt(mDIParent);
+                ch.Show();
+            }
+        }
+
     }
 }
