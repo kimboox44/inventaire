@@ -82,7 +82,7 @@
             // 
             // bien_categorie
             // 
-            this.bien_categorie.Caption = "Bien par catégorie";
+            this.bien_categorie.Caption = "Bien par emplacement";
             this.bien_categorie.Id = 2;
             this.bien_categorie.Name = "bien_categorie";
             this.bien_categorie.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
