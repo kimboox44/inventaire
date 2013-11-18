@@ -132,9 +132,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(379, 177);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.Size = new System.Drawing.Size(46, 13);
             this.label9.TabIndex = 26;
-            this.label9.Text = "Email :";
+            this.label9.Text = "Email **:";
             // 
             // label10
             // 
@@ -168,18 +168,18 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(379, 47);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 13);
+            this.label13.Size = new System.Drawing.Size(59, 13);
             this.label13.TabIndex = 22;
-            this.label13.Text = "Adresse :";
+            this.label13.Text = "Adresse **:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(379, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 13);
+            this.label14.Size = new System.Drawing.Size(93, 13);
             this.label14.TabIndex = 21;
-            this.label14.Text = "Raison sociale :";
+            this.label14.Text = "Raison sociale  **:";
             // 
             // tBFax
             // 
@@ -248,9 +248,10 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(15, 125);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 13);
+            this.label5.Size = new System.Drawing.Size(130, 13);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Registre de commerce  :";
+            this.label5.Text = "Registre de commerce ** :";
+            
             // 
             // label4
             // 

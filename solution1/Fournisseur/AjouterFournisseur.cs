@@ -67,15 +67,28 @@ namespace solution1
         string controlSaisie()
         {
             string messageErreur = null;
-            if (tBRaisonSociale.Text != "")
+            if (tBRaisonSociale.Text != "") 
+
+                if (tBEmail.Text != "") 
+                     
+                    if (tBRegistreDeCommerce.Text != "")
+
+                        if (tBAdresse.Text != "")
+                    
+                             if(tBTél1.Text !="")
+                        
             {
 
             }
             else
             {
-                messageErreur = "Veuillez entrer la raison sociale du client";
+                messageErreur = "Veuillez entrer tous les champs obligatoires";
             }
             return messageErreur;
         }
+
+
+
+
     }
 }

@@ -578,6 +578,7 @@
             this.dTPDateAcquisition.Name = "dTPDateAcquisition";
             this.dTPDateAcquisition.Size = new System.Drawing.Size(225, 20);
             this.dTPDateAcquisition.TabIndex = 21;
+            this.dTPDateAcquisition.ValueChanged += new System.EventHandler(this.dTPDateAcquisition_ValueChanged);
             // 
             // label2
             // 

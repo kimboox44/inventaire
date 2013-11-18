@@ -931,13 +931,13 @@
             this.toolStripSplitButton3.Name = "toolStripSplitButton3";
             this.toolStripSplitButton3.Size = new System.Drawing.Size(32, 42);
             this.toolStripSplitButton3.Text = "toolStripSplitButton3";
-            this.toolStripSplitButton3.Visible = false;
             // 
             // cloturéToolStripMenuItem
             // 
             this.cloturéToolStripMenuItem.Name = "cloturéToolStripMenuItem";
-            this.cloturéToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.cloturéToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cloturéToolStripMenuItem.Text = "Cloturé";
+            this.cloturéToolStripMenuItem.Click += new System.EventHandler(this.cloturéToolStripMenuItem_Click);
             // 
             // cloture
             // 
