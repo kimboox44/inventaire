@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBonsDeTransfert));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,13 +39,6 @@
             this.rBTous = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dGVBonDeTransfert = new System.Windows.Forms.DataGridView();
-            this.ColumnIdBonTransfert = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMotif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSiteSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSiteDest = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnModifier = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColumnImprimer = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColumnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tBIdBonTransfert = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -65,6 +59,14 @@
             this.ColumnProvenance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDestination = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonQuitter = new System.Windows.Forms.Button();
+            this.ColumnIdBonTransfert = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMotif = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSiteSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSiteDest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnModifier = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnImprimer = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnSupprimer = new System.Windows.Forms.DataGridViewImageColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVBonDeTransfert)).BeginInit();
@@ -75,8 +77,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dTPFin);
@@ -101,6 +103,7 @@
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 32;
             this.label2.Text = "de";
+            this.label2.Visible = false;
             // 
             // label1
             // 
@@ -110,6 +113,7 @@
             this.label1.Size = new System.Drawing.Size(14, 13);
             this.label1.TabIndex = 31;
             this.label1.Text = "à";
+            this.label1.Visible = false;
             // 
             // dTPFin
             // 
@@ -117,6 +121,7 @@
             this.dTPFin.Name = "dTPFin";
             this.dTPFin.Size = new System.Drawing.Size(230, 20);
             this.dTPFin.TabIndex = 30;
+            this.dTPFin.Visible = false;
             this.dTPFin.ValueChanged += new System.EventHandler(this.dTPFin_ValueChanged);
             // 
             // dTPDebut
@@ -125,6 +130,7 @@
             this.dTPDebut.Name = "dTPDebut";
             this.dTPDebut.Size = new System.Drawing.Size(230, 20);
             this.dTPDebut.TabIndex = 29;
+            this.dTPDebut.Visible = false;
             this.dTPDebut.ValueChanged += new System.EventHandler(this.dTPDebut_ValueChanged);
             // 
             // rBDate
@@ -136,6 +142,7 @@
             this.rBDate.TabIndex = 28;
             this.rBDate.Text = "Date :";
             this.rBDate.UseVisualStyleBackColor = true;
+            this.rBDate.Visible = false;
             this.rBDate.CheckedChanged += new System.EventHandler(this.rBDate_CheckedChanged);
             // 
             // rBNumBonTransfert
@@ -164,8 +171,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dGVBonDeTransfert);
             this.groupBox2.Location = new System.Drawing.Point(7, 112);
             this.groupBox2.Name = "groupBox2";
@@ -176,12 +183,13 @@
             // 
             // dGVBonDeTransfert
             // 
-            this.dGVBonDeTransfert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVBonDeTransfert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dGVBonDeTransfert.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dGVBonDeTransfert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVBonDeTransfert.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnIdBonTransfert,
+            this.Date,
             this.ColumnMotif,
             this.ColumnSiteSource,
             this.ColumnSiteDest,
@@ -197,55 +205,6 @@
             this.dGVBonDeTransfert.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVBonDeTransfert_CellClick);
             this.dGVBonDeTransfert.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dGVBonDeTransfert_CellPainting);
             this.dGVBonDeTransfert.SelectionChanged += new System.EventHandler(this.dGVBonDeTransfert_SelectionChanged);
-            // 
-            // ColumnIdBonTransfert
-            // 
-            this.ColumnIdBonTransfert.HeaderText = "N° Bon";
-            this.ColumnIdBonTransfert.Name = "ColumnIdBonTransfert";
-            this.ColumnIdBonTransfert.ReadOnly = true;
-            this.ColumnIdBonTransfert.Width = 107;
-            // 
-            // ColumnMotif
-            // 
-            this.ColumnMotif.HeaderText = "Motif";
-            this.ColumnMotif.Name = "ColumnMotif";
-            this.ColumnMotif.Width = 580;
-            // 
-            // ColumnSiteSource
-            // 
-            this.ColumnSiteSource.HeaderText = "Site Source";
-            this.ColumnSiteSource.Name = "ColumnSiteSource";
-            this.ColumnSiteSource.Width = 190;
-            // 
-            // ColumnSiteDest
-            // 
-            this.ColumnSiteDest.HeaderText = "Site destination";
-            this.ColumnSiteDest.Name = "ColumnSiteDest";
-            this.ColumnSiteDest.Width = 190;
-            // 
-            // ColumnModifier
-            // 
-            this.ColumnModifier.HeaderText = "";
-            this.ColumnModifier.Name = "ColumnModifier";
-            this.ColumnModifier.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnModifier.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColumnModifier.Width = 25;
-            // 
-            // ColumnImprimer
-            // 
-            this.ColumnImprimer.HeaderText = "";
-            this.ColumnImprimer.Name = "ColumnImprimer";
-            this.ColumnImprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnImprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColumnImprimer.Width = 25;
-            // 
-            // ColumnSupprimer
-            // 
-            this.ColumnSupprimer.HeaderText = "";
-            this.ColumnSupprimer.Name = "ColumnSupprimer";
-            this.ColumnSupprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnSupprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColumnSupprimer.Width = 25;
             // 
             // tBIdBonTransfert
             // 
@@ -263,54 +222,54 @@
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel4});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 690);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 688);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1366, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1366, 24);
             this.statusStrip1.TabIndex = 3;
             // 
             // toolStripStatusLabel5
             // 
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(13, 17);
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(13, 19);
             this.toolStripStatusLabel5.Text = "  ";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Green;
-            this.toolStripStatusLabel1.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.toolStripStatusLabel1.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(20, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(20, 19);
             this.toolStripStatusLabel1.Text = "   ";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(63, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(68, 19);
             this.toolStripStatusLabel2.Text = " Bien reçu   ";
             // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.BackColor = System.Drawing.Color.Red;
-            this.toolStripStatusLabel3.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.toolStripStatusLabel3.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(20, 17);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(20, 19);
             this.toolStripStatusLabel3.Text = "   ";
             // 
             // toolStripStatusLabel4
             // 
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(91, 17);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(96, 19);
             this.toolStripStatusLabel4.Text = " Bien en transfert";
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.dGVBiens);
             this.groupBox3.Location = new System.Drawing.Point(14, 432);
             this.groupBox3.Name = "groupBox3";
@@ -321,8 +280,8 @@
             // 
             // dGVBiens
             // 
-            this.dGVBiens.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVBiens.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dGVBiens.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dGVBiens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVBiens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -405,6 +364,63 @@
             this.buttonQuitter.UseVisualStyleBackColor = true;
             this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
             // 
+            // ColumnIdBonTransfert
+            // 
+            this.ColumnIdBonTransfert.HeaderText = "N° Bon";
+            this.ColumnIdBonTransfert.Name = "ColumnIdBonTransfert";
+            this.ColumnIdBonTransfert.ReadOnly = true;
+            this.ColumnIdBonTransfert.Width = 107;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // ColumnMotif
+            // 
+            this.ColumnMotif.HeaderText = "Motif";
+            this.ColumnMotif.Name = "ColumnMotif";
+            this.ColumnMotif.Width = 580;
+            // 
+            // ColumnSiteSource
+            // 
+            this.ColumnSiteSource.HeaderText = "Site Source";
+            this.ColumnSiteSource.Name = "ColumnSiteSource";
+            this.ColumnSiteSource.Width = 190;
+            // 
+            // ColumnSiteDest
+            // 
+            this.ColumnSiteDest.HeaderText = "Site destination";
+            this.ColumnSiteDest.Name = "ColumnSiteDest";
+            this.ColumnSiteDest.Width = 190;
+            // 
+            // ColumnModifier
+            // 
+            this.ColumnModifier.HeaderText = "";
+            this.ColumnModifier.Name = "ColumnModifier";
+            this.ColumnModifier.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnModifier.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColumnModifier.Visible = false;
+            this.ColumnModifier.Width = 25;
+            // 
+            // ColumnImprimer
+            // 
+            this.ColumnImprimer.HeaderText = "";
+            this.ColumnImprimer.Name = "ColumnImprimer";
+            this.ColumnImprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnImprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColumnImprimer.Width = 25;
+            // 
+            // ColumnSupprimer
+            // 
+            this.ColumnSupprimer.HeaderText = "";
+            this.ColumnSupprimer.Image = ((System.Drawing.Image)(resources.GetObject("ColumnSupprimer.Image")));
+            this.ColumnSupprimer.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.ColumnSupprimer.Name = "ColumnSupprimer";
+            this.ColumnSupprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnSupprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColumnSupprimer.Width = 25;
+            // 
             // FormBonsDeTransfert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -450,14 +466,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dGVBiens;
         private System.Windows.Forms.Button buttonQuitter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdBonTransfert;
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMotif;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSiteSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSiteDest;
-        private System.Windows.Forms.DataGridViewButtonColumn ColumnModifier;
-        private System.Windows.Forms.DataGridViewButtonColumn ColumnImprimer;
-        private System.Windows.Forms.DataGridViewButtonColumn ColumnSupprimer;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
@@ -473,5 +481,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParticularité;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProvenance;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDestination;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdBonTransfert;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMotif;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSiteSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSiteDest;
+        private System.Windows.Forms.DataGridViewButtonColumn ColumnModifier;
+        private System.Windows.Forms.DataGridViewButtonColumn ColumnImprimer;
+        private System.Windows.Forms.DataGridViewImageColumn ColumnSupprimer;
     }
 }
