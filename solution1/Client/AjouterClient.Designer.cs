@@ -125,9 +125,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(379, 177);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.Size = new System.Drawing.Size(41, 13);
             this.label9.TabIndex = 52;
-            this.label9.Text = "Email ** :";
+            this.label9.Text = "Email  :";
             // 
             // label10
             // 
@@ -232,9 +232,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(15, 151);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 39;
-            this.label6.Text = "Tél 1 ** :";
+            this.label6.Text = "Tél 1  :";
             // 
             // label5
             // 

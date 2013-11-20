@@ -65,14 +65,29 @@ namespace solution1
         {
             string messageErreur = null;
             if (tBRaisonSociale.Text != "")
+            {
 
-                if (tBAdresse.Text !="")
+            }
+            else
+            {
+                messageErreur = "Veuillez entrer tous les chapms obligatoires";
+            }
 
-                    if (tBEmail.Text != "")
+
+            if (tBAdresse.Text != "")
+            {
+
+            }
+            else
+            {
+                messageErreur = "Veuillez entrer tous les chapms obligatoires";
+            }
+
+                  //  if (tBEmail.Text != "")
 
                         if (tBRegistreDeCommerce.Text !="")
 
-                            if (tBTél1.Text !="")
+                           // if (tBTél1.Text !="")
             {
                 
             }

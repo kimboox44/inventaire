@@ -132,9 +132,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(379, 177);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.Size = new System.Drawing.Size(38, 13);
             this.label9.TabIndex = 26;
-            this.label9.Text = "Email **:";
+            this.label9.Text = "Email :";
             // 
             // label10
             // 
@@ -251,7 +251,6 @@
             this.label5.Size = new System.Drawing.Size(130, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Registre de commerce ** :";
-            
             // 
             // label4
             // 

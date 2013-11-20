@@ -67,15 +67,31 @@ namespace solution1
         string controlSaisie()
         {
             string messageErreur = null;
-            if (tBRaisonSociale.Text != "") 
 
-                if (tBEmail.Text != "") 
-                     
-                    if (tBRegistreDeCommerce.Text != "")
+            if (tBRaisonSociale.Text != "")
+            {
 
-                        if (tBAdresse.Text != "")
+            }
+            else
+            {
+                messageErreur = "Veuillez entrer tous les champs obligatoires";
+            }
+                //if (tBEmail.Text != "") 
+
+
+            if (tBAdresse.Text != "")
+            {
+
+            }
+
+            else
+            {
+                messageErreur = "Veuillez entrer tous les champs obligatoires";
+
+            }              
+                            if (tBRegistreDeCommerce.Text != "")
                     
-                             if(tBTél1.Text !="")
+                          
                         
             {
 

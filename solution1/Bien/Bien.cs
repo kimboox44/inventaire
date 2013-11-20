@@ -107,10 +107,10 @@ namespace solution1
             SqlCommand.Parameters.Add("@prix", SqlDbType.Float).Value = pric;
             SqlCommand.Parameters.Add("@ancienCode", SqlDbType.VarChar, 30).Value = this.ancienCode;
 
-            if (idFournisseur != -1)
+            //if (idFournisseur != -1)
                 SqlCommand.Parameters.Add("@idFournisseur", SqlDbType.Int).Value = DBNull.Value;
-            else
-                SqlCommand.Parameters.Add("@idFournisseur", SqlDbType.Int).Value = this.idFournisseur;
+            //else
+            //    SqlCommand.Parameters.Add("@idFournisseur", SqlDbType.Int).Value = this.idFournisseur;
 
 
             SqlCommand.Parameters.Add("@numFacture", SqlDbType.VarChar, 20).Value = this.numFacture;

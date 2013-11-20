@@ -428,11 +428,11 @@ namespace solution1
                     {
                         MessageBox.Show("Echec d'enregistrement du numéro de facture du PV", "Erreur d'enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
-                 /*   else 
+                   else 
                     {
-                        this.Close();
+                        MessageBox.Show("Enregistrement effectué");
                     }
-                    */
+                    
 
 
 

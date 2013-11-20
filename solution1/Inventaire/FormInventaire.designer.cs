@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInventaire));
+            System.Windows.Forms.ColumnHeader columnFour;
             this.mesIcones = new System.Windows.Forms.ImageList(this.components);
             this.treeViewEmplacement = new System.Windows.Forms.TreeView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -49,7 +50,6 @@
             this.columnNumSérie = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnMarque = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnParticularité = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnFour = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnNumFacture = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageListBien = new System.Windows.Forms.ImageList(this.components);
             this.contextMenuBien = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -125,6 +125,7 @@
             this.cloturéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cloture = new System.Windows.Forms.Button();
             this.lab_inf = new System.Windows.Forms.Label();
+            columnFour = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -267,7 +268,7 @@
             this.columnNumSérie,
             this.columnMarque,
             this.columnParticularité,
-            this.columnFour,
+            columnFour,
             this.columnNumFacture});
             this.listViewBien.FullRowSelect = true;
             this.listViewBien.GridLines = true;
@@ -334,7 +335,7 @@
             // 
             // columnFour
             // 
-            this.columnFour.Text = "Fournisseur";
+            columnFour.Text = "Fournisseur";
             // 
             // columnNumFacture
             // 
@@ -935,7 +936,7 @@
             // cloturéToolStripMenuItem
             // 
             this.cloturéToolStripMenuItem.Name = "cloturéToolStripMenuItem";
-            this.cloturéToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cloturéToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.cloturéToolStripMenuItem.Text = "Cloturé";
             this.cloturéToolStripMenuItem.Click += new System.EventHandler(this.cloturéToolStripMenuItem_Click);
             // 
@@ -1092,7 +1093,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton3;
         private System.Windows.Forms.ToolStripMenuItem cloturéToolStripMenuItem;
-        private System.Windows.Forms.ColumnHeader columnFour;
     }
 }
 
