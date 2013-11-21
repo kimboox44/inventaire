@@ -39,6 +39,14 @@
             this.rBTous = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dGVBonDeTransfert = new System.Windows.Forms.DataGridView();
+            this.ColumnIdBonTransfert = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMotif = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSiteSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSiteDest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnModifier = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnImprimer = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnSupprimer = new System.Windows.Forms.DataGridViewImageColumn();
             this.tBIdBonTransfert = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -48,7 +56,10 @@
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGVBiens = new System.Windows.Forms.DataGridView();
+            this.buttonQuitter = new System.Windows.Forms.Button();
             this.ColumnIdBien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnProvenance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDestination = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnAncienCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDésignation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCatégorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,17 +67,6 @@
             this.ColyumnEtat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnParticularité = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnProvenance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDestination = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonQuitter = new System.Windows.Forms.Button();
-            this.ColumnIdBonTransfert = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMotif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSiteSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSiteDest = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnModifier = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColumnImprimer = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColumnSupprimer = new System.Windows.Forms.DataGridViewImageColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVBonDeTransfert)).BeginInit();
@@ -206,6 +206,63 @@
             this.dGVBonDeTransfert.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dGVBonDeTransfert_CellPainting);
             this.dGVBonDeTransfert.SelectionChanged += new System.EventHandler(this.dGVBonDeTransfert_SelectionChanged);
             // 
+            // ColumnIdBonTransfert
+            // 
+            this.ColumnIdBonTransfert.HeaderText = "N° Bon";
+            this.ColumnIdBonTransfert.Name = "ColumnIdBonTransfert";
+            this.ColumnIdBonTransfert.ReadOnly = true;
+            this.ColumnIdBonTransfert.Width = 107;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // ColumnMotif
+            // 
+            this.ColumnMotif.HeaderText = "Motif";
+            this.ColumnMotif.Name = "ColumnMotif";
+            this.ColumnMotif.Width = 580;
+            // 
+            // ColumnSiteSource
+            // 
+            this.ColumnSiteSource.HeaderText = "Site Source";
+            this.ColumnSiteSource.Name = "ColumnSiteSource";
+            this.ColumnSiteSource.Width = 190;
+            // 
+            // ColumnSiteDest
+            // 
+            this.ColumnSiteDest.HeaderText = "Site destination";
+            this.ColumnSiteDest.Name = "ColumnSiteDest";
+            this.ColumnSiteDest.Width = 190;
+            // 
+            // ColumnModifier
+            // 
+            this.ColumnModifier.HeaderText = "";
+            this.ColumnModifier.Name = "ColumnModifier";
+            this.ColumnModifier.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnModifier.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColumnModifier.Visible = false;
+            this.ColumnModifier.Width = 25;
+            // 
+            // ColumnImprimer
+            // 
+            this.ColumnImprimer.HeaderText = "";
+            this.ColumnImprimer.Name = "ColumnImprimer";
+            this.ColumnImprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnImprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColumnImprimer.Width = 25;
+            // 
+            // ColumnSupprimer
+            // 
+            this.ColumnSupprimer.HeaderText = "";
+            this.ColumnSupprimer.Image = ((System.Drawing.Image)(resources.GetObject("ColumnSupprimer.Image")));
+            this.ColumnSupprimer.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.ColumnSupprimer.Name = "ColumnSupprimer";
+            this.ColumnSupprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnSupprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColumnSupprimer.Width = 25;
+            // 
             // tBIdBonTransfert
             // 
             this.tBIdBonTransfert.Location = new System.Drawing.Point(134, 39);
@@ -286,25 +343,46 @@
             this.dGVBiens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVBiens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnIdBien,
+            this.ColumnProvenance,
+            this.ColumnDestination,
             this.ColumnAncienCode,
             this.ColumnDésignation,
             this.ColumnCatégorie,
             this.ColumnDateAcquisition,
             this.ColyumnEtat,
             this.ColumnPrix,
-            this.ColumnParticularité,
-            this.ColumnProvenance,
-            this.ColumnDestination});
+            this.ColumnParticularité});
             this.dGVBiens.GridColor = System.Drawing.Color.Gainsboro;
             this.dGVBiens.Location = new System.Drawing.Point(11, 19);
             this.dGVBiens.Name = "dGVBiens";
             this.dGVBiens.Size = new System.Drawing.Size(1325, 201);
             this.dGVBiens.TabIndex = 33;
             // 
+            // buttonQuitter
+            // 
+            this.buttonQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonQuitter.Location = new System.Drawing.Point(1271, 663);
+            this.buttonQuitter.Name = "buttonQuitter";
+            this.buttonQuitter.Size = new System.Drawing.Size(87, 23);
+            this.buttonQuitter.TabIndex = 30;
+            this.buttonQuitter.Text = "Quitter";
+            this.buttonQuitter.UseVisualStyleBackColor = true;
+            this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
+            // 
             // ColumnIdBien
             // 
             this.ColumnIdBien.HeaderText = "Identifiant";
             this.ColumnIdBien.Name = "ColumnIdBien";
+            // 
+            // ColumnProvenance
+            // 
+            this.ColumnProvenance.HeaderText = "Provenance";
+            this.ColumnProvenance.Name = "ColumnProvenance";
+            // 
+            // ColumnDestination
+            // 
+            this.ColumnDestination.HeaderText = "Destination";
+            this.ColumnDestination.Name = "ColumnDestination";
             // 
             // ColumnAncienCode
             // 
@@ -342,84 +420,6 @@
             this.ColumnParticularité.HeaderText = "Particularité";
             this.ColumnParticularité.Name = "ColumnParticularité";
             this.ColumnParticularité.Width = 370;
-            // 
-            // ColumnProvenance
-            // 
-            this.ColumnProvenance.HeaderText = "Provenance";
-            this.ColumnProvenance.Name = "ColumnProvenance";
-            // 
-            // ColumnDestination
-            // 
-            this.ColumnDestination.HeaderText = "Destination";
-            this.ColumnDestination.Name = "ColumnDestination";
-            // 
-            // buttonQuitter
-            // 
-            this.buttonQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonQuitter.Location = new System.Drawing.Point(1271, 663);
-            this.buttonQuitter.Name = "buttonQuitter";
-            this.buttonQuitter.Size = new System.Drawing.Size(87, 23);
-            this.buttonQuitter.TabIndex = 30;
-            this.buttonQuitter.Text = "Quitter";
-            this.buttonQuitter.UseVisualStyleBackColor = true;
-            this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
-            // 
-            // ColumnIdBonTransfert
-            // 
-            this.ColumnIdBonTransfert.HeaderText = "N° Bon";
-            this.ColumnIdBonTransfert.Name = "ColumnIdBonTransfert";
-            this.ColumnIdBonTransfert.ReadOnly = true;
-            this.ColumnIdBonTransfert.Width = 107;
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // ColumnMotif
-            // 
-            this.ColumnMotif.HeaderText = "Motif";
-            this.ColumnMotif.Name = "ColumnMotif";
-            this.ColumnMotif.Width = 580;
-            // 
-            // ColumnSiteSource
-            // 
-            this.ColumnSiteSource.HeaderText = "Site Source";
-            this.ColumnSiteSource.Name = "ColumnSiteSource";
-            this.ColumnSiteSource.Width = 190;
-            // 
-            // ColumnSiteDest
-            // 
-            this.ColumnSiteDest.HeaderText = "Site destination";
-            this.ColumnSiteDest.Name = "ColumnSiteDest";
-            this.ColumnSiteDest.Width = 190;
-            // 
-            // ColumnModifier
-            // 
-            this.ColumnModifier.HeaderText = "";
-            this.ColumnModifier.Name = "ColumnModifier";
-            this.ColumnModifier.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnModifier.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColumnModifier.Visible = false;
-            this.ColumnModifier.Width = 25;
-            // 
-            // ColumnImprimer
-            // 
-            this.ColumnImprimer.HeaderText = "";
-            this.ColumnImprimer.Name = "ColumnImprimer";
-            this.ColumnImprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnImprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColumnImprimer.Width = 25;
-            // 
-            // ColumnSupprimer
-            // 
-            this.ColumnSupprimer.HeaderText = "";
-            this.ColumnSupprimer.Image = ((System.Drawing.Image)(resources.GetObject("ColumnSupprimer.Image")));
-            this.ColumnSupprimer.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.ColumnSupprimer.Name = "ColumnSupprimer";
-            this.ColumnSupprimer.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnSupprimer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColumnSupprimer.Width = 25;
             // 
             // FormBonsDeTransfert
             // 
@@ -471,16 +471,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdBien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAncienCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDésignation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCatégorie;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateAcquisition;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColyumnEtat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrix;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParticularité;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProvenance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDestination;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdBonTransfert;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMotif;
@@ -489,5 +479,15 @@
         private System.Windows.Forms.DataGridViewButtonColumn ColumnModifier;
         private System.Windows.Forms.DataGridViewButtonColumn ColumnImprimer;
         private System.Windows.Forms.DataGridViewImageColumn ColumnSupprimer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdBien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProvenance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDestination;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAncienCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDésignation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCatégorie;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateAcquisition;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColyumnEtat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrix;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParticularité;
     }
 }

@@ -251,14 +251,18 @@ namespace solution1
             dGVBiens.Rows.Clear();
             try
             {
-                requete = "create view vueBonDeTransfert as select Bien.idBien, Bien.ancienCode, Bien.DesigBien, CategorieBien.DesigCategorieBien, Bien.DateAcquisitionBien, Etat.DesigEtat, Bien.Prix, Bien.Particularite, Transferer.idEmplaSource, Transferer.idEmplaDest, Emplacement.DesigEmpla as DesigEmplaSource, Transferer.reçu from  bien, Transferer, CategorieBien, Emplacement, SeTrouveB, Etat where Emplacement.idEmplaComplet = Transferer.idEmplaSource  and Bien.IdBien = Transferer.idBien and CategorieBien.IdCategorieBien = Bien.IdCategorieBien and seTrouveB.IdBien = Bien.idBien and seTrouveB.IdEtat = Etat.idEtat and SeTrouveB.uidInventaire = '" + idinventaire + "' and Transferer.idBonTransfert = " + dGVBonDeTransfert.Rows[dGVBonDeTransfert.CurrentCell.RowIndex].Cells["ColumnIdBonTransfert"].Value;
+                /*
+                requete = "create view vueBonDeTransfert as select Bien.idBien, Bien.ancienCode, Bien.DesigBien, CategorieBien.DesigCategorieBien, Bien.DateAcquisitionBien, Etat.DesigEtat, Bien.Prix, Bien.Particularite,Transferer.idEmplaSource, Transferer.idEmplaDest,  Emplacement.DesigEmpla as DesigEmplaSource, Transferer.reçu from  bien, Transferer, CategorieBien, Emplacement, SeTrouveB, Etat where Emplacement.idEmplaComplet = Transferer.idEmplaSource  and Bien.IdBien = Transferer.idBien and CategorieBien.IdCategorieBien = Bien.IdCategorieBien and seTrouveB.IdBien = Bien.idBien and seTrouveB.IdEtat = Etat.idEtat and SeTrouveB.uidInventaire = '" + idinventaire + "' and Transferer.idBonTransfert = " + dGVBonDeTransfert.Rows[dGVBonDeTransfert.CurrentCell.RowIndex].Cells["ColumnIdBonTransfert"].Value;
                 Console.WriteLine(requete);
                 MaConnexion.ExecuteUpdate(connectionString, requete);
 
-                requete = "select vueBonDeTransfert.idBien, vueBonDeTransfert.ancienCode, vueBonDeTransfert.DesigBien, vueBonDeTransfert.DesigCategorieBien, vueBonDeTransfert.DateAcquisitionBien, vueBonDeTransfert.DesigEtat,vueBonDeTransfert.Prix, vueBonDeTransfert.Particularite, vueBonDeTransfert.DesigEmplaSource, Emplacement.DesigEmpla as DesigEmplaDestination, vueBonDeTransfert.reçu from vueBonDeTransfert, Emplacement where vueBonDeTransfert.idEmplaDest = Emplacement.idEmplaComplet";
+                requete = "select vueBonDeTransfert.idBien, vueBonDeTransfert.ancienCode, vueBonDeTransfert.DesigBien, vueBonDeTransfert.DesigCategorieBien, vueBonDeTransfert.DateAcquisitionBien, vueBonDeTransfert.DesigEtat,vueBonDeTransfert.Prix, vueBonDeTransfert.Particularite, vueBonDeTransfert.DesigEmplaSource,Emplacement.DesigEmpla as DesigEmplaDestination, vueBonDeTransfert.reçu from vueBonDeTransfert, Emplacement where vueBonDeTransfert.idEmplaDest = Emplacement.idEmplaComplet";
                 Console.WriteLine(requete);
 
-                dS = MaConnexion.ExecuteSelect(connectionString, requete);
+                */
+              string  requete3 = "select Bien.idbien,Transferer.idEmplaSource,Transferer.idEmplaDest,Bien.ancienCode, Bien.DesigBien, CategorieBien.DesigCategorieBien, Bien.DateAcquisitionBien, Etat.DesigEtat, Bien.Prix ,Bien.Particularite from bien, Transferer, CategorieBien, Emplacement, SeTrouveB, Etat where Emplacement.idEmplaComplet = Transferer.idEmplaSource and  Bien.IdBien = Transferer.idBien and CategorieBien.IdCategorieBien = Bien.IdCategorieBien and seTrouveB.IdBien = Bien.idBien and seTrouveB.IdEtat = Etat.idEtat and SeTrouveB.uidInventaire = '" + idinventaire + "' and Transferer.idBonTransfert = " + dGVBonDeTransfert.Rows[dGVBonDeTransfert.CurrentCell.RowIndex].Cells["ColumnIdBonTransfert"].Value;
+
+                dS = MaConnexion.ExecuteSelect(connectionString, requete3);
                 foreach (DataRow row in dS.Tables[0].Rows)
                 {
                     object[] ligneBienTransféré = new object[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString().Substring(0, 8), row[5].ToString(), row[6].ToString(), row[7].ToString(), row[8].ToString(), row[9].ToString() };
@@ -280,6 +284,7 @@ namespace solution1
             this.Close();
         }
 
+        
 
     }
 }
